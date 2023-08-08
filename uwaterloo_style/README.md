@@ -7,5 +7,11 @@ col: vertical component
 FUTHERMORE UPDATES:
 add ID
 add more style
+add js
 add DB
 add Dynamic Reactions
+update the design
+
+SCHEDULE:
+Sept 5 2023 start
+Dec 22 2023 end
