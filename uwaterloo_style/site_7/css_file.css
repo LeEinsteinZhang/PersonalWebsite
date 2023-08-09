@@ -1,0 +1,13 @@
+.main-content {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.section-content {
+    padding: 0 .8rem 0 .8rem;
+    clear: both;
+    max-width: 63.125rem;
+    margin-left: auto;
+    margin-right: auto
+}
