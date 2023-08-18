@@ -1,0 +1,1 @@
+this is a repo for dynamic web with single page application.
