@@ -1,23 +1,74 @@
 #!/bin/bash
 
-# Get the list of directories matching the pattern, sorted in descending order
-dirs=$(ls -d ../../old_* 2>/dev/null | sort -r)
+clear_flg=$1
 
-# Get the most recent directory from the list
-latest_dir=$(echo "$dirs" | head -n 1)
+if [ -d "../../cloud" ]; then
+    echo "REMOTE"
 
-# Check if the latest_dir exists
-if [ -z "$latest_dir" ]; then
-    echo "No directory matching the pattern old_year_month_day_hour_min_second found!"
-    exit 1
+    if [ "$clear_flg" == "clear" ] || [ "$clear_flg" == "c" ]; then
+        if [ "$confirm" == "y" ] || [ "$confirm" == "Y" ]; then
+            rm -rf ../../old*
+            echo "SUCCESSFUL CLEAR BCAKUP"
+            exit 0
+        else
+            echo "CANCEL DELETE OPERATION"
+            exit 1
+        fi
+    fi
+
+    # Get the list of directories matching the pattern, sorted in descending order
+    dirs=$(ls -d ../../old_* 2>/dev/null | sort -r)
+
+    # Get the most recent directory from the list
+    latest_dir=$(echo "$dirs" | head -n 1)
+
+    # Check if the latest_dir exists
+    if [ -z "$latest_dir" ]; then
+        echo "NO MORE BACKUP"
+        exit 1
+    fi
+
+    # Check and remove existing ../../html if it exists
+    if [ -d "../../html" ]; then
+        rm -rf "../../html"
+    fi
+
+    # Rename the latest directory to 'html'
+    mv "$latest_dir" "../../html"
+else
+    echo "LOCALHOST"
+
+    if [ "$clear_flg" == "clear" ] || [ "$clear_flg" == "c" ]; then
+        read -p "Are you sure to delete all the backup? (y/n): " confirm
+        if [ "$confirm" == "y" ] || [ "$confirm" == "Y" ]; then
+            rm -rf ../../localhost/old*
+            echo "SUCCESSFUL CLEAR BCAKUP"
+            exit 0
+        else
+            echo "CANCEL DELETE OPERATION"
+            exit 1
+        fi
+    fi
+
+    # Get the list of directories matching the pattern, sorted in descending order
+    dirs=$(ls -d ../../localhost/old_* 2>/dev/null | sort -r)
+
+    # Get the most recent directory from the list
+    latest_dir=$(echo "$dirs" | head -n 1)
+
+    # Check if the latest_dir exists
+    if [ -z "$latest_dir" ]; then
+        echo "NO MORE BACKUP"
+        exit 1
+    fi
+
+    # Check and remove existing ../../html if it exists
+    if [ -d "../../localhost/html" ]; then
+        rm -rf "../../localhost/html"
+    fi
+
+    # Rename the latest directory to 'html'
+    mv "$latest_dir" "../../localhost/html"
 fi
-
-# Check and remove existing ../../html if it exists
-if [ -d "../../html" ]; then
-    rm -rf "../../html"
-fi
-
-# Rename the latest directory to 'html'
-mv "$latest_dir" "../../html"
 
 echo "Task completed!"
