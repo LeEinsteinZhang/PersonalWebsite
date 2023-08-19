@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Get the list of directories matching the pattern, sorted in descending order
+dirs=$(ls -d ../../old_* 2>/dev/null | sort -r)
+
+# Get the most recent directory from the list
+latest_dir=$(echo "$dirs" | head -n 1)
+
+# Check if the latest_dir exists
+if [ -z "$latest_dir" ]; then
+    echo "No directory matching the pattern old_year_month_day_hour_min_second found!"
+    exit 1
+fi
+
+# Check and remove existing ../../html if it exists
+if [ -d "../../html" ]; then
+    rm -rf "../../html"
+fi
+
+# Rename the latest directory to 'html'
+mv "$latest_dir" "../../html"
+
+echo "Task completed!"
