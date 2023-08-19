@@ -5,7 +5,7 @@ repo_name=$1
 # Get the current date and time in the format 'old_year_month_day_hour_min_second'
 current_date=$(date +old_%Y_%m_%d_%H_%M_%S)
 
-if [ -d "../../cloud" ]; then
+if [ -f "../../cloud" ]; then
     echo "REMOTE"
     
     # Step 1: Rename ../html if it exists

@@ -2,7 +2,7 @@
 
 clear_flg=$1
 
-if [ -d "../../cloud" ]; then
+if [ -f "../../cloud" ]; then
     echo "REMOTE"
 
     if [ "$clear_flg" == "clear" ] || [ "$clear_flg" == "c" ]; then
