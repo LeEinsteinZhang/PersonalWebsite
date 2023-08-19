@@ -1,0 +1,35 @@
+#!/bin/bash
+
+repo_name=$1
+remote_user="123"
+html_path="/var/www"
+
+# Get the current date and time in the format 'old_year_month_day_hour_min_second'
+current_date=$(date +old_%Y_%m_%d_%H_%M_%S)
+
+# Step 1: Rename remote ../html if it exists
+if [ "$repo_name" == "html" ]; then
+    ssh -t $remote_user << EOF
+    if [ -d "$html_path/html" ]; then
+        rm -rf "$html_path/html"
+        rm -rf $html_path/old*
+    fi
+EOF
+else
+    # Rename the remote /var/www/html directory if it exists
+    ssh -t $remote_user << EOF
+    if [ -d "$html_path/html" ]; then
+        mv "$html_path/html" "$html_path/$current_date"
+    fi
+EOF
+fi
+
+# Step 2: Copy the provided repo to remote ../html
+if [ -d "$repo_name" ]; then
+    scp -r "$repo_name" $remote_user:$html_path/html
+else
+    echo "The repo '${repo_name}' doesn't exist!"
+    exit 1
+fi
+
+echo "Task completed on the remote server!"
