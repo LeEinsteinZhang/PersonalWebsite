@@ -5,6 +5,7 @@ clear_flg=$1
 if [ -f "../../cloud" ]; then
     echo "REMOTE"
 
+    # extra clear operations
     if [ "$clear_flg" == "clear" ] || [ "$clear_flg" == "c" ]; then
         read -p "Are you sure to delete all the backup? (y/n): " confirm
         if [ "$confirm" == "y" ] || [ "$confirm" == "Y" ]; then
