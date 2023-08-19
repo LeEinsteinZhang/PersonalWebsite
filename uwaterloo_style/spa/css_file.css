@@ -448,6 +448,11 @@ button:hover {
 		padding-bottom: 50px;
 	}
 	
+	.exp-page {
+		margin: 80px auto 0px;
+		padding-bottom: 40px;
+	}
+	
 	.dropdown-menu {
 		position: relative;
 		display: block;
