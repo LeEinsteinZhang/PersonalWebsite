@@ -35,8 +35,13 @@ body {
 }
 
 .main-page {
-	margin: 80px auto 20px; /* Increase the top margin and added bottom margin */
+	margin: 80px auto 150px; /* Increase the top margin and added bottom margin */
     padding-bottom: 200px;  /* Added padding to the bottom to avoid overlap with the footer */
+}
+
+.exp-page {
+	margin: 110px auto 0px; /* Increase the top margin and added bottom margin */
+	padding-bottom: 40px;
 }
 
 .column-section {
@@ -81,6 +86,15 @@ header {
 .logo-link img {
 	padding: 2px 0;
 	max-width: 60px;
+}
+
+[id]:before {
+  content: "";
+  display: block;
+  height: 80px;  /* Adjust to the height of your header or any other offset you need */
+  margin-top: -80px; /* Same value as height but negative */
+  visibility: hidden;
+  pointer-events: none;
 }
 
 /* Header Settings - Nav Bar*/
@@ -230,6 +244,7 @@ nav ul li a:hover {
 }
 
 /* Footer Settings */
+/*
 footer {
 	flex-shrink: 0;
 	position: relative;
@@ -237,6 +252,16 @@ footer {
     color: #737373;
 	font-family: 'Roboto Condensed', sans-serif;
 	bottom: 0;
+}
+*/
+footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000000;
+    color: #737373;
+    font-family: 'Roboto Condensed', sans-serif;
 }
   
 .footer-content {
@@ -418,10 +443,11 @@ button:hover {
 }
 
 /* 移动端适配 */
-@media screen and (max-width : 550px ){
+@media screen and (max-width : 768px ){
 	.main-page {
 		padding-bottom: 50px;
 	}
+	
 	.dropdown-menu {
 		position: relative;
 		display: block;
