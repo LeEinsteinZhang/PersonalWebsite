@@ -361,6 +361,10 @@ nav ul li a:hover {
 	filter: brightness(0%);
 }
 
+.job-img img {
+	border-radius: 1vw;
+}
+
 /* Footer Settings */
 footer {
     background-color: #000000;
