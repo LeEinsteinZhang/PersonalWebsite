@@ -126,6 +126,23 @@ body {
     margin-left: calc((min(80vw, 1200px) - 440px) / 2); /* Adjust this value as needed */
 }
 
+/* language */
+.language-switcher {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+.language-switcher a {
+    text-decoration: none;
+    color: #555;
+    padding: 0 10px;
+}
+
+.language-switcher a:hover {
+    text-decoration: underline;
+}
+
 /* Flex Weight */
 .flex-1 {
 	flex: 1;
@@ -241,7 +258,8 @@ nav {
 }
 
 .menu {
-	max-width: 450px;
+	position: relative;
+	max-width: 600px;
 	display: flex;
 	align-items: flex-end;
 	justify-content: space-between;
@@ -258,7 +276,7 @@ nav ul {
 
 nav ul li:not(:last-child) {
 	margin-right: 30px;
-	}
+}
 
 nav ul li a {
 	text-decoration: none;
@@ -386,7 +404,7 @@ footer a {
 }
 
 .uwaterloo-link img {
-    max-width: 200px;
+    max-width: 150px;
 	margin-left: -25px;
 }
 
