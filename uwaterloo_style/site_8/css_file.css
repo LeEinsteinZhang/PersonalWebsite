@@ -380,7 +380,7 @@ nav ul li a:hover {
 }
 
 .job-img img {
-	border-radius: 1vw;
+	border-radius: min(1vw, 20px);
 }
 
 /* Footer Settings */
