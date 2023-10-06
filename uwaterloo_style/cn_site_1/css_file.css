@@ -4,10 +4,11 @@
 
 
 html {
+	background-color: black;
+	height: 100%;
 	margin: 0;
   	padding: 0;
-	height: 100%;
-	background-color: black;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -380,7 +381,7 @@ nav ul li a:hover {
 }
 
 .job-img img {
-	border-radius: 1vw;
+	border-radius: min(1vw, 20px);
 }
 
 /* Footer Settings */
