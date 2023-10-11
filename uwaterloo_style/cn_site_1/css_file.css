@@ -100,11 +100,24 @@ body {
 	flex: 4;
 }
 
+.p-sub {
+	margin-top: -5px;
+}
+
+.p-subsub {
+	margin-top: -10px;
+}
 
 .images {
 	display: flex;
 	flex-direction: row;
 }
+
+.section-offset {
+    padding-top: 40px;
+    margin-top: -40px;
+}
+
 
 #home {
     position: relative;
@@ -127,6 +140,11 @@ body {
     margin-left: calc((min(80vw, 1200px) - 440px) / 2); /* Adjust this value as needed */
 }
 
+#about-img img {
+	height: calc(min(80vh, 800px));
+	width: auto;
+	object-fit: contain;
+}
 /* language */
 .language-switcher {
     display: flex;
@@ -405,8 +423,8 @@ footer a {
 }
 
 .uwaterloo-link img {
-    max-width: 150px;
-	margin-left: -25px;
+    height: 45px;
+	width: auto;
 }
 
 /* Button Settings */
