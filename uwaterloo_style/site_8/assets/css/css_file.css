@@ -302,7 +302,7 @@ header {
 
 .logo-link img {
 	padding: 2px 0;
-	max-width: 150px;
+	max-width: 60px;
 }
 
 /* Header Settings - Nav Bar*/
@@ -463,8 +463,8 @@ footer a {
 }
 
 .uwaterloo-link img {
-    height: 45px;
-	width: auto;
+    max-width: 150px;
+	min-width: 100px;
 }
 
 /* Button Settings */
