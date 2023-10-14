@@ -141,8 +141,8 @@ body {
 }
 
 #about-img img {
-	height: calc(min(80vh, 800px));
-	width: auto;
+	max-height: 80vh;
+	width: min(600px, 40vw);
 	object-fit: contain;
 }
 /* language */
@@ -463,8 +463,7 @@ footer a {
 }
 
 .uwaterloo-link img {
-    max-width: 150px;
-	min-width: 100px;
+    width: min(150px, 25vw);
 }
 
 /* Button Settings */
