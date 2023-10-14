@@ -237,6 +237,46 @@ body {
 	margin-bottom: 50px;
 }
 
+.indicator-area{
+   position: absolute;
+   bottom: 15px;
+   left: 50%;
+   transform:translate(-50%, -50%);
+}
+
+.indicator-area span{
+   display: block;
+   width: 20px;
+   height: 20px;
+   border-bottom:1px solid #fff;
+   border-right:1px solid #fff;
+   transform: rotate(45deg);
+   animation:animate 2s infinite;
+   margin: -10px;
+}
+
+.indicator-area span:nth-child(2){
+   animation-delay:-0.2s;
+}
+
+.indicator-area span:nth-child(3){
+   animation-delay:-0.4s;
+}
+
+@keyframes animate{
+   0%{
+      opacity: 0;
+      transform: rotate(45deg) translate(-20px, -20px);
+   }
+   50%{
+      opacity: 1;
+   }
+   100%{
+      opacity: 0;
+      transform: rotate(45deg) translate(20px, 20px);
+   }
+}
+
 .welcome {
 	font-family: 'Roboto', sans-serif;
 	font-size: 18px;
