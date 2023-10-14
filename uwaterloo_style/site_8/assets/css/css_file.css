@@ -596,7 +596,7 @@ button:hover {
 }
 
 /* 移动端适配 */
-@media screen and (max-width : 425px ){	
+@media screen and (max-width : 475px ){	
 	.exp-page {
 		margin-top: 65px;
 	}
