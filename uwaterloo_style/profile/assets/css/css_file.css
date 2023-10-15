@@ -602,9 +602,9 @@ button:hover {
 	display: flex;
 	flex-direction: column;
 /*	justify-content: space-between;*/
-	align-items: flex-start;
-	position: relative;
-	width: min(100vw, 1200px);
+/*	align-items: flex-start;*/
+/*	position: relative;*/
+	width: min(90vw, 1200px);
 	margin: 0px auto;
 	box-sizing: border-box;
 }
@@ -612,11 +612,19 @@ button:hover {
 .profile {
     display: flex;
     flex-direction: row;
-    margin: 10px;
+    margintop: 10px;
     width: 100%;
 }
+
 .profile-picture {
     width: 20%;
+}
+
+.profile-picture img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
 }
 
 .profile-info {
@@ -784,6 +792,7 @@ button:hover {
     
     .profile-info {
         width: 100%;
-        margin-left: 0px;
+        margin: 0;
+        padding: 0;
     }
 }
