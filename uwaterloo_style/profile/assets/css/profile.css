@@ -1,0 +1,55 @@
+/* CSS Document */
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    width: 100%;
+}
+.profile-picture {
+    width: 20%;
+}
+
+.profile-info {
+    width: 70%;
+    margin-left: 40px;
+}
+
+.profile-name p {
+    ont-family: 'Orbitron', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.profile-description p {
+    font-size: 20px;
+    font-family: "Times New Roman";
+    margin-top: -30px;
+}
+
+.accordion {
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+.accordion-header {
+    cursor: pointer;
+    padding: 8px 10px;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-content {
+    display: block;
+    padding: 5px 10px;
+}
+
+.arrow {
+    transition: transform 0.3s;
+}
+
+.arrow.up {
+    transform: rotate(-180deg);
+}
