@@ -288,7 +288,7 @@ body {
 
 /* Header Settings */
 header {
-	position: fixed;
+/*	position: fixed;*/
 	width: 100%;
 	flex-shrink: 0;
 	background-color: black;
@@ -302,7 +302,8 @@ header {
 
 .logo-link img {
 	padding: 2px 0;
-	max-width: 60px;
+	height: 40px;
+    width: auto;
 }
 
 /* Header Settings - Nav Bar*/
