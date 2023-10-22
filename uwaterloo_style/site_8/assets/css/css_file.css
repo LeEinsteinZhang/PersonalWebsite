@@ -29,7 +29,7 @@ body {
 	justify-content: space-between;
 	align-items: flex-start;
 	position: relative;
-	width: 95vw;
+	width: 90vw;
 	max-width: 1200px;
 	margin: 0px auto;
 	box-sizing: border-box;
@@ -318,11 +318,11 @@ nav {
 
 .menu {
 	position: relative;
+    width: 90vw;
 	max-width: 1200px;
 	display: flex;
 	align-items: flex-end;
 	justify-content: space-between;
-	width: 100%;
 	padding: 0 10px;
 }
 
