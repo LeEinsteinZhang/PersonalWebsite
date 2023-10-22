@@ -564,6 +564,7 @@ button:hover {
 	font-weight: bold;
 	border: none;
 	cursor: pointer;
+    font-size: 30px;
 	padding: 10px;
 }
 
