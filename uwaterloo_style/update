@@ -1,38 +1,39 @@
 #!/bin/bash
 
-repo_name=$1
+source=$1
+target=$2
 
 # Get the current date and time in the format 'old_year_month_day_hour_min_second'
-current_date=$(date +old_%Y_%m_%d_%H_%M_%S)
+current_date=$target$(date +_backup_%Y_%m_%d_%H_%M_%S)
 
 if [ -f "../../cloud" ]; then
     echo "REMOTE"
     
-    # Step 1: Rename ../html if it exists
-    if [ -d "../../html" ]; then
-        mv "../../html" "../../$current_date"
+    # Step 1: Rename ../$target if it exists
+    if [ -d "../../$target" ]; then
+        mv "../../$target" "../../$current_date"
     fi
 
-    # Step 2: Copy the provided repo to ../html
-    if [ -d "$repo_name" ]; then
-        cp -r "$repo_name" "../../html"
+    # Step 2: Copy the provided repo to ../$target
+    if [ -d "$source" ]; then
+        cp -r "$source" "../../$target"
     else
-        echo "The repo '${repo_name}' doesn't exist!"
+        echo "The repo '${source}' doesn't exist!"
         exit 1
     fi
 else
     echo "LOCALHOST"
 
-    # Step 1: Rename ../html if it exists
-    if [ -d "../../localhost/html" ]; then
-        mv "../../localhost/html" "../../localhost/$current_date"
+    # Step 1: Rename ../$target if it exists
+    if [ -d "../../localhost/$target" ]; then
+        mv "../../localhost/$target" "../../localhost/$current_date"
     fi
 
-    # Step 2: Copy the provided repo to ../html
-    if [ -d "$repo_name" ]; then
-        cp -r "$repo_name" "../../localhost/html"
+    # Step 2: Copy the provided repo to ../$target
+    if [ -d "$source" ]; then
+        cp -r "$source" "../../localhost/$target"
     else
-        echo "The repo '${repo_name}' doesn't exist!"
+        echo "The repo '${source}' doesn't exist!"
         exit 1
     fi
 fi
