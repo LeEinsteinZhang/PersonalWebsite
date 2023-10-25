@@ -29,7 +29,7 @@ body {
 	justify-content: space-between;
 	align-items: flex-start;
 	position: relative;
-	width: 95vw;
+	width: 90vw;
 	max-width: 1200px;
 	margin: 0px auto;
 	box-sizing: border-box;
@@ -40,6 +40,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	margin: 0px auto;
+    margin-bottom: 30px;
 }
 
 .exp-page {
@@ -52,24 +53,6 @@ body {
 .column-section {
 	display: flex;
 	flex-direction: column;
-}
-
-.left {
-    float: left;
-}
-
-.right {
-    float: right;
-}
-
-.left-column {
-	position: absolute;
-	left: 0;
-}
-
-.right-column {
-	position: absolute;
-	right: 0;
 }
 
 .row-section {
@@ -128,16 +111,6 @@ body {
 #contact {
 	display: flex;
 	flex-direction: row;
-	margin: 0px auto;
-	min-height: 249px;
-}
-
-#contact .column-section:first-child {
-    margin-right: calc((min(80vw, 1200px) - 440px) / 2); /* Adjust this value as needed */
-}
-
-#contact .column-section:last-child {
-    margin-left: calc((min(80vw, 1200px) - 440px) / 2); /* Adjust this value as needed */
 }
 
 #about-img img {
@@ -318,11 +291,11 @@ nav {
 
 .menu {
 	position: relative;
+    width: 90vw;
 	max-width: 1200px;
 	display: flex;
 	align-items: flex-end;
 	justify-content: space-between;
-	width: 100%;
 	padding: 0 10px;
 }
 
@@ -432,12 +405,6 @@ nav ul li a:hover {
 	width: 100%;
 }
 
-.social-media img {
-	max-height: 30px;
-	margin-right: 30px;
-	filter: brightness(0%);
-}
-
 .job-img img {
 	border-radius: min(1vw, 20px);
 }
@@ -445,21 +412,75 @@ nav ul li a:hover {
 /* Footer Settings */
 footer {
     background-color: #000000;
-    color: #737373;
+    color: #ffffff;
     font-family: 'Roboto Condensed', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
-  
+
+footer a {
+	color: #81c784;
+    text-decoration: none;
+}
+
 .footer-content {
     background-color: black;
 	display: flex;
-	justify-content: center;
 	position: relative;
-	align-items: flex-end;
+    justify-content: space-evenly;
+    width: 90vw;
+	max-width: 1200px;
 }
-  
-footer a {
-	color: #ffffff;
-    text-decoration: none;
+
+.footer-address {
+    flex: 1;
+    text-align: left;
+}
+
+.footer-address p {
+    margin: 0;
+}
+
+.footer-address a:hover {
+    text-decoration: underline;
+}
+
+.footer-menu {
+    flex: 1;
+    /* 使内容居中 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-social p {
+    margin: 0px;
+    margin-top: 5px;
+}
+
+.footer-social {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    text-align: right;
+    justify-content: flex-end;
+}
+
+.social-media img {
+    max-height: 30px;
+    margin-left: 15px;
+}
+
+.social-media img:hover {
+    filter: brightness(0) saturate(100%) invert(46%) sepia(49%) saturate(1111%) hue-rotate(88deg) brightness(97%) contrast(84%);
 }
 
 .uwaterloo-link img {
@@ -601,23 +622,6 @@ button:hover {
 		margin-top: 65px;
 	}
 
-	.content {
-		margin: auto 0.1vw;
-	}
-	
-	#contact {
-		flex-direction: column;
-		min-height: 300px;
-	}
-
-	#contact .column-section:first-child {
-		margin-right: 0; /* Adjust this value as needed */
-	}
-	
-	#contact .column-section:last-child {
-		margin-left: 0; /* Adjust this value as needed */
-	}
-
 	.dropdown-menu {
 		position: relative;
 		display: block;
@@ -688,10 +692,6 @@ button:hover {
 	
 	.social-media img {
 		max-height: 24px;
+	}
 
-	}
-	
-	.logo-link img {
-		max-width: 60px;
-	}
 }
