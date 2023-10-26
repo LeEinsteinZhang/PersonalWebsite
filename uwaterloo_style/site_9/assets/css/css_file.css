@@ -43,11 +43,60 @@ body {
     margin-bottom: 30px;
 }
 
+.about-section p, h1, h2 {
+	margin: 5px 0;
+	width: 80%;
+}
+
 .exp-page {
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 	margin: 105px auto 0px; /* Increase the top margin and added bottom margin */
+}
+
+.exp-section {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	margin: 15px 0px;
+}
+
+.exp-text {
+	display: flex;
+	flex-direction: column;
+	width: 60%
+}
+
+.exp-name {
+	margin: 0;
+	font-size: 24px;
+	font-weight: bold;
+	color: black;
+	width: 100%;
+}
+
+.exp-type {
+	margin-top: 10px;
+	font-size: 16px;
+	font-weight: bold;
+	color: black;
+	width: 85%;
+}
+
+.exp-description {
+	margin: 5px 0px 0px 0px;
+	font-size: 16px;
+	color: black;
+	width: 85%;
+}
+
+.exp-img {
+	width: 40%;
+}
+
+.exp-img img {
+	width: 100%;
 }
 
 .column-section {
@@ -83,14 +132,6 @@ body {
 	flex: 4;
 }
 
-.p-sub {
-	margin-top: -5px;
-}
-
-.p-subsub {
-	margin-top: -10px;
-}
-
 .images {
 	display: flex;
 	flex-direction: row;
@@ -115,7 +156,6 @@ body {
 
 #about-img img {
 	max-height: 80vh;
-	width: min(600px, 40vw);
 	object-fit: contain;
 }
 /* language */
@@ -133,27 +173,6 @@ body {
 
 .language-switcher a:hover {
     text-decoration: underline;
-}
-
-/* Flex Weight */
-.flex-1 {
-	flex: 1;
-}
-
-.flex-2 {
-	flex: 2;
-}
-
-.flex-3 {
-	flex: 3;
-}
-
-.flex-4 {
-	flex: 4;
-}
-
-.flex-5 {
-	flex: 5;
 }
 
 .margin-10 {
@@ -405,10 +424,6 @@ nav ul li a:hover {
 	width: 100%;
 }
 
-.job-img img {
-	border-radius: min(1vw, 20px);
-}
-
 /* Footer Settings */
 footer {
     background-color: #000000;
@@ -488,23 +503,26 @@ footer a {
 }
 
 /* Button Settings */
-button {
+.transparent-button {
+    background-color: transparent; /* makes the button's background transparent */
+    color: black; /* sets the text color to white, or choose any color that suits your design */
+	font-size: 16px; /* sets text size within the button */
 	font-weight: bold;
-	font-size: 16px;
-	background-color: black;
-	color: white;
-	padding: 10px 10px;
-	border: none;
-	border-radius: 5px;
+    border: 1px solid black; /* creates a border around the button; you could set the color to match the text or be transparent as well */
+    padding: 10px 20px; /* adds some space around the text within the button */
+    text-align: center; /* centers the button text */
+    text-decoration: none; /* removes any default underline styles on the text */
+    display: inline-block; /* necessary to apply padding and overall sizing */
+    cursor: pointer; /* changes the mouse cursor on hover */
+    transition: background-color 0.3s, color 0.3s; /* optional: enables a smooth transition effect for hover changes */
 }
 
-button:hover {
-	background-color: #444;
+.transparent-button:hover {
+    background-color: rgba(230,230,230,1.00); /* this is optional: it sets a background color when hovering over the button */
+    border: 1px solid rgba(230,230,230,1.00);
 }
-
 
 /* Text Settings */
-
 .title {
 	font-family: 'Orbitron', sans-serif;
 	font-weight: bold;
@@ -621,7 +639,31 @@ button:hover {
 	.exp-page {
 		margin-top: 65px;
 	}
-
+	
+	.exp-name {
+		font-size: 16px;
+	}
+	
+	.exp-type {
+		font-size: 12px;
+	}
+	
+	.exp-description {
+		font-size: 12px;
+	}
+	
+	.exp-text {
+		width: 100%;
+	}
+	
+	.exp-description {
+		width: 100%;
+	}
+	
+	.exp-img {
+		display: none;
+	}
+	
 	.dropdown-menu {
 		position: relative;
 		display: block;
@@ -668,10 +710,6 @@ button:hover {
 	#about-img {
 		display: none;
 	}
-
-	.job-img {
-		display: none;
-	}
 	
 	.images {
 		flex-direction: column;
@@ -685,7 +723,7 @@ button:hover {
 		margin: 0px auto;
 	}
 
-	button {
+	.transparent-button {
 		font-size: 12px;
 		padding: 10px 10px;
 	}
