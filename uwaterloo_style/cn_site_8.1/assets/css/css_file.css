@@ -503,21 +503,21 @@ footer a {
 
 /* Button Settings */
 .transparent-button {
-    background-color: transparent; /* makes the button's background transparent */
-    color: black; /* sets the text color to white, or choose any color that suits your design */
-	font-size: 16px; /* sets text size within the button */
+    background-color: transparent;
+    color: black;
+	font-size: 16px;
 	font-weight: bold;
-    border: 1px solid black; /* creates a border around the button; you could set the color to match the text or be transparent as well */
-    padding: 10px 20px; /* adds some space around the text within the button */
-    text-align: center; /* centers the button text */
-    text-decoration: none; /* removes any default underline styles on the text */
-    display: inline-block; /* necessary to apply padding and overall sizing */
-    cursor: pointer; /* changes the mouse cursor on hover */
-    transition: background-color 0.3s, color 0.3s; /* optional: enables a smooth transition effect for hover changes */
+    border: 1px solid black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .transparent-button:hover {
-    background-color: rgba(230,230,230,1.00); /* this is optional: it sets a background color when hovering over the button */
+    background-color: rgba(230,230,230,1.00);
     border: 1px solid rgba(230,230,230,1.00);
 }
 
