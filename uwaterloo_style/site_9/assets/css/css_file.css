@@ -315,7 +315,6 @@ nav {
 	display: flex;
 	align-items: flex-end;
 	justify-content: space-between;
-	padding: 0 10px;
 }
 
 nav ul {
