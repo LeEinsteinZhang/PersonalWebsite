@@ -1,0 +1,5 @@
+file:
+find /path/to/your/repo -type f -exec chmod 644 {} \;
+
+repo:
+find /path/to/your/repo -type d -exec chmod 755 {} \;
