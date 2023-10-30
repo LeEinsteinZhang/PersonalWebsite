@@ -1,36 +1,26 @@
 #!/bin/bash
 # usage: ./upload [repo]
 
-repo_name=$1
-remote_user="123"       # use ssh user store in config or just nume@ip
+source=$1
+target=$2
+remote_user="123"       # use ssh user store in config or just nume@ip (root user)
 html_path="/var/www"    # path where html located (aparche/nginx default)
 
 # Get the current date and time in the format 'old_year_month_day_hour_min_second'
-current_date=$(date +old_%Y_%m_%d_%H_%M_%S)
+current_date=$target$(date +_backup_%Y_%m_%d_%H_%M_%S)
 
 # Step 1: Rename remote ../html if it exists
-if [ "$repo_name" == "html" ]; then
-    # this need to set hard backup in current repo or any other repo
-    ssh -t $remote_user << EOF
-    if [ -d "$html_path/html" ]; then
-        rm -rf "$html_path/html"
-        rm -rf $html_path/old*
-    fi
-EOF
-else
-    # Rename the remote /var/www/html directory if it exists
-    ssh -t $remote_user << EOF
-    if [ -d "$html_path/html" ]; then
-        mv "$html_path/html" "$html_path/$current_date"
-    fi
-EOF
+ssh -t $remote_user << EOF
+if [ -d "$html_path/$target" ]; then
+    mv "$html_path/$target" "$html_path/$current_date"
 fi
+EOF
 
 # Step 2: Copy the provided repo to remote ../html
-if [ -d "$repo_name" ]; then
-    scp -r "$repo_name" $remote_user:$html_path/html
+if [ -d "$source" ]; then
+    scp -r "$source" $remote_user:$html_path/$target
 else
-    echo "The repo '${repo_name}' doesn't exist!"
+    echo "The repo '${target}' doesn't exist!"
     exit 1
 fi
 
