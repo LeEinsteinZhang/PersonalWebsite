@@ -10,17 +10,29 @@ fi
 
 if [ -f "../../cloud" ]; then
     echo "REMOTE"
-
-    # extra clear operations
-    if [ "$clear_flg" == "clear" ] || [ "$clear_flg" == "c" ]; then
-        read -p "Are you sure you want to delete all the backups? (y/n): " confirm
-        if [ "$confirm" == "y" ] || [ "$confirm" == "Y" ]; then
-            rm -rf "../../${target}_backup_"*  # Use the target in the directory pattern
-            echo "SUCCESSFUL CLEAR BACKUP"
-            exit 0
-        else
-            echo "CANCEL DELETE OPERATION"
-            exit 1
+    if [ "$target" == "all" ] || [ "$target" == "a" ]; then
+        if [ "$clear_flg" == "clear" ] || [ "$clear_flg" == "c" ]; then
+            read -p "Are you sure you want to delete all the backups? (y/n): " confirm
+            if [ "$confirm" == "y" ] || [ "$confirm" == "Y" ]; then
+                rm -rf ../../*_backup_*  # Use the target in the directory pattern
+                echo "SUCCESSFUL CLEAR BACKUP"
+                exit 0
+            else
+                echo "CANCEL DELETE OPERATION"
+                exit 1
+            fi
+        fi
+    else
+        if [ "$clear_flg" == "clear" ] || [ "$clear_flg" == "c" ]; then
+            read -p "Are you sure you want to delete all the "$clear_flg" backups? (y/n): " confirm
+            if [ "$confirm" == "y" ] || [ "$confirm" == "Y" ]; then
+                rm -rf "../../${target}_backup_"*  # Use the target in the directory pattern
+                echo "SUCCESSFUL CLEAR BACKUP"
+                exit 0
+            else
+                echo "CANCEL DELETE OPERATION"
+                exit 1
+            fi
         fi
     fi
 
