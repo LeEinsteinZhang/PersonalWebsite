@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>test</title>
+        <script>
+            var context;
+            var arr = new Array();
+            var starCount = 800;
+            var rains = new Array();
+            var rainCount = 20;
+
+            function init() {
+                var stars = document.getElementById("stars");
+                windowWidth = window.innerWidth;
+                star.width = windowWidth;
+                star.height = window.innerHeight;
+                context = stars.getContext("2d");
+            }
+
+            var star = function () {
+                this.x = windowWidth * Math.random();
+                this.y = 5000 * math.random();
+                this.text = ".";
+                this.color = "white";
+                this.getColor = function () {
+                    var _r = Math.random();
+                    if (_r < 0.5) {
+                        this.color = "#333";
+                    } else {
+                        this.color = "white";
+                    }
+                }
+
+                this.init = function () {
+                    this.getColor();
+                }
+
+                this.draw = function () {
+                    context.fillstyle = this.color;
+                    context.fillText(this.text, this.x, this.y);
+                }
+            }
+
+            function drawMoon() {
+                var moon = new Image();
+                moon.src = "./images/moon.jpg"
+            }
+        </script>
+    </head>
+</html>

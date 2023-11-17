@@ -503,6 +503,7 @@ footer a {
 
 /* Button Settings */
 .transparent-button {
+    align-self: flex-start;
     background-color: transparent;
     color: black;
 	font-size: 16px;
