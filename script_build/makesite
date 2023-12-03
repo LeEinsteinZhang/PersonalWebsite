@@ -1,0 +1,35 @@
+#!/bin/bash
+
+export LC_CTYPE=C
+export LANG=C
+
+# 定义原始和目标文件夹的路径
+original_folder="site_10"
+folder_cn="${original_folder}_cn"
+folder_en="${original_folder}_en"
+
+# 复制文件夹
+cp -r "$original_folder" "$folder_cn"
+cp -r "$original_folder" "$folder_en"
+
+rm "$folder_cn/sitemap.xml"
+rm "$folder_en/sitemap.xml"
+
+rm "$folder_cn/index.html"
+rm "$folder_en/index.html"
+
+# 将 site_10_cn 中 cn 子文件夹的所有文件移到 site_10_cn
+mv "$folder_cn/cn/"* "$folder_cn/"
+rm -r "$folder_cn/cn/"
+
+# 将 site_10_en 中 en 子文件夹的所有文件移到 site_10_en
+mv "$folder_en/en/"* "$folder_en/"
+rm -r "$folder_en/en/"
+
+# 替换 site_10_cn/en 中的所有 '/cn' 为 '/'
+find "$folder_cn/en" -type f -name '*.html' -exec sed -i '' 's/\/cn\//\//g' {} +
+
+# 替换 site_10_en/cn 中的所有 '/en' 为 '/'
+find "$folder_en/cn" -type f -name '*.html' -exec sed -i '' 's/\/en\//\//g' {} +
+
+echo "操作完成。"
