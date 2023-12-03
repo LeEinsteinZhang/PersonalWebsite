@@ -3,8 +3,14 @@
 export LC_CTYPE=C
 export LANG=C
 
-# 定义原始和目标文件夹的路径
-original_folder="site_10"
+# 检查是否提供了参数
+if [ "$#" -ne 1 ]; then
+    echo "Usage: $0 path_to_original_folder"
+    exit 1
+fi
+
+# 使用第一个命令行参数作为原始文件夹路径
+original_folder="$1"
 folder_cn="${original_folder}_cn"
 folder_en="${original_folder}_en"
 
