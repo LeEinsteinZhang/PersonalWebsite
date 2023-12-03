@@ -18,9 +18,9 @@ folder_en="${original_folder}_en"
 cp -r "$original_folder" "$folder_cn"
 cp -r "$original_folder" "$folder_en"
 
+# 删除非共用文件
 rm "$folder_cn/sitemap.xml"
 rm "$folder_en/sitemap.xml"
-
 rm "$folder_cn/index.html"
 rm "$folder_en/index.html"
 
