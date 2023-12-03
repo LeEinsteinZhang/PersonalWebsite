@@ -1,4 +1,5 @@
 #!/bin/bash
+# usage: ./makesite [site_name]
 
 export LC_CTYPE=C
 export LANG=C
