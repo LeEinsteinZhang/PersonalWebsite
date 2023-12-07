@@ -1,0 +1,27 @@
+#!/bin/bash
+# usage: ./upload [repo]
+
+source=$1
+target=$2
+remote_user="123"       # use ssh user store in config or just nume@ip (root user)
+html_path="/var/www"    # path where html located (aparche/nginx default)
+
+# Get the current date and time in the format 'old_year_month_day_hour_min_second'
+current_date=$target$(date +_backup_%Y_%m_%d_%H_%M_%S)
+
+# Step 1: Rename remote ../html if it exists
+ssh -t $remote_user << EOF
+if [ -d "$html_path/$target" ]; then
+    mv "$html_path/$target" "$html_path/$current_date"
+fi
+EOF
+
+# Step 2: Copy the provided repo to remote ../html
+if [ -d "$source" ]; then
+    scp -r "$source" $remote_user:$html_path/$target
+else
+    echo "The repo '${target}' doesn't exist!"
+    exit 1
+fi
+
+echo "Task completed on the remote server!"
