@@ -20,8 +20,6 @@ cp -r "$original_folder" "$folder_cn"
 cp -r "$original_folder" "$folder_en"
 
 # 删除非共用文件
-rm "$folder_cn/sitemap.xml"
-rm "$folder_en/sitemap.xml"
 rm "$folder_cn/index.html"
 rm "$folder_en/index.html"
 
@@ -34,9 +32,16 @@ mv "$folder_en/en/"* "$folder_en/"
 rm -r "$folder_en/en/"
 
 # 替换 site_10_cn/en 中的所有 '/cn' 为 '/'
-find "$folder_cn/en" -type f -name '*.html' -exec sed -i '' 's/\/cn\//\//g' {} +
+find "$folder_cn/en" -type f -name '*.html' -exec sed -i 's/\/cn\//\//g' {} +
+find "$folder_cn" -type f -name 'sitemap*.xml' -exec sed -i 's/https:\/\//http:\/\//g' {} +
+find "$folder_cn" -type f -name 'sitemap*.xml' -exec sed -i 's/\/cn\//\//g' {} +
+find "$folder_cn" -type f -name 'sitemap*.xml' -exec sed -i 's/www\.zhang-le\.com/www\.xn--fjqs32b\.cn/g' {} +
+
 
 # 替换 site_10_en/cn 中的所有 '/en' 为 '/'
-find "$folder_en/cn" -type f -name '*.html' -exec sed -i '' 's/\/en\//\//g' {} +
+find "$folder_en/cn" -type f -name '*.html' -exec sed -i 's/\/en\//\//g' {} +
+find "$folder_en" -type f -name 'sitemap*.xml' -exec sed -i 's/\/en\//\//g' {} +
+find "$folder_en" -type f -name 'sitemap*.xml' -exec sed -i 's/www\.zhang-le\.com/www\.zhangle\.ca/g' {} +
+
 
 echo "操作完成。"
