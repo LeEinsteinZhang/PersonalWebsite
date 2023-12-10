@@ -1,0 +1,47 @@
+#!/bin/bash
+# usage: ./makesite [site_name]
+
+export LC_CTYPE=C
+export LANG=C
+
+# 检查是否提供了参数
+if [ "$#" -ne 1 ]; then
+    echo "Usage: $0 path_to_original_folder"
+    exit 1
+fi
+
+# 使用第一个命令行参数作为原始文件夹路径
+original_folder="$1"
+folder_cn="${original_folder}_cn"
+folder_en="${original_folder}_en"
+
+# 复制文件夹
+cp -r "$original_folder" "$folder_cn"
+cp -r "$original_folder" "$folder_en"
+
+# 删除非共用文件
+rm "$folder_cn/index.html"
+rm "$folder_en/index.html"
+
+# 将 site_10_cn 中 cn 子文件夹的所有文件移到 site_10_cn
+mv "$folder_cn/cn/"* "$folder_cn/"
+rm -r "$folder_cn/cn/"
+
+# 将 site_10_en 中 en 子文件夹的所有文件移到 site_10_en
+mv "$folder_en/en/"* "$folder_en/"
+rm -r "$folder_en/en/"
+
+# 替换 site_10_cn/en 中的所有 '/cn' 为 '/'
+find "$folder_cn/en" -type f -name '*.html' -exec sed -i 's/\/cn\//\//g' {} +
+find "$folder_cn" -type f -name 'sitemap*.xml' -exec sed -i 's/https:\/\//http:\/\//g' {} +
+find "$folder_cn" -type f -name 'sitemap*.xml' -exec sed -i 's/\/cn\//\//g' {} +
+find "$folder_cn" -type f -name 'sitemap*.xml' -exec sed -i 's/www\.zhang-le\.com/www\.xn--fjqs32b\.cn/g' {} +
+
+
+# 替换 site_10_en/cn 中的所有 '/en' 为 '/'
+find "$folder_en/cn" -type f -name '*.html' -exec sed -i 's/\/en\//\//g' {} +
+find "$folder_en" -type f -name 'sitemap*.xml' -exec sed -i 's/\/en\//\//g' {} +
+find "$folder_en" -type f -name 'sitemap*.xml' -exec sed -i 's/www\.zhang-le\.com/www\.zhangle\.ca/g' {} +
+
+
+echo "操作完成。"
