@@ -11,7 +11,8 @@ if [ -f "/var/www/cloud" ]; then
     
     # Step 1: Rename ../$target if it exists
     if [ -d "/var/www/$target" ]; then
-        mv "/var/www/$target" "/var/www/$current_date"
+        [ ! -d "/var/www/backup/$target" ] && mkdir -p "/var/www/backup/$target"
+        mv "/var/www/$target" "/var/www/backup/$target/$current_date"
     fi
 
     # Step 2: Copy the provided repo to ../$target
@@ -26,7 +27,8 @@ else
 
     # Step 1: Rename ../$target if it exists
     if [ -d "/var/www/localhost/$target" ]; then
-        mv "/var/www/localhost/$target" "/var/www/localhost/$current_date"
+    [ ! -d "/var/www/localhost/backup/$target" ] && mkdir -p "/var/www/localhost/backup/$target"
+        mv "/var/www/localhost/$target" "/var/www/localhost/backup/$target/$current_date"
     fi
 
     # Step 2: Copy the provided repo to ../$target

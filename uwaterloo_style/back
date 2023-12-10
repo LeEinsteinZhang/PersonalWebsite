@@ -8,63 +8,11 @@ if [ -z "$target" ]; then
     exit 1
 fi
 
-if [ -f "../../cloud" ]; then
-    echo "REMOTE"
-    if [ "$target" == "all" ] || [ "$target" == "a" ]; then
-        if [ "$clear_flg" == "clear" ] || [ "$clear_flg" == "c" ]; then
-            read -p "Are you sure you want to delete all the backups? (y/n): " confirm
-            if [ "$confirm" == "y" ] || [ "$confirm" == "Y" ]; then
-                rm -rf ../../*_backup_*  # Use the target in the directory pattern
-                echo "SUCCESSFUL CLEAR BACKUP"
-                exit 0
-            else
-                echo "CANCEL DELETE OPERATION"
-                exit 1
-            fi
-        fi
-    else
-        if [ "$clear_flg" == "clear" ] || [ "$clear_flg" == "c" ]; then
-            read -p "Are you sure you want to delete all the "$clear_flg" backups? (y/n): " confirm
-            if [ "$confirm" == "y" ] || [ "$confirm" == "Y" ]; then
-                rm -rf "../../${target}_backup_"*  # Use the target in the directory pattern
-                echo "SUCCESSFUL CLEAR BACKUP"
-                exit 0
-            else
-                echo "CANCEL DELETE OPERATION"
-                exit 1
-            fi
-        fi
-    fi
-
-    # Get the list of directories matching the new pattern, sorted in descending order
-    dirs=$(ls -d "../../${target}_backup_"* 2>/dev/null | sort -r)  # Adjusted pattern
-
-    # Get the most recent directory from the list
-    latest_dir=$(echo "$dirs" | head -n 1)
-
-    # Check if the latest_dir exists
-    if [ -z "$latest_dir" ]; then
-        echo "NO MORE BACKUP"
-        exit 1
-    fi
-
-    # Check and remove existing ../../$target if it exists
-    if [ -d "../../$target" ]; then
-        rm -rf "../../$target"
-    fi
-
-    # Rename the latest directory to '$target'
-    mv "$latest_dir" "../../$target"
-else
-    echo "LOCALHOST"
-
-    # Similar changes as above should be applied here for the 'LOCALHOST' section
-    # ...
-
+if [ "$target" == "all" ] || [ "$target" == "a" ]; then
     if [ "$clear_flg" == "clear" ] || [ "$clear_flg" == "c" ]; then
         read -p "Are you sure you want to delete all the backups? (y/n): " confirm
         if [ "$confirm" == "y" ] || [ "$confirm" == "Y" ]; then
-            rm -rf "../../localhost/${target}_backup_"*  # Adjusted pattern
+            rm -rf /var/www/backup
             echo "SUCCESSFUL CLEAR BACKUP"
             exit 0
         else
@@ -72,13 +20,36 @@ else
             exit 1
         fi
     fi
-
-    # Adjust the pattern for the new backup naming convention
-    dirs=$(ls -d "../../localhost/${target}_backup_"* 2>/dev/null | sort -r)  # Adjusted pattern
-
-    # The rest of the script remains largely the same, adjusting directory paths where necessary.
-    # ...
-
+else
+    if [ "$clear_flg" == "clear" ] || [ "$clear_flg" == "c" ]; then
+        read -p "Are you sure you want to delete all the "$clear_flg" backups? (y/n): " confirm
+        if [ "$confirm" == "y" ] || [ "$confirm" == "Y" ]; then
+            rm -rf "/var/www/backup/${target}"  # Use the target in the directory pattern
+            echo "SUCCESSFUL CLEAR BACKUP"
+            exit 0
+        else
+            echo "CANCEL DELETE OPERATION"
+            exit 1
+        fi
+    fi
 fi
 
-echo "Task completed!"
+# Get the list of directories matching the new pattern, sorted in descending order
+dirs=$(ls -d "/var/www/backup/${target}/${target}_backup_"* 2>/dev/null | sort -r)  # Adjusted pattern
+
+# Get the most recent directory from the list
+latest_dir=$(echo "$dirs" | head -n 1)
+
+# Check if the latest_dir exists
+if [ -z "$latest_dir" ]; then
+    echo "NO MORE BACKUP"
+    exit 1
+fi
+
+# Check and remove existing /var/www/$target if it exists
+if [ -d "/var/www/$target" ]; then
+    rm -rf "/var/www/$target"
+fi
+
+# Rename the latest directory to '$target'
+mv "$latest_dir" "/var/www/$target"
