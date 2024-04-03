@@ -6,14 +6,17 @@
 	<meta charset="UTF-8">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width,initial-scale=1" name="viewport">
-    <meta content="description" name="description">
+    <meta content="Virtual Physics English Homepgae" name="description">
     <meta name="google" content="notranslate" />
-    <meta name="msapplication-tap-highlight" content="no">  
+    <meta name="msapplication-tap-highlight" content="no">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon.png">
     <link rel="icon" href="/assets/icons/favicon.ico">
     <link rel="shortcut icon" href="/assets/icons/favicon.ico">
-	<link href="/css_file.css" rel="stylesheet">
+    <link href="/assets/css/css_file.css" rel="stylesheet">
 </head>
+<div class="header-background">
+
+</div>
 
 <body>
     <header>
@@ -27,15 +30,16 @@
 					<li><a href="#contact">Contact</a></li>
 				</ul>
 
-				<div class="dropdown-menu">
-					<button class="dropdown-btn">&#9776;</button>
-					<div class="dropdown-content">
-                        <a href="#home">Home</a>
-					    <a href="#about">About</a>
-                        <a href="#projects">Projects</a>
-					    <a href="#contact">Contact</a>
-					</div>
-				</div>
+				<div class="row-section">
+                    <div class="language-switcher"> <a href="/cn/" id="cn">中文</a> </div>
+                    <div class="dropdown-menu">
+                        <button class="dropdown-btn">&#9776;</button>
+                        <div class="dropdown-content"> 
+                            <a href="./">Home</a> 
+                            <a href="#about">About</a> 
+                            <a href="#projects">Projects</a></div>
+                    </div>
+                </div>
 			</div>
 		</nav>
 		
@@ -44,7 +48,7 @@
 		</div>
 	</header>
 
-    <div id="home">
+    <div id="home" class="section-offset">
         <div class="slide-container">
             <div class="background-slide">
                 <img src="/assets/images/background_0.jpg" alt="Background">
@@ -86,9 +90,7 @@
                         <p align="left">- Web &amp; Server Developer</p>
                         <p align="left">- Computational Physics Simulation Developer</p>
 
-                        <a href="https://zhangle.ca/" target="_blank">
-                            <button>Discover</button>
-                        </a>
+                        <a class="transparent-button" href="https://zhangle.ca/" target="_blank">Discover</a>
                     </div>
 
                     <div id="about-img" class="column-section img-container flex-2 margin-10">
@@ -105,9 +107,7 @@
                         <p align="left">- Unity Engineer</p>
                         <p align="left">- Computational Physics Simulation Developer</p>
 
-                        <a href="https://xiaohanxu.ca/" target="_blank">
-                            <button>Discover</button>
-                        </a>
+                        <a class="transparent-button" href="https://xiaohanxu.ca/" target="_blank">Discover</a>
                     </div>
 
                     <div id="about-img" class="column-section img-container flex-2 margin-10">
@@ -121,75 +121,54 @@
             </div>
             
 
-            <div class="row-section">
-                <div class="column-section flex-5 margin-10">
-                    <h1>Schrödinger Computational Solution</h1>
-                    <h3>Quantum Mechanics</h3>
-                    <p>Solving one-dimensional Schrödinger equation for a harmonic oscillator (HO) potential as well as for an infinite square well (ISW) potential</p>
-                    <a href="https://github.com/LeEinsteinZhang/SchrodingerSolving" target="_blank">
-                        <button>Discover</button>
-                    </a>
+            <div class="exp-section">
+                <div class="exp-text">
+                    <p class="exp-name">Schrödinger Computational Solution</p>
+                    <p class="exp-type">Quantum Mechanics</p>
+                    <p class="exp-description">Solving one-dimensional Schrödinger equation for a harmonic oscillator (HO) potential as well as for an infinite square well (ISW) potential</p>
+                    <p></p>
+                    <a class="transparent-button" href="https://github.com/LeEinsteinZhang/SchrodingerSolving" target="_blank">Discover</a>
                 </div>
     
-                <div class="job-img img-container flex-4 margin-10">
+                <div class="exp-img">
                     <img src="/assets/images/ho_isw/ho_isw.jpg" alt="">
                 </div>
             </div>
 
-            <div class="row-section">
-                <div class="column-section flex-5 margin-10">
-                    <h1>Ray Tracing</h1>
-                    <h3>Classic Mechanics</h3>
-                    <p>Modelling the light in computer program. To simulate the real light reflaction in different situations.</p>
-                    <a href="https://github.com/LeEinsteinZhang/ComputationalPhysics/blob/main/ray_tracing.ipynb" target="_blank">
-                        <button>Discover</button>
-                    </a>
+            <div class="exp-section">
+                <div class="exp-text">
+                    <p class="exp-name">Ray Tracing</p>
+                    <p class="exp-type">Classic Mechanics</p>
+                    <p class="exp-description">Modelling the light in computer program. To simulate the real light reflaction in different situations.</p>
+                    <p></p>
+                    <a class="transparent-button" href="https://github.com/LeEinsteinZhang/ComputationalPhysics/blob/main/ray_tracing.ipynb" target="_blank">Discover</a>
                 </div>
     
-                <div class="job-img img-container flex-4 margin-10">
+                <div class="exp-img">
                     <img src="/assets/images/ray_tracing/rat_tracing.jpg" alt="">
                 </div>
             </div>
 
-            <div class="row-section">
-                <div class="column-section flex-5 margin-10">
-                    <h1>Soving Linear Equations</h1>
-                    <h3>Mathematical Computations</h3>
-                    <p>Use the concept of matrix in mathematics to solve some problems in real life that involve the solution of linear equations</p>
-                    <a href="https://github.com/LeEinsteinZhang/ComputationalPhysics/blob/main/solving_linear_equation.ipynb" target="_blank">
-                        <button>Discover</button>
-                    </a>
+            <div class="exp-section">
+                <div class="exp-text">
+                    <p class="exp-name">Soving Linear Equations</p>
+                    <p class="exp-type">Mathematical Computations</p>
+                    <p class="exp-description">Use the concept of matrix in mathematics to solve some problems in real life that involve the solution of linear equations</p>
+                    <p></p>
+                    <a class="transparent-button" href="https://github.com/LeEinsteinZhang/ComputationalPhysics/blob/main/solving_linear_equation.ipynb" target="_blank">Discover</a>
                 </div>
     
-                <div class="job-img img-container flex-4 margin-10">
+                <div class="exp-img">
                     <img src="/assets/images/solve_linear/solve_linear.jpg" alt="">
-                </div>
-            </div>
-            
-            <div class="title black">
-                <p>Contact Information</p>
-            </div>
-
-            <div id="contact">
-                <div class="column-section">
-                    <p><span class="bold">Email:</span> <a href="mailto:virtualphy.com@gmail.com">virtualphy.com@gmail.com</a></p>
-                    <p><span class="bold">Address:</span> ON, Canada</p>
-                </div>
-
-                <div class="column-section">
-                    <p><span class="bold">邮箱:</span> <a href="mailto:virtualphy.com@gmail.com">virtualphy.com@gmail.com</a></p>
-                    <p><span class="bold">地址:</span> 中国， 河南</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2023 VirtualPhys. All rights reserved.</p>
-        </div>
-    </footer>
-	
-    <script src="slideshow.js"></script>
-	<script src="phone.js"></script>
+<footer> </footer>
+<script src="/assets/js/jquery-3.7.1.js"></script>
+<script src="/assets/js/header.js"></script> 
+<script src="/assets/js/slideshow.js"></script> 
+<script src="/assets/js/dropdown_menu.js"></script> 
+<script src="/assets/js/footer.js"></script>
 </body>
