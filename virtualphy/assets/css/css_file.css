@@ -43,6 +43,53 @@ body {
 	width: 80%;
 }
 
+.staff {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+.staff-card {
+	flex: 1;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: stretch;
+	gap: 10px;
+}
+
+.staff-descriptions {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	justify-content: space-between;
+}
+  
+.staff-descriptions h2 {
+	margin-bottom: auto;
+}
+
+.staff-descriptions p {
+	margin-bottom: auto;
+}
+
+.staff-descriptions transparent-button {
+	margin-top: auto;
+}
+
+.staff-img {
+	flex: 1;
+	flex-direction: column;
+	align-items: center;
+	object-fit: contain;
+	height: 100%;
+}
+
+.staff-img img {
+	width: 100%;
+}
+
 .exp-page {
 	min-height: 100vh;
 	display: flex;
@@ -148,10 +195,6 @@ body {
 	flex-direction: row;
 }
 
-#about-img img {
-	max-height: 80vh;
-	object-fit: contain;
-}
 /* language */
 .language-switcher {
     display: flex;
@@ -470,7 +513,6 @@ footer a {
 
 .footer-menu {
     flex: 1;
-    /* 使内容居中 */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -645,6 +687,10 @@ footer a {
 	.exp-img {
 		display: none;
 	}
+
+	.staff-img {
+		display: none;
+	}
 	
 	.dropdown-menu {
 		position: relative;
@@ -687,10 +733,6 @@ footer a {
 
 	.welcome {
 		font-size: 12px;
-	}
-	
-	#about-img {
-		display: none;
 	}
 	
 	.images {
