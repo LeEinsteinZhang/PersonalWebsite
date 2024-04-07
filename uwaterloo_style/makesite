@@ -10,7 +10,7 @@ if [ "$#" -ne 1 ]; then
 fi
 
 original_folder="$1"
-path_curtent="/var/www/current"
+path_curtent="/var/www/zhangle"
 
 # remove old current
 if [ -d "$path_curtent" ]; then
@@ -18,7 +18,7 @@ if [ -d "$path_curtent" ]; then
     rm -rf "$path_curtent"
 fi
 
-folder_enzh="${path_curtent}/en_zh_site"
+folder_enzh="${path_curtent}/enzh_site"
 folder_zh="${path_curtent}/zh_site"
 folder_en="${path_curtent}/en_site"
 
