@@ -10,19 +10,21 @@ if [ "$#" -ne 1 ]; then
 fi
 
 original_folder="$1"
-path_curtent="/var/www/zhangle"
+path_zhangle="/var/www/zhangle"
+current_date=$target$(date +backup_%Y_%m_%d_%H%M%S)
 
 # remove old current
-if [ -d "$path_curtent" ]; then
-    echo "Removing existing current folder..."
-    rm -rf "$path_curtent"
+if [ -d "$path_zhangle" ]; then
+    echo "Bsckup existing current folder..."
+    mkdir -p "/var/www/backup/zhangle/"
+    mv $path_zhangle "/var/www/backup/zhangle/$current_date"
 fi
 
-folder_enzh="${path_curtent}/enzh_site"
-folder_zh="${path_curtent}/zh_site"
-folder_en="${path_curtent}/en_site"
+folder_enzh="${path_zhangle}/enzh_site"
+folder_zh="${path_zhangle}/zh_site"
+folder_en="${path_zhangle}/en_site"
 
-mkdir -p "${path_curtent}"
+mkdir -p "${path_zhangle}"
 
 # copy files
 cp -r "$original_folder" "$folder_enzh"

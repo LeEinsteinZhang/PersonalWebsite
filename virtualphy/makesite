@@ -11,11 +11,13 @@ fi
 
 original_folder="$1"
 path_vp="/var/www/virtualphy"
+current_date=$target$(date +backup_%Y_%m_%d_%H%M%S)
 
 # remove old current
 if [ -d "$path_vp" ]; then
-    echo "Removing existing current folder..."
-    rm -rf "$path_vp"
+    echo "Bsckup existing current folder..."
+    mkdir -p "/var/www/backup/virtualphy/"
+    mv $path_vp "/var/www/backup/virtualphy/$current_date"
 fi
 
 folder_enzh="${path_vp}/enzh_site"
