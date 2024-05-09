@@ -52,6 +52,7 @@ body {
 .exp-section {
 	display: flex;
 	justify-content: space-between;
+	width: 100%;
 	flex-direction: row;
 	margin: 15px 0px;
 }
@@ -287,20 +288,20 @@ header {
 	height: 100px;
 }
 
-.logo-link {
+.logo {
 	display: flex;
 	align-items: flex-start;
   transition: border 0.3s ease;
   border: 1px solid transparent;
 }
 
-.logo-link img {
+.logo img {
   padding: 2px 0;
-  height: 40px;
+  height: 30px;
   width: auto;
 }
 
-.logo-link:hover {
+.logo:hover {
   border: 1px solid white;
 }
 
@@ -320,7 +321,7 @@ nav {
     width: 90vw;
 	max-width: 1200px;
 	display: flex;
-	align-items: flex-end;
+	align-items: center;
 	justify-content: space-between;
 }
 
@@ -435,6 +436,7 @@ footer {
     background-color: #000000;
     color: #ffffff;
     font-family: 'Helvetica', sans-serif;
+	font-size: 12px;
     display: flex;
     justify-content: center;
     padding-top: 10px;
@@ -504,8 +506,24 @@ footer a {
     filter: brightness(0) saturate(100%) invert(46%) sepia(49%) saturate(1111%) hue-rotate(88deg) brightness(97%) contrast(84%);
 }
 
-.uwaterloo-link img {
+.logos-container {
+	display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.logo-link {
+	transition: border 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.logo-link img {
     width: min(150px, 25vw);
+}
+
+.logo-link:hover {
+	border: 1px solid black;
 }
 
 /* Button Settings */

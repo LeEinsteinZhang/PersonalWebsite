@@ -1,0 +1,57 @@
+#!/bin/bash
+# usage: ./makesite [site_name]
+
+export LC_CTYPE=C
+export LANG=C
+
+if [ "$#" -ne 1 ]; then
+    echo "Usage: $0 path_to_original_folder"
+    exit 1
+fi
+
+original_folder="$1"
+path_vp="/var/www/virtualphy"
+current_date=$target$(date +backup_%Y_%m_%d_%H%M%S)
+
+# remove old current
+if [ -d "$path_vp" ]; then
+    echo "Bsckup existing current folder..."
+    mkdir -p "/var/www/backup/virtualphy/"
+    mv $path_vp "/var/www/backup/virtualphy/$current_date"
+fi
+
+folder_enzh="${path_vp}/enzh_site"
+# folder_zh="${path_vp}/zh_site"
+# folder_en="${path_vp}/en_site"
+
+mkdir -p "${path_vp}"
+
+# copy files
+cp -r "$original_folder" "$folder_enzh"
+# cp -r "$original_folder" "$folder_zh"
+# cp -r "$original_folder" "$folder_en"
+
+# # delete common file
+# rm "$folder_zh/index.html"
+# rm "$folder_en/index.html"
+
+# # move to new location from /cn
+# mv "$folder_zh/cn/"* "$folder_zh/"
+# rm -r "$folder_zh/cn/"
+
+# # move to new location from /en
+# mv "$folder_en/en/"* "$folder_en/"
+# rm -r "$folder_en/en/"
+
+# # replace path
+# find "$folder_zh/en" -type f -name '*.html' -exec sed -i 's/\/cn\//\//g' {} +
+# find "$folder_zh" -type f -name 'sitemap*.xml' -exec sed -i 's/https:\/\//http:\/\//g' {} +
+# find "$folder_zh" -type f -name 'sitemap*.xml' -exec sed -i 's/\/cn\//\//g' {} +
+# find "$folder_zh" -type f -name 'sitemap*.xml' -exec sed -i 's/www\.zhang-le\.com/www\.xn--fjqs32b\.cn/g' {} +
+
+# # replace path
+# find "$folder_en/cn" -type f -name '*.html' -exec sed -i 's/\/en\//\//g' {} +
+# find "$folder_en" -type f -name 'sitemap*.xml' -exec sed -i 's/\/en\//\//g' {} +
+# find "$folder_en" -type f -name 'sitemap*.xml' -exec sed -i 's/www\.zhang-le\.com/www\.zhangle\.ca/g' {} +
+
+echo "Done"
