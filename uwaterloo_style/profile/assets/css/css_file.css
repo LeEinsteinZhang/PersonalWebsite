@@ -1,8 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
-
-
 html {
 	background-color: black;
 	height: 100%;
@@ -23,13 +18,13 @@ body {
 /* Main Structure */
 .content {
 	flex-grow: 1;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Helvetica', sans-serif;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: flex-start;
 	position: relative;
-	width: 95vw;
+	width: 90vw;
 	max-width: 1200px;
 	margin: 0px auto;
 	box-sizing: border-box;
@@ -40,36 +35,68 @@ body {
 	display: flex;
 	flex-direction: column;
 	margin: 0px auto;
+    margin-bottom: 30px;
+}
+
+.about-section p, h1, h2 {
+	margin: 5px 0;
+	width: 80%;
 }
 
 .exp-page {
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
-	margin: 105px auto 0px; /* Increase the top margin and added bottom margin */
+}
+
+.exp-section {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	flex-direction: row;
+	margin: 15px 0px;
+}
+
+.exp-text {
+	display: flex;
+	flex-direction: column;
+	width: 60%
+}
+
+.exp-name {
+	margin: 0;
+	font-size: 24px;
+	font-weight: bold;
+	color: black;
+	width: 100%;
+}
+
+.exp-type {
+	margin-top: 10px;
+	font-size: 16px;
+	font-weight: bold;
+	color: black;
+	width: 85%;
+}
+
+.exp-description {
+	margin: 5px 0px 0px 0px;
+	font-size: 16px;
+	color: black;
+	width: 85%;
+}
+
+.exp-img {
+	width: 40%;
+}
+
+.exp-img img {
+	width: 100%;
 }
 
 .column-section {
 	display: flex;
 	flex-direction: column;
-}
-
-.left {
-    float: left;
-}
-
-.right {
-    float: right;
-}
-
-.left-column {
-	position: absolute;
-	left: 0;
-}
-
-.right-column {
-	position: absolute;
-	right: 0;
 }
 
 .row-section {
@@ -100,22 +127,14 @@ body {
 	flex: 4;
 }
 
-.p-sub {
-	margin-top: -5px;
-}
-
-.p-subsub {
-	margin-top: -10px;
-}
-
 .images {
 	display: flex;
 	flex-direction: row;
 }
 
 .section-offset {
-    padding-top: 40px;
-    margin-top: -40px;
+    padding-top: 60px;
+    margin-top: -60px;
 }
 
 
@@ -128,21 +147,10 @@ body {
 #contact {
 	display: flex;
 	flex-direction: row;
-	margin: 0px auto;
-	min-height: 249px;
-}
-
-#contact .column-section:first-child {
-    margin-right: calc((min(80vw, 1200px) - 440px) / 2); /* Adjust this value as needed */
-}
-
-#contact .column-section:last-child {
-    margin-left: calc((min(80vw, 1200px) - 440px) / 2); /* Adjust this value as needed */
 }
 
 #about-img img {
 	max-height: 80vh;
-	width: min(600px, 40vw);
 	object-fit: contain;
 }
 /* language */
@@ -160,27 +168,6 @@ body {
 
 .language-switcher a:hover {
     text-decoration: underline;
-}
-
-/* Flex Weight */
-.flex-1 {
-	flex: 1;
-}
-
-.flex-2 {
-	flex: 2;
-}
-
-.flex-3 {
-	flex: 3;
-}
-
-.flex-4 {
-	flex: 4;
-}
-
-.flex-5 {
-	flex: 5;
 }
 
 .margin-10 {
@@ -278,7 +265,7 @@ body {
 }
 
 .welcome {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Helvetica', sans-serif;
 	font-size: 18px;
 	color: #999;
 	text-align: center;
@@ -288,43 +275,55 @@ body {
 
 /* Header Settings */
 header {
-/*	position: fixed;*/
 	width: 100%;
 	flex-shrink: 0;
-	background-color: black;
+	background: rgba(0, 0, 0, 0.5);
 	z-index: 1000;
 }
 
-.logo-link {
-  	display: flex;
-  	align-items: flex-start;
+.header-background {
+	position:relative;
+	background-color: #000000;
+	height: 100px;
 }
 
-.logo-link img {
-	padding: 2px 0;
+.logo {
+	display: flex;
+	align-items: flex-start;
+	transition: border 0.3s ease;
+	border: 1px solid transparent;
+}
+
+.logo img {
 	height: 40px;
-    width: auto;
+	width: auto;
+}
+
+.logo:hover {
+	border: 1px solid white;
 }
 
 /* Header Settings - Nav Bar*/
 nav {
-	background-color: black;
+	background-color: rgba(0, 0, 0);
 	display: flex;
 	justify-content: center;
 	position: relative;
 	align-items: flex-end;
 	padding: 10px 0;
-	font-family: 'Roboto Condensed', sans-serif;
+	font-family: 'Helvetica', sans-serif;
 }
 
 .menu {
-	position: relative;
-	max-width: 1200px;
 	display: flex;
-	align-items: flex-end;
+	font-family: 'Helvetica', sans-serif;
+	margin-bottom: 0;
+	position: relative;
+	transition: .2s;
+    width: 90vw;
+	max-width: 1200px;
+	align-items: center;
 	justify-content: space-between;
-	width: 100%;
-	padding: 0 10px;
 }
 
 nav ul {
@@ -374,7 +373,7 @@ nav ul li a:hover {
 .sub-nav ul li a {
 	text-decoration: none;
 	color: #FFFFFF;
-	font-family: 'Orbitron', sans-serif;
+	font-family: 'Helvetica', sans-serif;
 	font-size: 12px;
 }
 
@@ -433,69 +432,133 @@ nav ul li a:hover {
 	width: 100%;
 }
 
-.social-media img {
-	max-height: 30px;
-	margin-right: 30px;
-	filter: brightness(0%);
-}
-
-.job-img img {
-	border-radius: min(1vw, 20px);
-}
-
 /* Footer Settings */
 footer {
     background-color: #000000;
-    color: #737373;
-    font-family: 'Roboto Condensed', sans-serif;
+    color: #ffffff;
+    font-family: 'Helvetica', sans-serif;
+	font-size: 12px;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
-  
-.footer-content {
-    background-color: black;
-	display: flex;
-	justify-content: center;
-	position: relative;
-	align-items: flex-end;
-}
-  
+
 footer a {
-	color: #ffffff;
+	color: #81c784;
     text-decoration: none;
 }
 
-.uwaterloo-link img {
+.footer-content {
+    background-color: black;
+	display: flex;
+	position: relative;
+    justify-content: space-evenly;
+    width: 90vw;
+	max-width: 1200px;
+}
+
+.footer-address {
+    flex: 1;
+    text-align: left;
+}
+
+.footer-address p {
+    margin: 0;
+}
+
+.footer-address a:hover {
+    text-decoration: underline;
+}
+
+.footer-menu {
+    flex: 1;
+    /* 使内容居中 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-social p {
+    margin: 0px;
+    margin-top: 5px;
+}
+
+.footer-social {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    text-align: right;
+    justify-content: flex-end;
+}
+
+.social-media img {
+    max-height: 30px;
+    margin-left: 15px;
+}
+
+.social-media img:hover {
+	filter: brightness(0) saturate(100%) invert(46%) sepia(49%) saturate(1111%) hue-rotate(88deg) brightness(97%) contrast(84%);
+}
+
+.logos-container {
+	display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.logo-link {
+	transition: border 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.logo-link img {
     width: min(150px, 25vw);
 }
 
+.logo-link:hover {
+	border: 1px solid black;
+}
+
 /* Button Settings */
-button {
-	font-weight: bold;
+.transparent-button {
+    align-self: flex-start;
+    background-color: transparent;
+    color: black;
 	font-size: 16px;
-	background-color: black;
-	color: white;
-	padding: 10px 10px;
-	border: none;
-	border-radius: 5px;
+	font-weight: bold;
+    border: 1px solid black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-button:hover {
-	background-color: #444;
+.transparent-button:hover {
+    background-color: rgba(230,230,230,1.00);
+    border: 1px solid rgba(230,230,230,1.00);
 }
-
 
 /* Text Settings */
-
 .title {
-	font-family: 'Orbitron', sans-serif;
+	font-family: 'Helvetica', sans-serif;
 	font-weight: bold;
 	font-size: 36px;
 	text-align: center;
-	/* margin-bottom: 20px; */
 	margin: 0px auto;
 }
 
 .sub-title {
-	font-family: 'Orbitron', sans-serif;
+	font-family: 'Helvetica', sans-serif;
 	font-weight: bold;
 	position: absolute;
 	top: 50%;
@@ -598,12 +661,10 @@ button:hover {
 
 /* profile */
 .profile-page {
+	font-family: 'Helvetica', sans-serif;
     flex-grow: 1;
 	display: flex;
 	flex-direction: column;
-/*	justify-content: space-between;*/
-/*	align-items: flex-start;*/
-/*	position: relative;*/
 	width: min(90vw, 1200px);
 	margin: 0px auto;
 	box-sizing: border-box;
@@ -612,7 +673,7 @@ button:hover {
 .profile {
     display: flex;
     flex-direction: row;
-    margintop: 10px;
+    margin-top: 10px;
     width: 100%;
 }
 
@@ -633,14 +694,14 @@ button:hover {
 }
 
 .profile-name p {
-    ont-family: 'Orbitron', sans-serif;
+    font-family: 'Helvetica', sans-serif;
     font-size: 40px;
     font-weight: bold;
 }
 
 .profile-description p {
     font-size: 20px;
-    font-family: "Times New Roman";
+     font-family: 'Helvetica', sans-serif;
     margin-top: -30px;
 }
 
