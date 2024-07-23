@@ -1,0 +1,24 @@
+{
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "career": "Career",
+    "title": "Website Developer",
+    "description": "Virtual Physics Website Developer English Page",
+    "job_title": "Website Developer",
+    "job_location": "Waterloo, ON | Full-time",
+    "responsibilities_title": "Job Responsibilities:",
+    "responsibilities": [
+        "Responsible for the daily management and maintenance of the server to ensure stable operation of the system",
+        "Monitor server performance and handle hardware failures and software abnormalities in a timely manner",
+        "Manage data backup and security policies to prevent data loss and security incidents",
+        "Optimize server configuration and performance to improve system efficiency"
+    ],
+    "requirements_title": "Job Requirements:",
+    "requirements": [
+        "Bachelor degree or above, computer-related major",
+        "Have rich experience in server management and familiar with Linux/Windows server operations",
+        "Excellent problem-solving skills, able to quickly locate and solve problems",
+        "Good teamwork and communication skills"
+    ]
+}

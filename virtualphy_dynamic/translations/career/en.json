@@ -1,0 +1,35 @@
+{
+    "title": "Career",
+    "description": "Virtual Physics English Homepgae",
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "career": "Career",
+    "join_us": "Join Us",
+    "commitment": "We are committed to redefining user interaction with technology through cutting-edge physical modeling technology and augmented/mixed reality design. Now we're looking for some passionate new members who are eager to explore, create and realize the future at the forefront of technology.",
+    "quote": "Let's build the perfect virtual world.",
+    "quote_author": "Zhang, Le",
+    "jobs": [
+        {
+            "name": "AR/MR designer",
+            "type": "Unity | Unreal Engine",
+            "description": "Ability to model and script using Unity",
+            "link": "/en/career/modeling_engineer",
+            "image": "/images/career/jobs/modeling_engineer/card.jpg"
+        },
+        {
+            "name": "Computational physics program developer",
+            "type": "Python | C/C++ | C# | MATLAB",
+            "description": "Program/script development for some physical phenomena",
+            "link": "/en/career/scripts_developer",
+            "image": "/images/career/jobs/scripts_developer/card.jpg"
+        },
+        {
+            "name": "Full stack website developer",
+            "type": "HTML | React | Java | JavaScript",
+            "description": "Be able to skillfully use developer tools and open source architecture to implement designated website development",
+            "link": "/en/career/web_developer",
+            "image": "/images/career/jobs/web_developer/card.jpg"
+        }
+    ]
+}

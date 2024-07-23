@@ -1,0 +1,24 @@
+{
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "career": "Career",
+    "title": "Computational Physics Scripts Developer",
+    "description": "Virtual Physics Computational Physics Scripts Developer English Page",
+    "job_title": "Computational Physics Scripts Developer",
+    "job_location": "Waterloo, ON | Full-time",
+    "responsibilities_title": "Job Responsibilities:",
+    "responsibilities": [
+        "Responsible for numerical simulation and computational analysis of complex physical phenomena",
+        "Design and implement efficient computing models based on R&D needs",
+        "Analyze experimental data to verify the accuracy and reliability of the model",
+        "Cooperate with the scientific research team to promote the technological progress and achievement transformation of the project"
+    ],
+    "requirements_title": "Job Requirements:",
+    "requirements": [
+        "Bachelor degree or above in physics, applied mathematics or related majors",
+        "Proficient in computational physics methods and have research or work experience in related fields",
+        "Strong logical thinking and analytical skills, able to conduct scientific research independently",
+        "Good communication and teamwork skills"
+    ]
+}

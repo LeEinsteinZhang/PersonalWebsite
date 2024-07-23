@@ -1,0 +1,35 @@
+{
+    "title": "职业",
+    "description": "虚拟物理中文首页",
+    "home": "主页",
+    "about": "关于我们",
+    "projects": "项目",
+    "career": "加入我们",
+    "join_us": "加入我们",
+    "commitment": "我们致力于通过最前沿的物理建模技术和增强/混合现实设计重新定义用户与技术的互动。现在我们正在寻找一些充满激情的新成员，他们渴望探索、创造和实现技术前沿的未来。",
+    "quote": "让我们建立完美的虚拟世界。",
+    "quote_author": "张乐",
+    "jobs": [
+        {
+            "name": "AR/MR 设计师",
+            "type": "Unity | Unreal Engine",
+            "description": "能够使用 Unity 进行建模和脚本编写",
+            "link": "/zh/career/modeling_engineer",
+            "image": "/images/career/jobs/modeling_engineer/card.jpg"
+        },
+        {
+            "name": "计算物理程序开发员",
+            "type": "Python | C/C++ | C# | MATLAB",
+            "description": "一些物理现象的程序/脚本开发",
+            "link": "/zh/career/scripts_developer",
+            "image": "/images/career/jobs/scripts_developer/card.jpg"
+        },
+        {
+            "name": "全栈网站开发员",
+            "type": "HTML | React | Java | JavaScript",
+            "description": "能够熟练使用开发工具和开源架构实施指定的网站开发",
+            "link": "/zh/career/web_developer",
+            "image": "/images/career/jobs/web_developer/card.jpg"
+        }
+    ]
+}

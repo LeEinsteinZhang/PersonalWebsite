@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+
+<head>
+    <title>{{ translations.title }}</title>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta content="{{ translations.description }}" name="description">
+    <meta name="google" content="notranslate" />
+    <meta name="msapplication-tap-highlight" content="no">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='icons/icon.png') }}">
+    <link rel="icon" href="{{ url_for('static', filename='icons/favicon.ico') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='icons/favicon.ico') }}">
+    <link href="{{ url_for('static', filename='css/css_file.css') }}" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="menu">
+                <a href="/{{ lang }}/" class="logo"><img src="{{ url_for('static', filename='icons/logo.png') }}" alt="Logo"></a>
+                <ul>
+                    <li><a href="/{{ lang }}/">{{ translations.home }}</a></li>
+                    <li><a href="/{{ lang }}/#about">{{ translations.about }}</a></li>
+                    <li><a href="/{{ lang }}/#projects">{{ translations.projects }}</a></li>
+                    <li><a href="/{{ lang }}/career/">{{ translations.career }}</a></li>
+                </ul>
+                <div class="row-section">
+                    <div class="language-switcher"> <a href="/{{ 'zh' if lang == 'en' else 'en' }}/career/modeling_engineer" id="{{ 'zh' if lang == 'en' else 'en' }}">{{ '中文' if lang == 'en' else 'EN' }}</a> </div>
+                    <div class="dropdown-menu">
+                        <button class="dropdown-btn">&#9776;</button>
+                        <div class="dropdown-content">
+                            <a href="/{{ lang }}/">{{ translations.home }}</a>
+                            <a href="/{{ lang }}/#about">{{ translations.about }}</a>
+                            <a href="/{{ lang }}/#projects">{{ translations.projects }}</a>
+                            <a href="/{{ lang }}/career/">{{ translations.career }}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="color-bar">
+            <div class="color-block vitrtualphy"></div>
+        </div>
+    </header>
+
+    <div class="header-background"></div>
+
+    <div class="exp-page">
+        <div class="content">
+            <div class="column-section">
+                <p class="job-title">{{ translations.job_title }}</p>
+                <p class="job-location">{{ translations.job_location }}</p>
+                <div class="job-details">
+                    <strong>{{ translations.responsibilities_title }}</strong>
+                    <ul>
+                        {% for responsibility in translations.responsibilities %}
+                        <li>{{ responsibility }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="job-requirement">
+                    <strong>{{ translations.requirements_title }}</strong>
+                    <ul>
+                        {% for requirement in translations.requirements %}
+                        <li>{{ requirement }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include 'footer.html' %}
+    <script src="{{ url_for('static', filename='js/jquery-3.7.1.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/header.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/dropdown_menu.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/footer.js') }}"></script>
+</body>
+</html>

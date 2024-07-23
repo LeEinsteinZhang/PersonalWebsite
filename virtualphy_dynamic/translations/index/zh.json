@@ -1,0 +1,58 @@
+{
+    "title": "虚拟物理",
+    "description": "虚拟物理中文首页",
+    "home": "主页",
+    "about": "关于我们",
+    "projects": "项目",
+    "career": "加入我们",
+    "welcome_message": "欢迎访问我们的团队网站。VirtualPHY 是位于加拿大安大略省的软件开发团队，致力于开发与物理相关的混合/增强现实模拟程序。",
+    "about_us": "关于我们",
+    "about_us_content": "VirtualPHY 是位于加拿大安大略省的软件开发团队，致力于开发与物理相关的混合/增强现实模拟程序。目标群体是物理爱好者和学生，以及对探索更感兴趣的人群。为他们提供一个有趣的物理学习体验，通过虚拟世界中更真实的物理模拟。",
+    "staff": [
+        {
+            "name": "张乐",
+            "description": "滑铁卢大学三年级荣誉物理专业学生，主修物理，辅修计算。",
+            "titles": [
+                "VirtualPHY 联合创始人",
+                "Web & 服务器开发者",
+                "物理模拟开发者"
+            ],
+            "link": "https://zhangle.ca/",
+            "image": "/images/zhangle.jpg"
+        },
+        {
+            "name": "徐晓涵",
+            "description": "多伦多大学三年级数学物理专业学生，主修数学物理。",
+            "titles": [
+                "VirtualPHY 联合创始人",
+                "Unity 工程师",
+                "物理模拟开发者"
+            ],
+            "link": "https://xiaohanxu.ca/",
+            "image": "/images/xuxiaohan.jpg"
+        }
+    ],
+    "projects_section": [
+        {
+            "name": "薛定谔计算解",
+            "type": "量子力学",
+            "description": "求解谐振子（HO）势和无限深方势（ISW）势的一维薛定谔方程",
+            "link": "https://github.com/LeEinsteinZhang/SchrodingerSolving",
+            "image": "/images/ho_isw/ho_isw.jpg"
+        },
+        {
+            "name": "光线追踪",
+            "type": "经典力学",
+            "description": "在计算机程序中模拟光线的折射情况",
+            "link": "https://github.com/LeEinsteinZhang/ComputationalPhysics/blob/main/ray_tracing.ipynb",
+            "image": "/images/ray_tracing/rat_tracing.jpg"
+        },
+        {
+            "name": "解线性方程",
+            "type": "数学计算",
+            "description": "利用数学中的矩阵概念解决一些实际生活中涉及线性方程求解的问题",
+            "link": "https://github.com/LeEinsteinZhang/ComputationalPhysics/blob/main/solving_linear_equation.ipynb",
+            "image": "/images/solve_linear/solve_linear.jpg"
+        }
+    ]
+}

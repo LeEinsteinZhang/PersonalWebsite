@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+
+<head>
+    <title>{{ translations.title }}</title>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta content="{{ translations.description }}" name="description">
+    <meta name="google" content="notranslate" />
+    <meta name="msapplication-tap-highlight" content="no">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='icons/icon.png') }}">
+    <link rel="icon" href="{{ url_for('static', filename='icons/favicon.ico') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='icons/favicon.ico') }}">
+    <link href="{{ url_for('static', filename='css/css_file.css') }}" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="menu">
+                <a href="/{{ lang }}/" class="logo"><img src="{{ url_for('static', filename='icons/logo.png') }}" alt="Logo"></a>
+                <ul>
+                    <li><a href="/{{ lang }}/">{{ translations.home }}</a></li>
+                    <li><a href="/{{ lang }}/#about">{{ translations.about }}</a></li>
+                    <li><a href="/{{ lang }}/#projects">{{ translations.projects }}</a></li>
+                    <li><a href="/{{ lang }}/career/">{{ translations.career }}</a></li>
+                </ul>
+                <div class="row-section">
+                    <div class="language-switcher"> <a href="/{{ 'zh' if lang == 'en' else 'en' }}/career" id="{{ 'zh' if lang == 'en' else 'en' }}">{{ '中文' if lang == 'en' else 'EN' }}</a> </div>
+                    <div class="dropdown-menu">
+                        <button class="dropdown-btn">&#9776;</button>
+                        <div class="dropdown-content">
+                            <a href="/{{ lang }}/">{{ translations.home }}</a>
+                            <a href="/{{ lang }}/#about">{{ translations.about }}</a>
+                            <a href="/{{ lang }}/#projects">{{ translations.projects }}</a>
+                            <a href="/{{ lang }}/career/">{{ translations.career }}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="color-bar">
+            <div class="color-block vitrtualphy"></div>
+        </div>
+    </header>
+
+    <div class="header-background"></div>
+
+    <div class="exp-page">
+        <div class="content">
+            <div class="column-section">
+                <div class="canvas-container"> <img src="{{ url_for('static', filename='images/career/index/w0_0.jpg') }}" alt="">
+                    <div class="canvas-overlay"></div>
+                    <div class="sub-title"><p>{{ translations.join_us }}</p></div>
+                </div>
+                <div class="description">
+                    <p>{{ translations.commitment }}</p>
+                    <blockquote>
+                    <h2>"{{ translations.quote }}"</h2>
+                    <small>- {{ translations.quote_author }}</small> </blockquote>
+                </div>
+
+                {% for job in translations.jobs %}
+                <div class="exp-section">
+                    <div class="exp-text">
+                        <p class="exp-name">{{ job.name }}</p>
+                        <p class="exp-type">{{ job.type }}</p>
+                        <p class="exp-description">{{ job.description }}</p>
+                        <p></p>
+                        <a class="transparent-button" href="{{ job.link }}">Discover</a> 
+                    </div>
+                    <div class="exp-img"> <img src="{{ url_for('static', filename=job.image) }}" alt="{{ job.name }}"> </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    {% include 'footer.html' %}
+    <script src="{{ url_for('static', filename='js/jquery-3.7.1.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/header.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/dropdown_menu.js') }}"></script>
+</body>
+</html>
