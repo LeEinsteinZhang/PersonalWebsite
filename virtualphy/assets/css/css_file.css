@@ -35,7 +35,6 @@ body {
 	display: flex;
 	flex-direction: column;
 	margin: 0px auto;
-    margin-bottom: 30px;
 }
 
 .about-section p, h1, h2 {
@@ -678,6 +677,25 @@ footer a {
 
 #phone {
 	display: none;
+}
+
+/* Job page */
+.job-title {
+	font-size: 18px;
+	font-weight: bold;
+	color: navy;
+}
+
+.job-location {
+	color: gray;
+}
+
+.job-details {
+	margin-top: 5px;
+}
+
+.job-requirement {
+	margin-top: 10px;
 }
 
 /* 移动端适配 */
