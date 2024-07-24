@@ -11,22 +11,22 @@
     "staff": [
         {
             "name": "张乐",
-            "description": "滑铁卢大学三年级荣誉物理专业学生，主修物理，辅修计算。",
+            "description": "加拿大滑铁卢大学物理合作项目三年级。 主修物理，辅修计算机",
             "titles": [
-                "VirtualPHY 联合创始人",
-                "Web & 服务器开发者",
-                "物理模拟开发者"
+                "虚物联合创始人",
+                "网站以及服务器管理员",
+                "物理仿真开发技术团队成员"
             ],
             "link": "https://zhangle.ca/",
             "image": "/images/zhangle.jpg"
         },
         {
-            "name": "徐晓涵",
-            "description": "多伦多大学三年级数学物理专业学生，主修数学物理。",
+            "name": "许骁涵",
+            "description": "加拿大多伦多大学数学物理三年级。 数学物理专业。",
             "titles": [
-                "VirtualPHY 联合创始人",
-                "Unity 工程师",
-                "物理模拟开发者"
+                "虚物联合创始人",
+                "Unity引擎开发团队总管",
+                "物理仿真开发技术团队成员"
             ],
             "link": "https://xiaohanxu.ca/",
             "image": "/images/xuxiaohan.jpg"
@@ -34,23 +34,23 @@
     ],
     "projects_section": [
         {
-            "name": "薛定谔计算解",
-            "type": "量子力学",
-            "description": "求解谐振子（HO）势和无限深方势（ISW）势的一维薛定谔方程",
+            "name": "薛定谔波方程求解器",
+            "type": "量子物理",
+            "description": "求解谐振子 (HO) 势以及无限方阱 (ISW) 势的一维薛定谔方程",
             "link": "https://github.com/LeEinsteinZhang/SchrodingerSolving",
             "image": "/images/ho_isw/ho_isw.jpg"
         },
         {
             "name": "光线追踪",
-            "type": "经典力学",
-            "description": "在计算机程序中模拟光线的折射情况",
+            "type": "经典物理",
+            "description": "在计算机程序中对光进行建模, 模拟不同情况下真实的光反射",
             "link": "https://github.com/LeEinsteinZhang/ComputationalPhysics/blob/main/ray_tracing.ipynb",
             "image": "/images/ray_tracing/rat_tracing.jpg"
         },
         {
-            "name": "解线性方程",
+            "name": "线性方程求解器",
             "type": "数学计算",
-            "description": "利用数学中的矩阵概念解决一些实际生活中涉及线性方程求解的问题",
+            "description": "运用数学中矩阵的概念来解决现实生活中涉及线性方程组求解的一些问题",
             "link": "https://github.com/LeEinsteinZhang/ComputationalPhysics/blob/main/solving_linear_equation.ipynb",
             "image": "/images/solve_linear/solve_linear.jpg"
         }
