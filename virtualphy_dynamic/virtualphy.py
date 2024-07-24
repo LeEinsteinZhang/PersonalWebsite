@@ -57,5 +57,4 @@ def job_web_developer(lang):
     return render_template('job.html', translations=translations, lang=lang)
 
 if __name__ == '__main__':
-    app.run(debug=True)
-    
+    app.run()

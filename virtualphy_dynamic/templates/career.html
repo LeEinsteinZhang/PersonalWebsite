@@ -68,7 +68,7 @@
                         <p class="exp-type">{{ job.type }}</p>
                         <p class="exp-description">{{ job.description }}</p>
                         <p></p>
-                        <a class="transparent-button" href="{{ job.link }}">Discover</a> 
+                        <a class="transparent-button" href="{{ job.link }}">{{ translations.discover }}</a> 
                     </div>
                     <div class="exp-img"> <img src="{{ url_for('static', filename=job.image) }}" alt="{{ job.name }}"> </div>
                 </div>
