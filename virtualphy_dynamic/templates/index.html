@@ -19,7 +19,7 @@
     <header>
         <nav>
             <div class="menu">
-                <a href="/" class="logo"><img src="{{ url_for('static', filename='icons/logo.png') }}" alt="Logo"></a>
+                <a href="/{{ lang }}/" class="logo"><img src="{{ url_for('static', filename='icons/logo.png') }}" alt="Logo"></a>
                 <ul>
                     <li><a href="/{{ lang }}/">{{ translations.home }}</a></li>
                     <li><a href="/{{ lang }}/#about">{{ translations.about }}</a></li>
