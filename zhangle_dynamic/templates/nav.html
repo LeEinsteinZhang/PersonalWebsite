@@ -1,0 +1,26 @@
+<nav>
+	<div class="menu"> <a href="/{{ lang }}/" class="logo"><img src="{{ url_for('static', filename='icons/logo.png') }}" alt="Logo"></a>
+	<ul>
+		<li><a href="/{{ lang }}/">{{ translations.home }}</a></li>
+		<li><a href="/{{ lang }}/#about">{{ translations.about }}</a></li>
+		<li><a href="/{{ lang }}/#experiences">{{ translations.experiences }}</a></li>
+		<li><a href="/{{ lang }}/#projects">{{ translations.project }}</a></li>
+		<li><a href="/resume/LeZhang.pdf" target="_blank">{{ translations.resume }}</a></li>
+	</ul>
+	<div class="row-section">
+		<div class="language-switcher"> <a href="/{{ 'zh' if lang == 'en' else 'en' }}/" id="{{ 'zh' if lang == 'en' else 'en' }}">{{ '中文' if lang == 'en' else 'EN' }}</a> </div>
+			<div class="dropdown-menu">
+				<button class="dropdown-btn">&#9776;</button>
+				<div class="dropdown-content"> 
+					<a href="/{{ lang }}/">{{ translations.home }}</a> 
+					<a href="{{ url_for('static', filename='resume/' + translations.resume_file + '.pdf') }}" target="_blank">{{ translations.resume }}</a> 
+					<a href="cs-isa.html" title="" class="{{ translations.active }}">CS ISA</a> 
+					<a href="./website.html" title="" class="{{ translations.active }}">Website Developer</a> 
+					<a href="sound-engineer.html" title="" class="{{ translations.active }}">Public-Address System</a> 
+					<a href="electrical-engineer.html" title="" class="{{ translations.active }}">Electrical Engineer</a> 
+					<a href="visual-arts.html" title="" class="{{ translations.active }}">Visual Arts</a>
+					</div>
+			</div>
+		</div>
+	</div>
+</nav>
