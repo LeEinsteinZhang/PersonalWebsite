@@ -1,0 +1,39 @@
+{
+    "title": "CS136 Instructional Support Assistant",
+    "description": "As an Instructional Support Assistant (ISA) for CS136/l at the University of Waterloo's Faculty of Mathematics during the COOP, I actively assisted instructors, facilitated student learning through tutorials and digital platforms, managed coursework marking, and upheld academic integrity by proctoring examinations, ensuring a supportive educational environment",
+    "quote": "Facilitating academic success in CS136/l at UWaterloo.",
+    "quote_author": "Zhang, Le",
+    "sections": [
+        {
+            "exp_name": "Script Develop",
+            "exp_type": "C and Python script develop",
+            "exp_description": "Develop and implementation of course related script boost the speed of marking process and database communication",
+            "link_text": "Discover",
+            "link_url": "https://github.com/LeEinsteinZhang/marks_scripts",
+            "image": "images/cs_isa/p0_0.jpg"
+        }
+    ],
+    "images": [
+        {
+            "src": "images/cs_isa/w1_0.jpg",
+            "alt": "Recursion Explaination",
+            "caption": "Recursion Explaination"
+        },
+        {
+            "src": "images/cs_isa/w1_1.jpg",
+            "alt": "Code Debuging",
+            "caption": "Code Debuging"
+        },
+        {
+            "src": "images/cs_isa/w2_0.jpg",
+            "alt": "Create Course Notes",
+            "caption": "Create Course Notes"
+        },
+        {
+            "src": "images/cs_isa/w2_1.jpg",
+            "alt": "Bash Script Coding",
+            "caption": "Bash Script Coding"
+        }
+    ],
+    "main_image": "images/cs_isa/w3_0.jpg"
+}

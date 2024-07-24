@@ -1,37 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ lang }}">
 <head>
-<title>CS ISA</title>
-<meta charset="UTF-8">
-<meta content="IE=edge" http-equiv="X-UA-Compatible">
-<meta content="width=device-width,initial-scale=1" name="viewport">
-<meta content="description" name="description">
-<meta name="google" content="notranslate" />
-<meta name="msapplication-tap-highlight" content="no">
-<link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon.png">
-<link rel="icon" href="/assets/icons/favicon.ico">
-<link rel="shortcut icon" href="/assets/icons/favicon.ico">
-<link href="/assets/css/css_file.css" rel="stylesheet">
-<script src="/assets/js/dropdown_menu.js"></script>
+    <title>{{ translations.title }}</title>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta content="{{ translations.description }}" name="description">
+    <meta name="google" content="notranslate" />
+    <meta name="msapplication-tap-highlight" content="no">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='icons/icon.png') }}">
+    <link rel="icon" href="{{ url_for('static', filename='icons/favicon.ico') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='icons/favicon.ico') }}">
+    <link href="{{ url_for('static', filename='css/css_file.css') }}" rel="stylesheet">
+    <script src="{{ url_for('static', filename='js/dropdown_menu.js') }}"></script>
 </head>
 
 <body>
 <header>
   <nav>
-    <div class="menu"> <a href="./" class="logo"><img src="/assets/icons/logo.png" alt="Logo"></a>
+    <div class="menu"> <a href="/{{ lang }}/" class="logo"><img src="{{ url_for('static', filename='icons/logo.png') }}" alt="Logo"></a>
       <ul>
-        <li><a href="./">Home</a></li>
-        <li><a href="./#about">About</a></li>
-        <li><a href="./#experiences">Experiences</a></li>
-        <li><a href="./#projects">Projects</a></li>
-        <li><a href="/resume/LeZhang.pdf" target="_blank">Resume</a></li>
+        <li><a href="/{{ lang }}/">{{ translations.home }}</a></li>
+        <li><a href="/{{ lang }}/#about">{{ translations.about }}</a></li>
+        <li><a href="/{{ lang }}/#experiences">{{ translations.experiences }}</a></li>
+        <li><a href="/{{ lang }}/#projects">{{ translations.project }}</a></li>
+        <li><a href="{{ url_for('static', filename='resume/' + translations.resume_file + '.pdf') }}" target="_blank">{{ translations.resume }}</a></li>
       </ul>
       <div class="row-section">
-        <div class="language-switcher"> <a href="/cn/cs-isa.html" id="cn">中文</a> </div>
+        <div class="language-switcher"> <a href="/{{ 'zh' if lang == 'en' else 'en' }}/" id="{{ 'zh' if lang == 'en' else 'en' }}">{{ '中文' if lang == 'en' else 'EN' }}</a> </div>
         <div class="dropdown-menu">
           <button class="dropdown-btn">&#9776;</button>
-          <div class="dropdown-content"> <a href="./">Home</a> <a href="/resume/LeZhang.pdf" target="_blank">Resume</a> <a href="cs-isa.html" title="" class="active">CS ISA</a> <a href="./website.html" title="">Website Developer</a> <a href="sound-engineer.html" title="">Public-Address System</a> <a href="electrical-engineer.html" title="">Electrical Engineer</a> <a href="visual-arts.html" title="">Visual Arts</a> </div>
-        </div>
+          <div class="dropdown-content">
+						<a href="/{{ lang }}/">{{ translations.home }}</a> 
+						<a href="{{ url_for('static', filename='resume/' + translations.resume_file + '.pdf') }}" target="_blank">{{ translations.resume }}</a>
+						<a href="/{{ lang }}/cs-isa" title="" class="{{ 'active' if current_page == 'cs-isa' else '' }}">CS ISA</a> 
+						<a href="/{{ lang }}/web-developer" title="" class="{{ 'active' if current_page == 'website' else '' }}">Website Developer</a> 
+						<a href="/{{ lang }}/pa-system" title="" class="{{ 'active' if current_page == 'sound-engineer' else '' }}">Public-Address System</a> 
+						<a href="/{{ lang }}/electrical-engineer" title="" class="{{ 'active' if current_page == 'electrical-engineer' else '' }}">Electrical Engineer</a> 
+						<a href="/{{ lang }}/visual-arts" title="" class="{{ 'active' if current_page == 'visual-arts' else '' }}">Visual Arts</a>
+          </div>
       </div>
     </div>
   </nav>
@@ -43,66 +50,66 @@
   </div>
   <div class="sub-nav">
     <ul>
-      <li><a href="cs-isa.html" title="" class="active">CS ISA</a></li>
-      <li><a href="./website.html" title="">Website Developer</a></li>
-      <li><a href="sound-engineer.html" title="">Public-Address System</a></li>
-      <li><a href="electrical-engineer.html" title="">Electrical Engineer</a></li>
-      <li><a href="visual-arts.html" title="">Visual Arts</a></li>
+      <li><a href="/{{ lang }}/cs-isa" title="" class="{{ 'active' if current_page == 'cs-isa' else '' }}">CS ISA</a></li>
+      <li><a href="/{{ lang }}/web-developer" title="" class="{{ 'active' if current_page == 'website' else '' }}">Website Developer</a></li>
+      <li><a href="/{{ lang }}/pa-system" title="" class="{{ 'active' if current_page == 'sound-engineer' else '' }}">Public-Address System</a></li>
+      <li><a href="/{{ lang }}/electrical-engineer" title="" class="{{ 'active' if current_page == 'electrical-engineer' else '' }}">Electrical Engineer</a></li>
+      <li><a href="/{{ lang }}/visual-arts" title="" class="{{ 'active' if current_page == 'visual-arts' else '' }}">Visual Arts</a></li>
     </ul>
   </div>
 </header>
 <div class="header-background"></div>
 <div class="exp-page">
   <div class="content">
-    <div class="column-section">
-      <div class="canvas-container"> <img src="/assets/images/cs_isa/w0_0.jpg" alt="">
-        <div class="canvas-overlay"></div>
-        <div class="sub-title">
-          <p>CS136 Instructional Support Assistant</p>
-        </div>
+      <div class="column-section">
+          <div class="canvas-container"> 
+              <img src="{{ url_for('static', filename=translations.main_image) }}" alt="">
+              <div class="canvas-overlay"></div>
+              <div class="sub-title">
+                  <p>{{ translations.title }}</p>
+              </div>
+          </div>
+          <div class="description">
+              <p>{{ translations.description }}</p>
+              <blockquote>
+                  <h2>"{{ translations.quote }}"</h2>
+                  <small>- {{ translations.quote_author }}</small>
+              </blockquote>
+          </div>
+          {% for section in translations.sections %}
+          <div class="exp-section">
+              <div class="exp-text">
+                  <p class="exp-name">{{ section.exp_name }}</p>
+                  <p class="exp-type">{{ section.exp_type }}</p>
+                  <p class="exp-description">{{ section.exp_description }}</p>
+                  <p></p>
+                  <a class="transparent-button" href="{{ section.link_url }}" target="_blank">{{ section.link_text }}</a>
+              </div>
+              <div class="exp-img"> 
+                  <img src="{{ url_for('static', filename=section.image) }}" alt="script_devlop"> 
+              </div>
+          </div>
+          {% endfor %}
+          <div class="images">
+              {% for img in translations.images %}
+              <div class="img-container margin-10"> 
+                  <img src="{{ url_for('static', filename=img.src) }}" alt="{{ img.alt }}">
+                  <p>{{ img.caption }}</p>
+              </div>
+              {% endfor %}
+          </div>
+          <div class="row-section">
+              <div class="img-container"> 
+                  <img src="{{ url_for('static', filename=translations.main_image) }}" alt="Main"> 
+              </div>
+          </div>
       </div>
-      <div class="description">
-        <p>As an Instructional Support Assistant (ISA) for CS136/l at the University of Waterloo's Faculty of Mathematics during the COOP, I actively assisted instructors, facilitated student learning through tutorials and digital platforms, managed coursework marking, and upheld academic integrity by proctoring examinations, ensuring a supportive educational environment</p>
-        <blockquote>
-          <h2>"Facilitating academic success in CS136/l at UWaterloo."</h2>
-          <small>- Zhang, Le</small> </blockquote>
-      </div>
-      <div class="exp-section">
-        <div class="exp-text">
-            <p class="exp-name">Script Develop</p>
-            <p class="exp-type">C and Python script develop</p>
-            <p class="exp-description">Develop and implementation of course related script boost the speed of marking process and database communication</p>
-            <p></p>
-            <a class="transparent-button" href="https://github.com/LeEinsteinZhang/marks_scripts" target="_blank">Discover</a> </div>
-        <div class="exp-img"> <img src="/assets/images/cs_isa/p0_0.jpg" alt="script_devlop"> </div>
-      </div>
-      <div class="images">
-        <div class="img-container margin-10"> <img src="/assets/images/cs_isa/w1_0.jpg" alt="Recursion Explaination">
-          <p>Recursion Explaination</p>
-        </div>
-        <div class="img-container margin-10"> <img src="/assets/images/cs_isa/w1_1.jpg" alt="Code Debuging">
-          <p>Code Debuging</p>
-        </div>
-      </div>
-      <div class="images">
-        <div class="img-container margin-10"> <img src="/assets/images/cs_isa/w2_0.jpg" alt="Create Course Notes">
-          <p>Create Course Notes</p>
-        </div>
-        <div class="img-container margin-10"> <img src="/assets/images/cs_isa/w2_1.jpg" alt="Bash Script Coding">
-          <p>Bash Script Coding</p>
-        </div>
-      </div>
-      <div class="row-section">
-        <div class="img-container"> <img src="/assets/images/cs_isa/w3_0.jpg" alt="Main"> </div>
-      </div>
-    </div>
   </div>
 </div>
-<footer>
-</footer>
-<script src="/assets/js/jquery-3.7.1.js"></script>
-<script src="/assets/js/header.js"></script> 
-<script src="/assets/js/dropdown_menu.js"></script>
-<script src="/assets/js/footer.js"></script>
+{% include 'footer' %}
+<script src="{{ url_for('static', filename='js/jquery-3.7.1.js') }}"></script>
+<script src="{{ url_for('static', filename='js/header.js') }}"></script>
+<script src="{{ url_for('static', filename='js/slideshow.js') }}"></script>
+<script src="{{ url_for('static', filename='js/dropdown_menu.js') }}"></script>
 </body>
 </html>
