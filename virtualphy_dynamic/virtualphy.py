@@ -4,6 +4,8 @@ import os
 
 app = Flask(__name__)
 
+app.url_map.strict_slashes = False  # 禁用严格斜杠
+
 def load_translation(page, lang):
     with open(os.path.join('translations', page, f'{lang}.json'), 'r', encoding='utf-8') as file:
         return json.load(file)
