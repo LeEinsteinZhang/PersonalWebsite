@@ -1,0 +1,35 @@
+{
+    "title": "视觉艺术",
+    "background": "images/visual_arts/w0_0.jpg",
+    "description": "摄影是一种利用光的技术。 我曾担任商业摄影师，记录大型商业活动的图像。 我还在高中时和朋友成立了摄影俱乐部，并以摄影讲座的形式举办了几次大型俱乐部活动。 在此期间，我获得了学校颁发的许多奖项。 就我个人而言，我对古典摄影特别感兴趣。",
+    "quote": "眼睛在看之前应该先学会听。",
+    "quote_author": "罗伯特·弗兰克",
+    "sections": [],
+    "images": [
+        [
+            {
+                "src": "images/visual_arts/w1_0.jpg",
+                "alt": "商业摄影-迪丽热巴活动现场",
+                "caption": "商业摄影-迪丽热巴活动现场"
+            },
+            {
+                "src": "images/visual_arts/w1_1.jpg",
+                "alt": "建筑物的蓝晒照片",
+                "caption": "建筑物的蓝晒照片"
+            }
+        ],
+        [
+            {
+                "src": "images/visual_arts/w2_0.jpg",
+                "alt": "视频剪辑",
+                "caption": "视频剪辑"
+            },
+            {
+                "src": "images/visual_arts/w2_1.jpg",
+                "alt": "高中时期的电影拍摄活动之一",
+                "caption": "高中时期的电影拍摄活动之一"
+            }
+        ]
+    ],
+    "main_image": "images/visual_arts/w3_0.jpg"
+}

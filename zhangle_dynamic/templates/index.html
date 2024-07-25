@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="{{ lang }}">
 <head>
-    <title>{{ translations.title }}</title>
+    <title>{{ content.title }}</title>
     <meta charset="UTF-8">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width,initial-scale=1" name="viewport">
-    <meta content="{{ translations.description }}" name="description">
+    <meta content="{{ content.description }}" name="description">
     <meta name="google" content="notranslate" />
     <meta name="msapplication-tap-highlight" content="no">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='icons/icon.png') }}">
@@ -21,22 +21,22 @@
         <div class="menu"> 
             <a href="/{{ lang }}/" class="logo"><img src="{{ url_for('static', filename='icons/logo.png') }}" alt="Logo"></a>
             <ul>
-                <li><a href="/{{ lang }}/">{{ translations.home }}</a></li>
-                <li><a href="/{{ lang }}/#about">{{ translations.about }}</a></li>
-                <li><a href="/{{ lang }}/#experiences">{{ translations.experiences }}</a></li>
-                <li><a href="/{{ lang }}/#projects">{{ translations.projects }}</a></li>
-                <li><a href="{{ url_for('download_resume', filename=translations.resume_file + '.pdf') }}" target="_blank">{{ translations.resume }}</a></li>
+                <li><a href="/{{ lang }}/">{{ content.home }}</a></li>
+                <li><a href="/{{ lang }}/#about">{{ content.about }}</a></li>
+                <li><a href="/{{ lang }}/#experiences">{{ content.experiences }}</a></li>
+                <li><a href="/{{ lang }}/#projects">{{ content.projects }}</a></li>
+                <li><a href="{{ url_for('download_resume', filename=content.resume_file + '.pdf') }}" target="_blank">{{ content.resume }}</a></li>
             </ul>
             <div class="row-section">
                 <div class="language-switcher"> <a href="/{{ 'zh' if lang == 'en' else 'en' }}/" id="{{ 'zh' if lang == 'en' else 'en' }}">{{ '中文' if lang == 'en' else 'EN' }}</a> </div>
                 <div class="dropdown-menu">
                     <button class="dropdown-btn">&#9776;</button>
                     <div class="dropdown-content"> 
-                        <li><a href="/{{ lang }}/">{{ translations.home }}</a></li>
-                        <li><a href="/{{ lang }}/#about">{{ translations.about }}</a></li>
-                        <li><a href="/{{ lang }}/#experiences">{{ translations.experiences }}</a></li>
-                        <li><a href="/{{ lang }}/#projects">{{ translations.projects }}</a></li>
-                        <li><a href="{{ url_for('download_resume', filename=translations.resume_file + '.pdf') }}" target="_blank">{{ translations.resume }}</a></li>
+                        <li><a href="/{{ lang }}/">{{ content.home }}</a></li>
+                        <li><a href="/{{ lang }}/#about">{{ content.about }}</a></li>
+                        <li><a href="/{{ lang }}/#experiences">{{ content.experiences }}</a></li>
+                        <li><a href="/{{ lang }}/#projects">{{ content.projects }}</a></li>
+                        <li><a href="{{ url_for('download_resume', filename=content.resume_file + '.pdf') }}" target="_blank">{{ content.resume }}</a></li>
                 </div>
             </div>
         </div>
@@ -62,10 +62,10 @@
         </div>
         <div class="overlay">
             <div class="title white">
-                <p>{{ translations.description }}</p>
+                <p>{{ content.description }}</p>
             </div>
             <div class="welcome">
-                <p>{{ translations.welcome_message }}</p>
+                <p>{{ content.welcome_message }}</p>
             </div>
         </div>
     </div>
@@ -74,12 +74,12 @@
 <div class="main-page">
     <div class="content">
         <div id="about" class="title black section-offset">
-            <p>{{ translations.about_me }}</p>
+            <p>{{ content.about_me }}</p>
         </div>
         <div class="row-section">
             <div class="column-section about-section">
-                <h1>{{ translations.name }}</h1>
-                <p>{{ translations.about_description }}</p>
+                <h1>{{ content.name }}</h1>
+                <p>{{ content.about_description }}</p>
                 <p></p>
                 <div class="logos-container"> 
                     <a href="https://uwaterloo.ca/" class="logo-link" target="_blank">
@@ -90,31 +90,31 @@
                     </a> 
                 </div>
                 <p></p>
-                <h2>{{ translations.experiences }}</h2>
-                <p>{{ translations.highschool_experience }}</p>
+                <h2>{{ content.experiences }}</h2>
+                <p>{{ content.highschool_experience }}</p>
                 <p></p>
-                <h2>{{ translations.interests_and_awards }}</h2>
-                {% for award in translations.awards %}
+                <h2>{{ content.interests_and_awards }}</h2>
+                {% for award in content.awards %}
                     <p align="left">- {{ award }}</p>
                 {% endfor %}
                 <p></p>
-                <a class="transparent-button" href="{{ url_for('static', filename='resume/' + translations.resume_file + '.pdf') }}" target="_blank">{{ translations.resume_download }}</a>
+                <a class="transparent-button" href="{{ url_for('static', filename='resume/' + content.resume_file + '.pdf') }}" target="_blank">{{ content.resume_download }}</a>
             </div>
             <div id="about-img"> 
                 <img src="{{ url_for('static', filename='images/profil.jpg') }}">
             </div>
         </div>
         <div id="experiences" class="title black section-offset">
-            <p>{{ translations.experiences }}</p>
+            <p>{{ content.experiences }}</p>
         </div>
-        {% for job_exp in translations.experiences_section %}
+        {% for job_exp in content.experiences_section %}
             <div class="exp-section">
                 <div class="exp-text">
                     <p class="exp-name">{{ job_exp.name }}</p>
                     <p class="exp-type">{{ job_exp.type }}</p>
                     <p class="exp-description">{{ job_exp.description }}</p>
                     <p></p>
-                    <a class="transparent-button" href="{{ url_for('experiences', lang=lang, experience=job_exp.link) }}" target="_blank">{{ translations.discover }}</a>
+                    <a class="transparent-button" href="{{ url_for('experiences', lang=lang, experience=job_exp.link) }}" target="_blank">{{ content.discover }}</a>
 
                 </div>
                 <div class="exp-img">
@@ -123,16 +123,16 @@
             </div>
         {% endfor %}
         <div id="projects" class="title black section-offset">
-            <p>{{ translations.projects }}</p>
+            <p>{{ content.projects }}</p>
         </div>
-        {% for project in translations.projects_section %}
+        {% for project in content.projects_section %}
             <div class="exp-section">
                 <div class="exp-text">
                     <p class="exp-name">{{ project.name }}</p>
                     <p class="exp-type">{{ project.type }}</p>
                     <p class="exp-description">{{ project.description }}</p>
                     <p></p>
-                    <a class="transparent-button" href="{{ project.link }}" target="_blank">{{ translations.discover }}</a>
+                    <a class="transparent-button" href="{{ project.link }}" target="_blank">{{ content.discover }}</a>
                 </div>
                 <div class="exp-img">
                     <img src="{{ url_for('static', filename=project.image) }}" alt="">

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="{{ lang }}">
 <head>
-    <title>{{ translations.title }}</title>
+    <title>{{ content.title }}</title>
     <meta charset="UTF-8">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width,initial-scale=1" name="viewport">
-    <meta content="{{ translations.description }}" name="description">
+    <meta content="{{ content.description }}" name="description">
     <meta name="google" content="notranslate" />
     <meta name="msapplication-tap-highlight" content="no">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='icons/icon.png') }}">
@@ -20,19 +20,19 @@
   <nav>
     <div class="menu"> <a href="/{{ lang }}/" class="logo"><img src="{{ url_for('static', filename='icons/logo.png') }}" alt="Logo"></a>
       <ul>
-        <li><a href="/{{ lang }}/">{{ translations.home }}</a></li>
-        <li><a href="/{{ lang }}/#about">{{ translations.about }}</a></li>
-        <li><a href="/{{ lang }}/#experiences">{{ translations.experiences }}</a></li>
-        <li><a href="/{{ lang }}/#projects">{{ translations.project }}</a></li>
-        <li><a href="{{ url_for('static', filename='resume/' + translations.resume_file + '.pdf') }}" target="_blank">{{ translations.resume }}</a></li>
+        <li><a href="/{{ lang }}/">{{ content.home }}</a></li>
+        <li><a href="/{{ lang }}/#about">{{ content.about }}</a></li>
+        <li><a href="/{{ lang }}/#experiences">{{ content.experiences }}</a></li>
+        <li><a href="/{{ lang }}/#projects">{{ content.project }}</a></li>
+        <li><a href="{{ url_for('static', filename='resume/' + content.resume_file + '.pdf') }}" target="_blank">{{ content.resume }}</a></li>
       </ul>
       <div class="row-section">
         <div class="language-switcher"> <a href="/{{ 'zh' if lang == 'en' else 'en' }}/" id="{{ 'zh' if lang == 'en' else 'en' }}">{{ '中文' if lang == 'en' else 'EN' }}</a> </div>
         <div class="dropdown-menu">
           <button class="dropdown-btn">&#9776;</button>
           <div class="dropdown-content">
-						<a href="/{{ lang }}/">{{ translations.home }}</a> 
-						<a href="{{ url_for('static', filename='resume/' + translations.resume_file + '.pdf') }}" target="_blank">{{ translations.resume }}</a>
+						<a href="/{{ lang }}/">{{ content.home }}</a> 
+						<a href="{{ url_for('static', filename='resume/' + content.resume_file + '.pdf') }}" target="_blank">{{ content.resume }}</a>
 						<a href="cs-isa.html" title="" class="{{ 'active' if current_page == 'cs-isa' else '' }}">CS ISA</a> 
 						<a href="/{{ lang }}/website.html" title="" class="{{ 'active' if current_page == 'website' else '' }}">Website Developer</a> 
 						<a href="/{{ lang }}/sound-engineer.html" title="" class="{{ 'active' if current_page == 'sound-engineer' else '' }}">Public-Address System</a> 
@@ -56,8 +56,8 @@
 <footer>
 	<div class="footer-content">
 			<div class="footer-address">
-					<p>{{ translations.address }}</p>
-					<p>{{ translations.tel }}</p>
+					<p>{{ content.address }}</p>
+					<p>{{ content.tel }}</p>
 					<p><a href="mailto:le.zhang@uwaterloo.ca">le.zhang@uwaterloo.ca</a></p>
 			</div>
 			<div class="footer-social">
@@ -65,7 +65,7 @@
 							<a href="https://github.com/LeEinsteinZhang" target="_blank"> <img src="{{ url_for('static', filename='icons/github_w.png') }}" alt="GitHub"> </a> 
 							<a href="https://www.linkedin.com/in/uw-le-zhang" target="_blank"> <img src="{{ url_for('static', filename='icons/linkedin_w.png') }}" alt="LinkedIn"> </a> 
 					</div>
-					<p>&copy; 2024 {{ translations.author }}. {{ translations.rights }}</p>
+					<p>&copy; 2024 {{ content.author }}. {{ content.rights }}</p>
 			</div>
 	</div>
 </footer>

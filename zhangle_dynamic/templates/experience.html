@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="{{ lang }}">
 <head>
-    <title>{{ translations.title }}</title>
+    <title>{{ content.title }}</title>
     <meta charset="UTF-8">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width,initial-scale=1" name="viewport">
-    <meta content="{{ translations.description }}" name="description">
+    <meta content="{{ content.description }}" name="description">
     <meta name="google" content="notranslate" />
     <meta name="msapplication-tap-highlight" content="no">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='icons/icon.png') }}">
@@ -20,24 +20,22 @@
   <nav>
     <div class="menu"> <a href="/{{ lang }}/" class="logo"><img src="{{ url_for('static', filename='icons/logo.png') }}" alt="Logo"></a>
       <ul>
-        <li><a href="/{{ lang }}/">{{ translations.home }}</a></li>
-        <li><a href="/{{ lang }}/#about">{{ translations.about }}</a></li>
-        <li><a href="/{{ lang }}/#experiences">{{ translations.experiences }}</a></li>
-        <li><a href="/{{ lang }}/#projects">{{ translations.project }}</a></li>
-        <li><a href="{{ url_for('static', filename='resume/' + translations.resume_file + '.pdf') }}" target="_blank">{{ translations.resume }}</a></li>
+        <li><a href="/{{ lang }}/">{{ content.home }}</a></li>
+        <li><a href="/{{ lang }}/#about">{{ content.about }}</a></li>
+        <li><a href="/{{ lang }}/#experiences">{{ content.experiences }}</a></li>
+        <li><a href="/{{ lang }}/#projects">{{ content.projects }}</a></li>
+        <li><a href="{{ url_for('static', filename='resume/' + content.resume_file + '.pdf') }}" target="_blank">{{ content.resume }}</a></li>
       </ul>
       <div class="row-section">
-        <div class="language-switcher"> <a href="/{{ 'zh' if lang == 'en' else 'en' }}/" id="{{ 'zh' if lang == 'en' else 'en' }}">{{ '中文' if lang == 'en' else 'EN' }}</a> </div>
+        <div class="language-switcher"> <a href="/{{ 'zh' if lang == 'en' else 'en' }}/{{ current_page }}" id="{{ 'zh' if lang == 'en' else 'en' }}">{{ '中文' if lang == 'en' else 'EN' }}</a> </div>
         <div class="dropdown-menu">
           <button class="dropdown-btn">&#9776;</button>
           <div class="dropdown-content">
-						<a href="/{{ lang }}/">{{ translations.home }}</a> 
-						<a href="{{ url_for('static', filename='resume/' + translations.resume_file + '.pdf') }}" target="_blank">{{ translations.resume }}</a>
-						<a href="/{{ lang }}/cs-isa" title="" class="{{ 'active' if current_page == 'cs-isa' else '' }}">CS ISA</a> 
-						<a href="/{{ lang }}/web-developer" title="" class="{{ 'active' if current_page == 'website' else '' }}">Website Developer</a> 
-						<a href="/{{ lang }}/pa-system" title="" class="{{ 'active' if current_page == 'sound-engineer' else '' }}">Public-Address System</a> 
-						<a href="/{{ lang }}/electrical-engineer" title="" class="{{ 'active' if current_page == 'electrical-engineer' else '' }}">Electrical Engineer</a> 
-						<a href="/{{ lang }}/visual-arts" title="" class="{{ 'active' if current_page == 'visual-arts' else '' }}">Visual Arts</a>
+						<a href="/{{ lang }}/">{{ content.home }}</a> 
+						<a href="{{ url_for('static', filename='resume/' + content.resume_file + '.pdf') }}" target="_blank">{{ content.resume }}</a>
+            {% for item in content.sub_nav %}
+						  <a href="/{{ lang }}/{{ item.link }}" title="" class="{{ 'active' if current_page == item.link else '' }}">{{ item.name }}</a>
+            {% endfor %}
           </div>
       </div>
     </div>
@@ -50,11 +48,9 @@
   </div>
   <div class="sub-nav">
     <ul>
-      <li><a href="/{{ lang }}/cs-isa" title="" class="{{ 'active' if current_page == 'cs-isa' else '' }}">CS ISA</a></li>
-      <li><a href="/{{ lang }}/web-developer" title="" class="{{ 'active' if current_page == 'website' else '' }}">Website Developer</a></li>
-      <li><a href="/{{ lang }}/pa-system" title="" class="{{ 'active' if current_page == 'sound-engineer' else '' }}">Public-Address System</a></li>
-      <li><a href="/{{ lang }}/electrical-engineer" title="" class="{{ 'active' if current_page == 'electrical-engineer' else '' }}">Electrical Engineer</a></li>
-      <li><a href="/{{ lang }}/visual-arts" title="" class="{{ 'active' if current_page == 'visual-arts' else '' }}">Visual Arts</a></li>
+      {% for item in content.sub_nav %}
+        <li><a href="/{{ lang }}/{{ item.link }}" title="" class="{{ 'active' if current_page == item.link else '' }}">{{ item.name }}</a></li>
+      {% endfor %}
     </ul>
   </div>
 </header>
@@ -63,21 +59,21 @@
   <div class="content">
       <div class="column-section">
           <div class="canvas-container"> 
-              <img src="{{ url_for('static', filename=translations.background) }}" alt="">
+              <img src="{{ url_for('static', filename=content.background) }}" alt="">
               <div class="canvas-overlay"></div>
               <div class="sub-title">
-                  <p>{{ translations.title }}</p>
+                  <p>{{ content.title }}</p>
               </div>
           </div>
           <div class="description">
-              <p>{{ translations.description }}</p>
+              <p>{{ content.description }}</p>
               <blockquote>
-                  <h2>"{{ translations.quote }}"</h2>
-                  <small>- {{ translations.quote_author }}</small>
+                  <h2>"{{ content.quote }}"</h2>
+                  <small>- {{ content.quote_author }}</small>
               </blockquote>
           </div>
-          {% if translations.sections %}
-          {% for section in translations.sections %}
+          {% if content.sections %}
+          {% for section in content.sections %}
           <div class="exp-section">
               <div class="exp-text">
                   <p class="exp-name">{{ section.exp_name }}</p>
@@ -92,7 +88,7 @@
           </div>
           {% endfor %}
           {% endif %}
-          {% for row in translations.images %}
+          {% for row in content.images %}
           <div class="images">
               {% for img in row %}
               <div class="img-container margin-10"> 
@@ -104,7 +100,7 @@
           {% endfor %}
           <div class="row-section">
               <div class="img-container"> 
-                  <img src="{{ url_for('static', filename=translations.main_image) }}" alt="Main"> 
+                  <img src="{{ url_for('static', filename=content.main_image) }}" alt="Main"> 
               </div>
           </div>
       </div>

@@ -6,14 +6,14 @@ app = Flask(__name__)
 app.secret_key = '233'
 app.url_map.strict_slashes = False
 
-def load_translation(page, lang):
-    with open(os.path.join('translations', page, f'{lang}.json'), 'r', encoding='utf-8') as file:
-        translations = json.load(file)
-    # Load footer translations
-    with open(os.path.join('translations', 'base', f'{lang}.json'), 'r', encoding='utf-8') as file:
-        footer_translations = json.load(file)
-    translations.update(footer_translations)
-    return translations
+def load_content(page, lang):
+    with open(os.path.join('content', page, f'{lang}.json'), 'r', encoding='utf-8') as file:
+        content = json.load(file)
+    # Load footer content
+    with open(os.path.join('content', 'base', f'{lang}.json'), 'r', encoding='utf-8') as file:
+        footer_content = json.load(file)
+    content.update(footer_content)
+    return content
 
 @app.route('/')
 def home():
@@ -30,8 +30,8 @@ def home():
 def home_lang(lang):
     if 'lang' not in session or session['lang'] != lang:
         session['lang'] = lang
-    translations = load_translation('index', lang)
-    return render_template('index.html', translations=translations, lang=lang, current_page='index')
+    content = load_content('index', lang)
+    return render_template('index.html', content=content, lang=lang, current_page='index')
 
 @app.route('/resume/<filename>')
 def download_resume(filename):
@@ -42,9 +42,8 @@ def download_resume(filename):
 def experiences(lang, experience):
     if 'lang' not in session or session['lang'] != lang:
         session['lang'] = lang
-    translations = load_translation(f'experiences/{experience}', lang)
-    print(translations)
-    return render_template('experience.html', translations=translations, lang=lang, current_page=experience)
+    content = load_content(f'experiences/{experience}', lang)
+    return render_template('experience.html', content=content, lang=lang, current_page=experience)
 
 if __name__ == '__main__':
     app.run()

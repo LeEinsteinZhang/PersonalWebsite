@@ -1,12 +1,6 @@
 {
     "title": "Zhang Le",
     "description": "Le Zhang's Personal Website",
-    "home": "Home",
-    "about": "About",
-    "experiences": "Experiences",
-    "projects": "Projects",
-    "resume": "Resume",
-    "resume_file": "LeZhang",
     "welcome_message": "Welcome to my personal website. I'm Zhang, Le. Honours Physics student in the University of Waterloo, Interested in quantum physics and IoT.",
     "about_me": "About Me",
     "name": "Zhang, Le",
@@ -33,14 +27,14 @@
             "type": "CO-OP | University of Waterloo 2023",
             "description": "Web maintenance optimizes content, performance, and security, ensuring a seamless user experience.",
             "link": "website",
-            "image": "images/website/card.jpg"
+            "image": "images/web_developer/card.jpg"
         },
         {
             "name": "Public-Address System",
             "type": "CO-OP | University of Waterloo IST-ITMS 2023",
             "description": "Edit and control the sound effect for events. Worked in University of Waterloo ITMS and high school events team.",
             "link": "sound-engineer",
-            "image": "images/sound_engineer/card.jpg"
+            "image": "images/pa_system/card.jpg"
         },
         {
             "name": "Electrical Engineer",

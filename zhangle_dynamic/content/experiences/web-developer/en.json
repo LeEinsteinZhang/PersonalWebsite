@@ -1,0 +1,35 @@
+{
+    "title": "Website Developer",
+    "background": "images/web_developer/w0_0.jpg",
+    "description": "Independently developed and completed the portal website of mainland Chinese stars during middle school, and built a personal webpage during college. In addition, I worked on the website maintenance of the Faculty of Engineering of the University of Waterloo during the COOP of the university.",
+    "quote": "Hello World!",
+    "quote_author": "Zhang, Le",
+    "sections": [],
+    "images": [
+        [
+            {
+                "src": "images/web_developer/w1_0.png",
+                "alt": "Star Portal",
+                "caption": "Star Portal"
+            },
+            {
+                "src": "images/web_developer/w1_1.png",
+                "alt": "Star Portal Coding",
+                "caption": "Star Portal Coding"
+            }
+        ],
+        [
+            {
+                "src": "images/web_developer/w2_0.png",
+                "alt": "Personal Website",
+                "caption": "Personal Website"
+            },
+            {
+                "src": "images/web_developer/w2_1.png",
+                "alt": "Personal Website Coding",
+                "caption": "Personal Website Coding"
+            }
+        ]
+    ],
+    "main_image": "images/web_developer/w3_0.jpg"
+}
