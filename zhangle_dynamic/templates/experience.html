@@ -63,7 +63,7 @@
   <div class="content">
       <div class="column-section">
           <div class="canvas-container"> 
-              <img src="{{ url_for('static', filename=translations.main_image) }}" alt="">
+              <img src="{{ url_for('static', filename=translations.background) }}" alt="">
               <div class="canvas-overlay"></div>
               <div class="sub-title">
                   <p>{{ translations.title }}</p>
@@ -76,6 +76,7 @@
                   <small>- {{ translations.quote_author }}</small>
               </blockquote>
           </div>
+          {% if translations.sections %}
           {% for section in translations.sections %}
           <div class="exp-section">
               <div class="exp-text">
@@ -85,19 +86,22 @@
                   <p></p>
                   <a class="transparent-button" href="{{ section.link_url }}" target="_blank">{{ section.link_text }}</a>
               </div>
-              <div class="exp-img"> 
-                  <img src="{{ url_for('static', filename=section.image) }}" alt="script_devlop"> 
+              <div class="exp-img">
+                  <img src="{{ url_for('static', filename=section.image) }}" alt="">
               </div>
           </div>
           {% endfor %}
+          {% endif %}
+          {% for row in translations.images %}
           <div class="images">
-              {% for img in translations.images %}
+              {% for img in row %}
               <div class="img-container margin-10"> 
                   <img src="{{ url_for('static', filename=img.src) }}" alt="{{ img.alt }}">
                   <p>{{ img.caption }}</p>
               </div>
               {% endfor %}
           </div>
+          {% endfor %}
           <div class="row-section">
               <div class="img-container"> 
                   <img src="{{ url_for('static', filename=translations.main_image) }}" alt="Main"> 
@@ -106,7 +110,7 @@
       </div>
   </div>
 </div>
-{% include 'footer' %}
+{% include 'footer.html' %}
 <script src="{{ url_for('static', filename='js/jquery-3.7.1.js') }}"></script>
 <script src="{{ url_for('static', filename='js/header.js') }}"></script>
 <script src="{{ url_for('static', filename='js/slideshow.js') }}"></script>

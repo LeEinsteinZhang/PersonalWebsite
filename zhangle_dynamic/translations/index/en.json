@@ -26,35 +26,35 @@
             "type": "CO-OP | University of Waterloo 2024",
             "description": "Assisting instructors, supporting students, managing coursework, and ensuring effective communication and feedback within educational settings.",
             "link": "cs-isa",
-            "image": "images/cs_isa/cs_isa.jpg"
+            "image": "images/cs_isa/card.jpg"
         },
         {
             "name": "Website Developer & Maintenance",
             "type": "CO-OP | University of Waterloo 2023",
             "description": "Web maintenance optimizes content, performance, and security, ensuring a seamless user experience.",
             "link": "website",
-            "image": "images/website/website.jpg"
+            "image": "images/website/card.jpg"
         },
         {
             "name": "Public-Address System",
             "type": "CO-OP | University of Waterloo IST-ITMS 2023",
             "description": "Edit and control the sound effect for events. Worked in University of Waterloo ITMS and high school events team.",
             "link": "sound-engineer",
-            "image": "images/sound_engineer/sound_engineer.jpg"
+            "image": "images/sound_engineer/card.jpg"
         },
         {
             "name": "Electrical Engineer",
             "type": "",
             "description": "Programming, Construction robot. Worked as the Electrical Engineer in the high school robotics team.",
             "link": "electrical-engineer",
-            "image": "images/electrical_engineer/electrical_engineer.jpg"
+            "image": "images/electrical_engineer/card.jpg"
         },
         {
             "name": "Visual Arts",
             "type": "",
             "description": "Use and teach classical Visual Arts techniques. Worked with Canon and Sony in working and daily recording. Film video and edit the video for public. Worked with Final Cut Pro, Adobe PR and Davinci.",
             "link": "visual-arts",
-            "image": "images/visual_arts/visual_arts.jpg"
+            "image": "images/visual_arts/card.jpg"
         }
     ],
     "projects_section": [
@@ -63,35 +63,35 @@
             "type": "Python Based CPU Logic Simulation",
             "description": "Develop and implementation of CPU instruction sets and CPU peripheral systems such as memory management, I/O, and simple C compiler and OS",
             "link": "https://github.com/LeEinsteinZhang/MemorySimulator",
-            "image": "images/cpu_emulation/cpu_emulation.jpg"
+            "image": "images/cpu_emulation/card.jpg"
         },
         {
             "name": "Game Development",
             "type": "Python Classic Electrial Game Development",
             "description": "Use python to develop classic video games, two games have been completed so far, Connect 4 and Tetris",
             "link": "https://github.com/LeEinsteinZhang/Games",
-            "image": "images/game_develop/game_devlop.jpg"
+            "image": "images/game_develop/card.jpg"
         },
         {
             "name": "Schrödinger Computational Solution",
             "type": "Quantum Mechanics",
             "description": "Solving one-dimensional Schrödinger equation for a harmonic oscillator (HO) potential as well as for an infinite square well (ISW) potential",
             "link": "https://github.com/LeEinsteinZhang/SchrodingerSolving",
-            "image": "images/ho_isw/ho_isw.jpg"
+            "image": "images/ho_isw/card.jpg"
         },
         {
             "name": "Ray Tracing",
             "type": "Classic Mechanics",
             "description": "Modelling the light in computer program. To simulate the real light reflaction in different situations.",
             "link": "https://github.com/LeEinsteinZhang/ComputationalPhysics/blob/main/ray_tracing.ipynb",
-            "image": "images/ray_tracing/rat_tracing.jpg"
+            "image": "images/ray_tracing/card.jpg"
         },
         {
             "name": "Soving Linear Equations",
             "type": "Linear Algebra",
             "description": "Using the concept of matrix in mathematics to solve some problems in real life that involve the solution of linear equations",
             "link": "https://github.com/LeEinsteinZhang/ComputationalPhysics/blob/main/solving_linear_equation.ipynb",
-            "image": "images/solve_linear/solve_linear.jpg"
+            "image": "images/solve_linear/card.jpg"
         }
     ]
 }

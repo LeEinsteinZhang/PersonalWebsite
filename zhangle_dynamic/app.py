@@ -42,7 +42,8 @@ def download_resume(filename):
 def experiences(lang, experience):
     if 'lang' not in session or session['lang'] != lang:
         session['lang'] = lang
-    translations = load_translation(f'experiences/{experience}/', lang)
+    translations = load_translation(f'experiences/{experience}', lang)
+    print(translations)
     return render_template('experience.html', translations=translations, lang=lang, current_page=experience)
 
 if __name__ == '__main__':
