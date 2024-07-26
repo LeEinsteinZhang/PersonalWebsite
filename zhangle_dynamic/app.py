@@ -45,5 +45,10 @@ def experiences(lang, experience):
     content = load_content(f'experiences/{experience}', lang)
     return render_template('experience.html', content=content, lang=lang, current_page=experience)
 
+@app.route('/favicon.ico')
+def favicon():
+    return send_from_directory(os.path.join(app.root_path, 'static/icons'), 'favicon.ico', mimetype='image/vnd.microsoft.icon')
+
+
 if __name__ == '__main__':
     app.run()
