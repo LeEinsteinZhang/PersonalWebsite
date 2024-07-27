@@ -46,5 +46,9 @@ def experiences(experience):
 def favicon():
     return send_from_directory(os.path.join(app.root_path, 'static/icons'), 'favicon.ico', mimetype='image/vnd.microsoft.icon')
 
+@app.route('/sitemap')
+def sitemap():
+    return send_from_directory(os.path.join(app.root_path, 'static'), 'sitemap.xml')
+
 if __name__ == '__main__':
     app.run()
