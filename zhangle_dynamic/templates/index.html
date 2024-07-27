@@ -34,11 +34,11 @@
                 <div class="dropdown-menu">
                     <button class="dropdown-btn">&#9776;</button>
                     <div class="dropdown-content">
-                        <li><a href="/">{{ content.home }}</a></li>
-                        <li><a href="/#about">{{ content.about }}</a></li>
-                        <li><a href="/#experiences">{{ content.experiences }}</a></li>
-                        <li><a href="/#projects">{{ content.projects }}</a></li>
-                        <li><a href="{{ url_for('download_resume', filename=content.resume_file + '.pdf') }}" target="_blank">{{ content.resume }}</a></li>
+                        <a href="/">{{ content.home }}</a>
+                        <a href="/#about">{{ content.about }}</a>
+                        <a href="/#experiences">{{ content.experiences }}</a>
+                        <a href="/#projects">{{ content.projects }}</a>
+                        <a href="{{ url_for('download_resume', filename=content.resume_file + '.pdf') }}" target="_blank">{{ content.resume }}</a>
                     </div>
                 </div>
             </div>
