@@ -104,6 +104,16 @@ body {
 	flex-direction: row;
 }
 
+.page-404 {
+	font-family: 'Helvetica', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
 .contact {
 	display: flex;
 	flex-direction: row;
@@ -136,7 +146,6 @@ body {
     padding-top: 60px;
     margin-top: -60px;
 }
-
 
 #home {
     position: relative;

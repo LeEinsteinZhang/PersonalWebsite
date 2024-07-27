@@ -9,10 +9,18 @@ app.url_map.strict_slashes = False
 default_lang = 'en'
 
 def load_content(page, lang):
-    with open(os.path.join('content', page, f'{lang}.json'), 'r', encoding='utf-8') as file:
+    content_path = os.path.join('content', page, f'{lang}.json')
+    base_path = os.path.join('content', 'base', f'{lang}.json')
+    
+    if not os.path.exists(content_path) or not os.path.exists(base_path):
+        return None
+
+    with open(content_path, 'r', encoding='utf-8') as file:
         content = json.load(file)
-    with open(os.path.join('content', 'base', f'{lang}.json'), 'r', encoding='utf-8') as file:
+    
+    with open(base_path, 'r', encoding='utf-8') as file:
         footer_content = json.load(file)
+    
     content.update(footer_content)
     return content
 
@@ -40,6 +48,8 @@ def experiences(experience):
         session['lang'] = default_lang
     lang = session['lang']
     content = load_content(f'experiences/{experience}', lang)
+    if content is None:
+        return page_not_found(None)
     return render_template('experience.html', content=content, lang=lang, current_page=experience, default_lang=default_lang)
 
 @app.route('/favicon.ico')
@@ -49,6 +59,13 @@ def favicon():
 @app.route('/sitemap')
 def sitemap():
     return send_from_directory(os.path.join(app.root_path, 'static'), 'sitemap.xml')
+
+@app.errorhandler(404)
+def page_not_found(e):
+    if 'lang' not in session:
+        session['lang'] = default_lang
+    lang = session['lang']
+    return render_template('404.html', lang=lang), 404
 
 if __name__ == '__main__':
     app.run()
