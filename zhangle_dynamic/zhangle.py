@@ -30,12 +30,13 @@ def home():
         session['lang'] = default_lang
     lang = session['lang']
     content = load_content('index', lang)
+    session['prev_url'] = '/'
     return render_template('index.html', content=content, lang=lang, current_page='index', default_lang=default_lang)
 
 @app.route('/switch_lang/<lang>')
 def switch_lang(lang):
     session['lang'] = lang
-    next_url = request.args.get('next', url_for('home'))
+    next_url = request.args.get('next', request.referrer or url_for('home'))
     return redirect(next_url)
 
 @app.route('/resume/<filename>')
@@ -50,6 +51,7 @@ def experiences(experience):
     content = load_content(f'experiences/{experience}', lang)
     if content is None:
         return page_not_found(None)
+    session['prev_url'] = request.path
     return render_template('experience.html', content=content, lang=lang, current_page=experience, default_lang=default_lang)
 
 @app.route('/favicon.ico')
@@ -65,7 +67,12 @@ def page_not_found(e):
     if 'lang' not in session:
         session['lang'] = default_lang
     lang = session['lang']
-    return render_template('404.html', lang=lang), 404
+    prev_url = session.get('prev_url', '/')
+    return render_template('404.html', lang=lang, prev_url=prev_url), 404
+
+@app.route('/<path:path>')
+def catch_all(path):
+    return page_not_found(None)
 
 if __name__ == '__main__':
     app.run()

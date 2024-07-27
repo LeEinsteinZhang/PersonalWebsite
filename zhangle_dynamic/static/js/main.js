@@ -66,10 +66,4 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     showSlides();
-
-    // Set back button link
-    var backButton = document.getElementById('back-button');
-    if (backButton) {
-        backButton.href = document.referrer;
-    }
 });
