@@ -5,8 +5,7 @@
     "quote": "Hello World!",
     "quote_author": "张乐",
     "job_projects": [],
-    "exp_sections": [],
-    "images": [
+    "exp_sections": [
         {
             "quote": {},
             "images": [

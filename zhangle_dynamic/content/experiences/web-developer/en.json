@@ -5,8 +5,7 @@
     "quote": "Hello World!",
     "quote_author": "Zhang, Le",
     "job_projects": [],
-    "exp_sections": [],
-    "images": [
+    "exp_sections": [
         {
             "quote": {},
             "images": [
