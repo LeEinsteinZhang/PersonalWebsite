@@ -1,56 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-      xmlns="http://sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://sitemaps.org/schemas/sitemap/0.9
-            http://sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator xml-sitemaps.com -->
-
-<!-- Root -->
-<url>
-<loc>https://zhangle.ca/</loc>
-<lastmod>2024-07-26T23:30:30+00:00</lastmod>
-</url>
-<url>
-<loc>https://zhangle.ca/resume/LeZhang.pdf</loc>
-<lastmod>2024-07-26T23:30:30+00:00</lastmod>
-</url>
-<url>
-<loc>https://zhangle.ca/resume/&#x5F20;&#x4E50;.pdf</loc>
-<lastmod>2024-07-26T23:30:30+00:00</lastmod>
-</url>
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 
-<!-- content -->
 <url>
   <loc>https://zhangle.ca/</loc>
-  <lastmod>2024-07-26T23:30:30+00:00</lastmod>
+  <lastmod>2024-07-27T04:37:27+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
+  <loc>https://zhangle.ca/resume/LeZhang.pdf</loc>
+  <lastmod>2024-07-27T03:45:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://zhangle.ca/resume/%E5%BC%A0%E4%B9%90.pdf</loc>
+  <lastmod>2024-07-27T03:45:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://zhangle.ca/cs-isa</loc>
-  <lastmod>2024-07-26T23:30:30+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://zhangle.ca/website</loc>
-  <lastmod>2024-07-26T23:30:30+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://zhangle.ca/sound-engineer</loc>
-  <lastmod>2024-07-26T23:30:30+00:00</lastmod>
+  <lastmod>2024-07-27T04:37:27+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://zhangle.ca/electrical-engineer</loc>
-  <lastmod>2024-07-26T23:30:30+00:00</lastmod>
+  <lastmod>2024-07-27T04:37:27+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://zhangle.ca/visual-arts</loc>
-  <lastmod>2024-07-26T23:30:30+00:00</lastmod>
+  <lastmod>2024-07-27T04:37:27+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-
+<url>
+  <loc>https://zhangle.ca/static/resume/%E5%BC%A0%E4%B9%90.pdf</loc>
+  <lastmod>2024-07-27T03:45:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://zhangle.ca/web-developer</loc>
+  <lastmod>2024-07-27T04:37:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://zhangle.ca/pa-system</loc>
+  <lastmod>2024-07-27T04:37:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://zhangle.ca/static/resume/LeZhang.pdf</loc>
+  <lastmod>2024-07-27T03:45:05+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
 </urlset>
