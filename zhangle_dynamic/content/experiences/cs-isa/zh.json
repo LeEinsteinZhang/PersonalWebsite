@@ -4,7 +4,7 @@
     "description": "在 COOP 期间，作为滑铁卢大学数学系 CS136/l 的教学支持助理 (ISA)，我积极协助教师，通过教程和数字平台促进学生学习，管理课程作业评分，并通过监考考试维护学术诚信， 确保支持性的教育环境。",
     "quote": "传授知识是一个令人愉悦的过程。",
     "quote_author": "张乐",
-    "sections": [
+    "job_projects": [
         {
             "exp_name": "脚本开发",
             "exp_type": "利用C和Python以及脚本进行脚本开发",
@@ -14,31 +14,38 @@
             "image": "images/cs_isa/p0_0.jpg"
         }
     ],
+    "exp_sections": [],
     "images": [
-        [
-            {
-                "src": "images/cs_isa/w1_0.jpg",
-                "alt": "递归解释",
-                "caption": "递归解释"
-            },
-            {
-                "src": "images/cs_isa/w1_1.jpg",
-                "alt": "代码调试",
-                "caption": "代码调试"
-            }
-        ],
-        [
-            {
-                "src": "images/cs_isa/w2_0.jpg",
-                "alt": "创建课程笔记",
-                "caption": "创建课程笔记"
-            },
-            {
-                "src": "images/cs_isa/w2_1.jpg",
-                "alt": "Bash 脚本编码",
-                "caption": "Bash 脚本编码"
-            }
-        ]
+        {
+            "quote": {},
+            "images": [
+                {
+                    "src": "images/cs_isa/w1_0.jpg",
+                    "alt": "递归解释",
+                    "caption": "递归解释"
+                },
+                {
+                    "src": "images/cs_isa/w1_1.jpg",
+                    "alt": "代码调试",
+                    "caption": "代码调试"
+                }
+            ]
+        },
+        {
+            "quote": {},
+            "images": [
+                {
+                    "src": "images/cs_isa/w2_0.jpg",
+                    "alt": "创建课程笔记",
+                    "caption": "创建课程笔记"
+                },
+                {
+                    "src": "images/cs_isa/w2_1.jpg",
+                    "alt": "Bash 脚本编码",
+                    "caption": "Bash 脚本编码"
+                }
+            ]
+        }
     ],
     "main_image": "images/cs_isa/w3_0.jpg"
 }

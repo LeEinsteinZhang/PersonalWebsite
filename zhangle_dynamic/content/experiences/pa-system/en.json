@@ -4,32 +4,39 @@
     "description": "Worked as an audio editor and live sound control for the event operations team in the University of Waterloo ITMS with high rating of performance evaluations. As well as independent build audio power amplifier.",
     "quote": "Sound is not only the wave. It is vivid dancing element of life.",
     "quote_author": "Zhang, Le",
-    "sections": [],
+    "job_projects": [],
+    "exp_sections": [],
     "images": [
-        [
-            {
-                "src": "images/pa_system/w1_0.jpg",
-                "alt": "U of Waterloo Black and Golden Room Event",
-                "caption": "U of Waterloo Black and Golden Room Event"
-            },
-            {
-                "src": "images/pa_system/w1_1.jpg",
-                "alt": "Sound Tuning",
-                "caption": "Sound Tuning"
-            }
-        ],
-        [
-            {
-                "src": "images/pa_system/w2_0.jpg",
-                "alt": "DIY Amplifier",
-                "caption": "DIY Amplifier"
-            },
-            {
-                "src": "images/pa_system/w2_1.jpg",
-                "alt": "During the Event",
-                "caption": "During the Event"
-            }
-        ]
+        {
+            "quote": {},
+            "images": [
+                {
+                    "src": "images/pa_system/w1_0.jpg",
+                    "alt": "U of Waterloo Black and Golden Room Event",
+                    "caption": "U of Waterloo Black and Golden Room Event"
+                },
+                {
+                    "src": "images/pa_system/w1_1.jpg",
+                    "alt": "Sound Tuning",
+                    "caption": "Sound Tuning"
+                }
+            ]
+        },
+        {
+            "quote": {},
+            "images": [
+                {
+                    "src": "images/pa_system/w2_0.jpg",
+                    "alt": "DIY Amplifier",
+                    "caption": "DIY Amplifier"
+                },
+                {
+                    "src": "images/pa_system/w2_1.jpg",
+                    "alt": "During the Event",
+                    "caption": "During the Event"
+                }
+            ]
+        }
     ],
     "main_image": "images/pa_system/w3_0.jpg"
 }

@@ -4,32 +4,42 @@
     "description": "Photography is a technique that uses light. I have worked as a commercial photographer, capturing images of large commercial events. I also founded a photography club with friends in high school and organized several large club events in the form of photography lectures. During this period, I received many awards from the school. Personally, I am particularly interested in classical photography.",
     "quote": "The eye should learn to listen before it looks.",
     "quote_author": "Robert Frank",
-    "sections": [],
-    "images": [
-        [
-            {
-                "src": "images/visual_arts/w1_0.jpg",
-                "alt": "Commercial Photography - Dilireba Event",
-                "caption": "Commercial Photography - Dilireba Event"
-            },
-            {
-                "src": "images/visual_arts/w1_1.jpg",
-                "alt": "Blueprint Photo of a Building",
-                "caption": "Blueprint Photo of a Building"
-            }
-        ],
-        [
-            {
-                "src": "images/visual_arts/w2_0.jpg",
-                "alt": "Editing Video",
-                "caption": "Editing Video"
-            },
-            {
-                "src": "images/visual_arts/w2_1.jpg",
-                "alt": "One of the High School Film Projects",
-                "caption": "One of the High School Film Projects"
-            }
-        ]
+    "job_projects": [],
+    "exp_sections": [
+        {
+            "quote": {},
+            "images": [
+                {
+                    "src": "images/visual_arts/w1_0.jpg",
+                    "alt": "Commercial Photography - Dilireba Event",
+                    "caption": "Commercial Photography - Dilireba Event"
+                },
+                {
+                    "src": "images/visual_arts/w1_1.jpg",
+                    "alt": "Blueprint Photo of a Building",
+                    "caption": "Blueprint Photo of a Building"
+                }
+                ]
+        },
+        {
+            "quote": {
+                    "description": "In the photography club, not only Visual Arts activities are conducted, but also video recording. And we completed several groups of microfilm shooting and post-production during high school.",
+                    "text": "The foundation of film art is editing.",
+                    "quote_author": "Vsevolod Pudovkin"
+                },
+            "images": [
+                {
+                    "src": "images/visual_arts/w2_0.jpg",
+                    "alt": "Editing Video",
+                    "caption": "Editing Video"
+                },
+                {
+                    "src": "images/visual_arts/w2_1.jpg",
+                    "alt": "One of the High School Film job_projects",
+                    "caption": "One of the High School Film job_projects"
+                }
+            ]
+        }
     ],
     "main_image": "images/visual_arts/w3_0.jpg"
 }
