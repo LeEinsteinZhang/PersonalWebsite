@@ -18,23 +18,25 @@
 <body>
 <header>
   <nav>
-    <div class="menu"> <a href="/{{ lang }}/" class="logo"><img src="{{ url_for('static', filename='icons/logo.png') }}" alt="Logo"></a>
+    <div class="menu"> <a href="/" class="logo"><img src="{{ url_for('static', filename='icons/logo.png') }}" alt="Logo"></a>
       <ul>
-        <li><a href="/{{ lang }}/">{{ content.home }}</a></li>
-        <li><a href="/{{ lang }}/#about">{{ content.about }}</a></li>
-        <li><a href="/{{ lang }}/#experiences">{{ content.experiences }}</a></li>
-        <li><a href="/{{ lang }}/#projects">{{ content.projects }}</a></li>
+        <li><a href="/">{{ content.home }}</a></li>
+        <li><a href="/#about">{{ content.about }}</a></li>
+        <li><a href="/#experiences">{{ content.experiences }}</a></li>
+        <li><a href="/#projects">{{ content.projects }}</a></li>
         <li><a href="{{ url_for('static', filename='resume/' + content.resume_file + '.pdf') }}" target="_blank">{{ content.resume }}</a></li>
       </ul>
       <div class="row-section">
-        <div class="language-switcher"> <a href="/{{ 'zh' if lang == 'en' else 'en' }}/{{ current_page }}" id="{{ 'zh' if lang == 'en' else 'en' }}">{{ '中文' if lang == 'en' else 'EN' }}</a> </div>
+        <div class="language-switcher"> 
+          <a id="lang-switch" href="{{ url_for('switch_lang', lang='zh' if lang == 'en' else 'en', next=request.path) }}">{{ '中文' if lang == 'en' else 'EN' }}</a>
+        </div>
         <div class="dropdown-menu">
           <button class="dropdown-btn">&#9776;</button>
           <div class="dropdown-content">
-						<a href="/{{ lang }}/">{{ content.home }}</a> 
-						<a href="{{ url_for('static', filename='resume/' + content.resume_file + '.pdf') }}" target="_blank">{{ content.resume }}</a>
+            <a href="/">{{ content.home }}</a> 
+            <a href="{{ url_for('static', filename='resume/' + content.resume_file + '.pdf') }}" target="_blank">{{ content.resume }}</a>
             {% for item in content.sub_nav %}
-						  <a href="/{{ lang }}/{{ item.link }}" title="" class="{{ 'active' if current_page == item.link else '' }}">{{ item.name }}</a>
+              <a href="/{{ item.link }}" title="" class="{{ 'active' if current_page == item.link else '' }}">{{ item.name }}</a>
             {% endfor %}
           </div>
       </div>
@@ -49,7 +51,7 @@
   <div class="sub-nav">
     <ul>
       {% for item in content.sub_nav %}
-        <li><a href="/{{ lang }}/{{ item.link }}" title="" class="{{ 'active' if current_page == item.link else '' }}">{{ item.name }}</a></li>
+        <li><a href="/{{ item.link }}" title="" class="{{ 'active' if current_page == item.link else '' }}">{{ item.name }}</a></li>
       {% endfor %}
     </ul>
   </div>
@@ -111,5 +113,6 @@
 <script src="{{ url_for('static', filename='js/header.js') }}"></script>
 <script src="{{ url_for('static', filename='js/slideshow.js') }}"></script>
 <script src="{{ url_for('static', filename='js/dropdown_menu.js') }}"></script>
+<script src="{{ url_for('static', filename='js/language.js') }}"></script>
 </body>
 </html>
