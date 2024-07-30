@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for, session, send_from_directory, jsonify
+from flask import Flask, render_template, request, redirect, url_for, session, send_from_directory
 import json
 import os
 import uuid
@@ -79,11 +79,6 @@ def page_not_found(e):
 @app.route('/<path:path>')
 def catch_all(path):
     return page_not_found(None)
-
-@app.route('/session_info')
-def session_info():
-    session_dict = {key: value for key, value in session.items()}
-    return jsonify(session_dict)
 
 if __name__ == '__main__':
     app.run()
