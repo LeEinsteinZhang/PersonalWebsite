@@ -17,6 +17,13 @@
     "experiences_section_title": "工作经历",
     "experiences_section": [
         {
+            "name": "软件开发",
+            "type": "CO-OP | University of Waterloo 2024",
+            "description": "升级现有框架，测试功能和数据完整性。",
+            "link": "software-developer",
+            "image": "images/software_developer/card.jpg"
+        },
+        {
             "name": "CS136 助教",
             "type": "CO-OP | 滑铁卢大学 2024",
             "description": "协助教师进行课堂活动、帮助学生学习计算机科学知识、管理课程作业并确保教育环境中师生之间的有效沟通和反馈",

@@ -90,6 +90,7 @@
           </div>
           {% endfor %}
           {% endif %}
+          {% if content.exp_sections %}
           {% for row in content.exp_sections %}
           {% if row.quote %}
           <div class="description">
@@ -109,6 +110,7 @@
               {% endfor %}
           </div>
           {% endfor %}
+          {% endif %}
           <div class="row-section">
               <div class="img-container"> 
                   <img src="{{ url_for('static', filename=content.main_image) }}" alt="Main"> 

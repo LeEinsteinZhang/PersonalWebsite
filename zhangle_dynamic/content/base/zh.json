@@ -8,6 +8,10 @@
     "discover": "了解更多",
     "sub_nav": [
         {
+            "name": "软件开发",
+            "link": "software-developer"
+        },
+        {
             "name": "计算机助教",
             "link": "cs-isa"
         },

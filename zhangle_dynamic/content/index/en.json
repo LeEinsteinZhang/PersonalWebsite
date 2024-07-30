@@ -16,6 +16,13 @@
     "resume_download": "Resume Download",
     "experiences_section": [
         {
+            "name": "Software Developer",
+            "type": "CO-OP | University of Waterloo 2024",
+            "description": "To upgrade existing framework, test functionality and data integrity.",
+            "link": "software-developer",
+            "image": "images/software_developer/card.jpg"
+        },
+        {
             "name": "CS136 ISA",
             "type": "CO-OP | University of Waterloo 2024",
             "description": "Assisting instructors, supporting students, managing coursework, and ensuring effective communication and feedback within educational settings.",

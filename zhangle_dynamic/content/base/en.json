@@ -8,6 +8,10 @@
     "discover": "Discover",
     "sub_nav": [
         {
+            "name": "Software Developer",
+            "link": "software-developer"
+        },
+        {
             "name": "CS ISA",
             "link": "cs-isa"
         },
