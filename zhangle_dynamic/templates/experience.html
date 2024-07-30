@@ -24,7 +24,7 @@
         <li><a href="/#about">{{ content.about }}</a></li>
         <li><a href="/#experiences">{{ content.experiences }}</a></li>
         <li><a href="/#projects">{{ content.projects }}</a></li>
-        <li><a href="{{ url_for('static', filename='resume/' + content.resume_file + '.pdf') }}" target="_blank">{{ content.resume }}</a></li>
+        <li><a href="{{ url_for('download_resume', filename=content.resume_file + '.pdf') }}" target="_blank">{{ content.resume }}</a></li>
       </ul>
       <div class="row-section">
         <div class="language-switcher"> 
@@ -34,7 +34,7 @@
           <button class="dropdown-btn">&#9776;</button>
           <div class="dropdown-content">
             <a href="/">{{ content.home }}</a> 
-            <a href="{{ url_for('static', filename='resume/' + content.resume_file + '.pdf') }}" target="_blank">{{ content.resume }}</a>
+            <a href="{{ url_for('download_resume', filename=content.resume_file + '.pdf') }}" target="_blank">{{ content.resume }}</a>
             {% for item in content.sub_nav %}
               <a href="/{{ item.link }}" title="" class="{{ 'active' if current_page == item.link else '' }}">{{ item.name }}</a>
             {% endfor %}

@@ -1,9 +1,10 @@
-from flask import Flask, render_template, request, redirect, url_for, session, send_from_directory
+from flask import Flask, render_template, request, redirect, url_for, session, send_from_directory, jsonify
 import json
 import os
+import uuid
 
 app = Flask(__name__)
-app.secret_key = '233'
+app.secret_key = '65536'
 app.url_map.strict_slashes = False
 
 default_lang = 'en'
@@ -24,10 +25,15 @@ def load_content(page, lang):
     content.update(footer_content)
     return content
 
-@app.route('/')
-def home():
+def ensure_session():
+    if 'session_id' not in session:
+        session['session_id'] = str(uuid.uuid4())
     if 'lang' not in session:
         session['lang'] = default_lang
+
+@app.route('/')
+def home():
+    ensure_session()
     lang = session['lang']
     content = load_content('index', lang)
     session['prev_url'] = '/'
@@ -35,18 +41,19 @@ def home():
 
 @app.route('/switch_lang/<lang>')
 def switch_lang(lang):
+    ensure_session()
     session['lang'] = lang
     next_url = request.args.get('next', request.referrer or url_for('home'))
     return redirect(next_url)
 
 @app.route('/resume/<filename>')
 def download_resume(filename):
+    ensure_session()
     return send_from_directory(os.path.join(app.root_path, 'static/resume'), filename)
 
 @app.route('/<experience>')
 def experiences(experience):
-    if 'lang' not in session:
-        session['lang'] = default_lang
+    ensure_session()
     lang = session['lang']
     content = load_content(f'experiences/{experience}', lang)
     if content is None:
@@ -64,8 +71,7 @@ def sitemap():
 
 @app.errorhandler(404)
 def page_not_found(e):
-    if 'lang' not in session:
-        session['lang'] = default_lang
+    ensure_session()
     lang = session['lang']
     prev_url = session.get('prev_url', '/')
     return render_template('404.html', lang=lang, prev_url=prev_url), 404
@@ -73,6 +79,11 @@ def page_not_found(e):
 @app.route('/<path:path>')
 def catch_all(path):
     return page_not_found(None)
+
+@app.route('/session_info')
+def session_info():
+    session_dict = {key: value for key, value in session.items()}
+    return jsonify(session_dict)
 
 if __name__ == '__main__':
     app.run()
