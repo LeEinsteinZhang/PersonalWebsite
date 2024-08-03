@@ -31,6 +31,17 @@ def ensure_session():
     if 'lang' not in session:
         session['lang'] = default_lang
 
+
+@app.before_request
+def remove_html_suffix():
+    path = request.path
+    if path.endswith('.html'):
+        path = path[:-5]
+        if path == '/index':
+            return redirect('/')
+        else:
+            return redirect(path[:-5])
+
 @app.route('/')
 def home():
     ensure_session()
