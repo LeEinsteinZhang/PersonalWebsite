@@ -1,0 +1,40 @@
+{
+    "home": "主页",
+    "about": "关于",
+    "experiences": "工作经历",
+    "projects": "个人项目",
+    "resume": "简历",
+    "resume_file": "张乐",
+    "discover": "了解更多",
+    "sub_nav": [
+        {
+            "name": "软件开发",
+            "link": "software-developer"
+        },
+        {
+            "name": "计算机助教",
+            "link": "cs-isa"
+        },
+        {
+            "name": "网站开发",
+            "link": "web-developer"
+        },
+        {
+            "name": "音频工程",
+            "link": "pa-system"
+        },
+        {
+            "name": "电子工程师",
+            "link": "electrical-engineer"
+        },
+        {
+            "name": "视觉艺术",
+            "link": "visual-arts"
+        }
+    ],
+    "address": "加拿大, 安大略省, 滑铁卢市",
+    "tel": "+1 (647) 721-6033",
+    "email": "le.zhang@uwaterloo.ca",
+    "author": "张乐",
+    "rights": "保留所有权利。"
+}

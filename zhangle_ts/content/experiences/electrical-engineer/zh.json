@@ -1,0 +1,26 @@
+{
+    "title": "电子工程师",
+    "background": "images/electrical_engineer/w0_0.jpg",
+    "description": "FIRST机器人竞赛（FRC）是一项国际高中机器人竞赛。2018-2019年在中国河南省实验中学担任7047队成员，并进行基本的编程和设计工作。在2018年FIRST Power Up上海比赛中获得通用汽车赞助的工业设计奖。",
+    "quote": "表彰展示工业设计原则、在形式、功能和美学之间取得平衡的团队。",
+    "quote_author": "通用汽车",
+    "job_projects": [],
+    "exp_sections": [
+        {
+            "quote": {},
+            "images": [
+                {
+                    "src": "images/electrical_engineer/w1_0.jpg",
+                    "alt": "工业设计奖",
+                    "caption": "工业设计奖"
+                },
+                {
+                    "src": "images/electrical_engineer/w1_1.jpg",
+                    "alt": "7047团队",
+                    "caption": "7047团队"
+                }
+            ]
+        }
+    ],
+    "main_image": "images/electrical_engineer/w2_0.jpg"
+}

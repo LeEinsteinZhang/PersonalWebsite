@@ -1,0 +1,100 @@
+{
+    "title": "张乐",
+    "description": "张乐的个人网站",
+    "welcome_message": "欢迎来到我的个人网站。我是张乐， 加拿大滑铁卢大学在读的物理学生， 对量子计算和万物互联充满兴趣。",
+    "about_me": "关于",
+    "name": "张乐",
+    "about_description": "就读于加拿大滑铁卢大学荣誉物理辅修计算机。VirtualPHY联合创始人",
+    "highschool_experience": "高中毕业于中国河南省顶尖的高中之一的河南省实验中学。在校期间，曾担任高中摄影俱乐部的副会长，活动运营团队的音响工程师和活动策划，以及机器人团队的工程师和机械设计师，并在这些职位上表现出色。成功组织了几次大型学校活动，并在机器人比赛中赢得了通用汽车的工业设计奖。",
+    "interests_and_awards": "兴趣和奖项",
+    "awards": [
+        "科学展览会最佳作品 | 2018",
+        "校园最佳俱乐部领导 | 2018",
+        "First 机器人竞赛工业设计奖 | 2018",
+        "中国微电影节最佳剪辑奖 | 2018"
+    ],
+    "resume_download": "简历下载",
+    "experiences_section_title": "工作经历",
+    "experiences_section": [
+        {
+            "name": "软件开发",
+            "type": "CO-OP | 滑铁卢大学 2024",
+            "description": "升级现有框架，测试功能和数据完整性。",
+            "link": "software-developer",
+            "image": "images/software_developer/card.jpg"
+        },
+        {
+            "name": "CS136 助教",
+            "type": "CO-OP | 滑铁卢大学 2024",
+            "description": "协助教师进行课堂活动、帮助学生学习计算机科学知识、管理课程作业并确保教育环境中师生之间的有效沟通和反馈",
+            "link": "cs-isa",
+            "image": "images/cs_isa/card.jpg"
+        },
+        {
+            "name": "网站运营",
+            "type": "CO-OP | 滑铁卢大学 2023",
+            "description": "现就职于滑铁卢大学工程学院对网站进行维护以及对内容进行更新，确保网站的性能和安全性，确保用户体验",
+            "link": "website",
+            "image": "images/web_developer/card.jpg"
+        },
+        {
+            "name": "音频工程",
+            "type": "CO-OP | 滑铁卢大学 IST-ITMS 2023",
+            "description": "曾在滑铁卢大学 ITMS 和高中活动团队担任音频工程师，编辑和控制活动的实时音效",
+            "link": "sound-engineer",
+            "image": "images/pa_system/card.jpg"
+        },
+        {
+            "name": "电子工程师",
+            "type": "",
+            "description": "曾在高中机器人团队担任电气工程师进行编程，搭建机器人。并在国际赛事上获得通用汽车的工业设计奖",
+            "link": "electrical-engineer",
+            "image": "images/electrical_engineer/card.jpg"
+        },
+        {
+            "name": "视觉艺术",
+            "type": "",
+            "description": "使用和教授经典视觉艺术技巧。曾与佳能、索尼合作进行工作及日常录音。拍摄视频并为公众编辑视频。曾与 Final Cut Pro、Adobe PR 和 Davinci 合作。",
+            "link": "visual-arts",
+            "image": "images/visual_arts/card.jpg"
+        }
+    ],
+    "projects_section_title": "个人项目",
+    "projects_section": [
+        {
+            "name": "CPU仿真",
+            "type": "基于Python的CPU以及周围系统的模拟",
+            "description": "开发和实现CPU指令集和CPU外围系统, 如内存管理、I/O、简单的C编译器和操作系统",
+            "link": "https://github.com/LeEinsteinZhang/MemorySimulator",
+            "image": "images/cpu_emulation/card.jpg"
+        },
+        {
+            "name": "游戏开发",
+            "type": "Python经典电子游戏开发",
+            "description": "使用Python制作经典的电子游戏, 例如四子棋和俄罗斯方块。在此期间熟练掌握Python算法逻辑以及相关库的使用",
+            "link": "https://github.com/LeEinsteinZhang/Games",
+            "image": "images/game_develop/card.jpg"
+        },
+        {
+            "name": "一维薛定谔方程求解器",
+            "type": "量子力学",
+            "description": "使用C++求解量子力学中的一维谐振子 (HO) 势以及无限方阱 (ISW) 势的一维薛定谔方程的解",
+            "link": "https://github.com/LeEinsteinZhang/SchrodingerSolving",
+            "image": "images/ho_isw/card.jpg"
+        },
+        {
+            "name": "光线追踪",
+            "type": "经典力学",
+            "description": "在计算机中使用Python以及C++制作程序中对光路进行模拟。仿真不同情况下真实的光反射场景",
+            "link": "https://github.com/LeEinsteinZhang/ComputationalPhysics/blob/main/ray_tracing.ipynb",
+            "image": "images/ray_tracing/card.jpg"
+        },
+        {
+            "name": "线性方程求解程序",
+            "type": "线性代数",
+            "description": "使用Python和C进行程序制作, 并使用部分CUDA编程, 从而利用计算机的并行计算实现对线性方程的快速求解。",
+            "link": "https://github.com/LeEinsteinZhang/ComputationalPhysics/blob/main/solving_linear_equation.ipynb",
+            "image": "images/solve_linear/card.jpg"
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "title": "Electrical Engineer",
+    "background": "images/electrical_engineer/w0_0.jpg",
+    "description": "FIRST Robotics Competition (FRC) is an international high school robotics competition. Serve as a member of Team 7047 at Henan Experimental High school, China during 2018-2019. And perform basic programming and design work. Received Industrial Design Award sponsored by General Motors at the 2018 FIRST Power Up's Shanghai competition.",
+    "quote": "Celebrates the team that demonstrates industrial design principles, striking a balance between form, function, and aesthetics.",
+    "quote_author": "General Motors",
+    "job_projects": [],
+    "exp_sections": [
+        {
+            "quote": {},
+            "images": [
+                {
+                    "src": "images/electrical_engineer/w1_0.jpg",
+                    "alt": "The Awards",
+                    "caption": "The Awards"
+                },
+                {
+                    "src": "images/electrical_engineer/w1_1.jpg",
+                    "alt": "Team Photo",
+                    "caption": "Team Photo"
+                }
+            ]
+        }
+    ],
+    "main_image": "images/electrical_engineer/w2_0.jpg"
+}
