@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="<%= lang %>">
+<head>
+    <title><%= content.title %></title>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta content="<%= content.description %>" name="description">
+    <meta name="google" content="notranslate" />
+    <meta name="msapplication-tap-highlight" content="no">
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/icons/icon.png">
+    <link rel="icon" href="/static/icons/favicon.ico">
+    <link rel="shortcut icon" href="/static/icons/favicon.ico">
+    <link href="/static/css/css_file.css" rel="stylesheet">
+    <script src="/static/js/dropdown_menu.js"></script>
+</head>
+
+<body>
+<header>
+    <nav>
+        <div class="menu"> 
+            <a href="/" class="logo"><img src="/static/icons/logo.png" alt="Logo"></a>
+            <ul>
+                <li><a href="/"><%= content.home %></a></li>
+                <li><a href="/#about"><%= content.about %></a></li>
+                <li><a href="/#experiences"><%= content.experiences %></a></li>
+                <li><a href="/#projects"><%= content.projects %></a></li>
+                <li><a href="/resume/<%= content.resume_file %>.pdf" target="_blank"><%= content.resume %></a></li>
+            </ul>
+            <div class="row-section">
+                <div class="language-switcher">
+                    <a id="lang-switch" href="/switch_lang/<%= lang === 'en' ? 'zh' : 'en' %>?next=<%= request.path %>"><%= lang === 'en' ? '中文' : 'EN' %></a>
+                </div>
+                <div class="dropdown-menu">
+                    <button class="dropdown-btn">&#9776;</button>
+                    <div class="dropdown-content">
+                        <a href="/"><%= content.home %></a>
+                        <a href="/#about"><%= content.about %></a>
+                        <a href="/#experiences"><%= content.experiences %></a>
+                        <a href="/#projects"><%= content.projects %></a>
+                        <a href="/resume/<%= content.resume_file %>.pdf" target="_blank"><%= content.resume %></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="color-bar">
+        <div class="color-block site-c1"></div>
+        <div class="color-block site-c2"></div>
+        <div class="color-block site-c3"></div>
+        <div class="color-block site-c4"></div>
+    </div>
+</header>
+
+<div id="home" class="section-offset">
+    <div class="slide-container">
+        <div class="background-slide">
+            <img src="/static/images/background_0.jpg" alt="Background">
+        </div>
+        <div class="background-slide">
+            <img src="/static/images/background_1.jpg" alt="Background">
+        </div>
+        <div class="background-slide">
+            <img src="/static/images/background_2.jpg" alt="Background">
+        </div>
+        <div class="overlay">
+            <div class="title white">
+                <p><%= content.description %></p>
+            </div>
+            <div class="welcome">
+                <p><%= content.welcome_message %></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="main-page">
+    <div class="content">
+        <div id="about" class="title black section-offset">
+            <p><%= content.about_me %></p>
+        </div>
+        <div class="row-section">
+            <div class="column-section about-section">
+                <h1><%= content.name %></h1>
+                <p><%= content.about_description %></p>
+                <div class="logos-container">
+                    <a href="https://uwaterloo.ca/" class="logo-link" target="_blank">
+                        <img src="/static/icons/uwaterloo-logo.png" alt="University of Waterloo Logo">
+                    </a>
+                    <a href="http://www.virtualphy.com" class="logo-link" target="_blank">
+                        <img src="/static/icons/vp_logo.png" alt="Virtual Physics">
+                    </a>
+                </div>
+                <h2><%= content.experiences %></h2>
+                <p><%= content.highschool_experience %></p>
+                <h2><%= content.interests_and_awards %></h2>
+                <% content.awards.forEach(award => { %>
+                    <p align="left">- <%= award %></p>
+                <% }); %>
+                <p></p>
+                <a class="transparent-button" href="/resume/<%= content.resume_file %>.pdf" target="_blank"><%= content.resume_download %></a>
+            </div>
+            <div id="about-img">
+                <img src="/static/images/profil.jpg">
+            </div>
+        </div>
+        <div id="experiences" class="title black section-offset">
+            <p><%= content.experiences %></p>
+        </div>
+        <% content.experiences_section.forEach(job_exp => { %>
+            <div class="exp-section">
+                <div class="exp-text">
+                    <p class="exp-name"><%= job_exp.name %></p>
+                    <p class="exp-type"><%= job_exp.type %></p>
+                    <p class="exp-description"><%= job_exp.description %></p>
+                    <p></p>
+                    <a class="transparent-button" href="/<%= job_exp.link %>"><%= content.discover %></a>
+                </div>
+                <div class="exp-img">
+                    <img src="/static/<%= job_exp.image %>" alt="">
+                </div>
+            </div>
+        <% }); %>
+        <div id="projects" class="title black section-offset">
+            <p><%= content.projects %></p>
+        </div>
+        <% content.projects_section.forEach(project => { %>
+            <div class="exp-section">
+                <div class="exp-text">
+                    <p class="exp-name"><%= project.name %></p>
+                    <p class="exp-type"><%= project.type %></p>
+                    <p class="exp-description"><%= project.description %></p>
+                    <p></p>
+                    <a class="transparent-button" href="<%= project.link %>" target="_blank"><%= content.discover %></a>
+                </div>
+                <div class="exp-img">
+                    <img src="/static/<%= project.image %>" alt="">
+                </div>
+            </div>
+        <% }); %>
+    </div>
+</div>
+<%- include('footer') %>
+<script src="/static/js/jquery-3.7.1.js"></script>
+<script src="/static/js/main.js"></script>
+</body>
+</html>

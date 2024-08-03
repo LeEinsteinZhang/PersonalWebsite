@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="<%= lang %>">
+<head>
+    <title><%= content.title %></title>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta content="<%= content.description %>" name="description">
+    <meta name="google" content="notranslate" />
+    <meta name="msapplication-tap-highlight" content="no">
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/icons/icon.png">
+    <link rel="icon" href="/static/icons/favicon.ico">
+    <link rel="shortcut icon" href="/static/icons/favicon.ico">
+    <link href="/static/css/css_file.css" rel="stylesheet">
+    <script src="/static/js/dropdown_menu.js"></script>
+</head>
+
+<body>
+<header>
+  <nav>
+    <div class="menu"> <a href="/" class="logo"><img src="/static/icons/logo.png" alt="Logo"></a>
+      <ul>
+        <li><a href="/"><%= content.home %></a></li>
+        <li><a href="/#about"><%= content.about %></a></li>
+        <li><a href="/#experiences"><%= content.experiences %></a></li>
+        <li><a href="/#projects"><%= content.projects %></a></li>
+        <li><a href="/resume/<%= content.resume_file %>.pdf" target="_blank"><%= content.resume %></a></li>
+      </ul>
+      <div class="row-section">
+        <div class="language-switcher"> 
+          <a id="lang-switch" href="/switch_lang/<%= lang === 'en' ? 'zh' : 'en' %>?next=<%= request.path %>"><%= lang === 'en' ? '中文' : 'EN' %></a>
+        </div>
+        <div class="dropdown-menu">
+          <button class="dropdown-btn">&#9776;</button>
+          <div class="dropdown-content">
+            <a href="/"><%= content.home %></a> 
+            <a href="/resume/<%= content.resume_file %>.pdf" target="_blank"><%= content.resume %></a>
+            <% content.sub_nav.forEach(item => { %>
+              <a href="/<%= item.link %>" title="" class="<%= current_page === item.link ? 'active' : '' %>"><%= item.name %></a>
+            <% }); %>
+          </div>
+      </div>
+    </div>
+  </nav>
+  <div class="color-bar">
+    <div class="color-block site-c1"></div>
+    <div class="color-block site-c2"></div>
+    <div class="color-block site-c3"></div>
+    <div class="color-block site-c4"></div>
+  </div>
+  <div class="sub-nav">
+    <ul>
+      <% content.sub_nav.forEach(item => { %>
+        <li><a href="/<%= item.link %>" title="" class="<%= current_page === item.link ? 'active' : '' %>"><%= item.name %></a></li>
+      <% }); %>
+    </ul>
+  </div>
+</header>
+<div class="header-background"></div>
+<div class="exp-page">
+  <div class="content">
+      <div class="column-section">
+          <div class="canvas-container"> 
+              <img src="/static/<%= content.background %>" alt="">
+              <div class="canvas-overlay"></div>
+              <div class="sub-title">
+                  <p><%= content.title %></p>
+              </div>
+          </div>
+          <div class="description">
+              <p><%= content.description %></p>
+              <% if (content.quote && content.quote.trim() !== '') { %>
+              <blockquote>
+                  <h2>"<%= content.quote %>"</h2>
+                  <small>- <%= content.quote_author %></small>
+              </blockquote>
+              <% } %>
+          </div>
+          <% if (content.job_projects) { %>
+          <% content.job_projects.forEach(project => { %>
+          <div class="exp-section">
+              <div class="exp-text">
+                  <p class="exp-name"><%= project.exp_name %></p>
+                  <p class="exp-type"><%= project.exp_type %></p>
+                  <p class="exp-description"><%= project.exp_description %></p>
+                  <a class="transparent-button" href="<%= project.link_url %>" target="_blank"><%= project.link_text %></a>
+              </div>
+              <div class="exp-img">
+                  <img src="/static/<%= project.image %>" alt="">
+              </div>
+          </div>
+          <% }); %>
+          <% } %>
+          <% if (content.exp_sections) { %>
+          <% content.exp_sections.forEach(row => { %>
+          <% if (row.quote && row.quote.text && row.quote.text.trim() !== '') { %>
+          <div class="description">
+            <p><%= row.quote.description %></p>
+            <blockquote>
+                <h2>"<%= row.quote.text %>"</h2>
+                <small>- <%= row.quote.quote_author %></small>
+            </blockquote>
+          </div>
+          <% } %>
+          <div class="images">
+              <% row.images.forEach(img => { %>
+              <div class="img-container margin-10"> 
+                  <img src="/static/<%= img.src %>" alt="<%= img.alt %>">
+                  <p><%= img.caption %></p>
+              </div>
+              <% }); %>
+          </div>
+          <% }); %>
+          <% } %>
+          <div class="row-section">
+              <div class="img-container"> 
+                  <img src="/static/<%= content.main_image %>" alt="Main"> 
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<%- include('footer') %>
+<script src="/static/js/jquery-3.7.1.js"></script>
+<script src="/static/js/main.js"></script>
+</body>
+</html>
