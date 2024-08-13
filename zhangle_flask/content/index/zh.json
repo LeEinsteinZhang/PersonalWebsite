@@ -65,7 +65,7 @@
             "name": "CPU仿真",
             "type": "基于Python的CPU以及周围系统的模拟",
             "description": "开发和实现CPU指令集和CPU外围系统, 如内存管理、I/O、简单的C编译器和操作系统",
-            "link": "https://github.com/LeEinsteinZhang/MemorySimulator",
+            "link": "https://github.com/LeEinsteinZhang/cpuEmulationPublic",
             "image": "images/cpu_emulation/card.jpg"
         },
         {

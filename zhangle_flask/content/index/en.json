@@ -63,7 +63,7 @@
             "name": "CPU Emulation",
             "type": "Python Based CPU Logic Simulation",
             "description": "Develop and implementation of CPU instruction sets and CPU peripheral systems such as memory management, I/O, and simple C compiler and OS",
-            "link": "https://github.com/LeEinsteinZhang/MemorySimulator",
+            "link": "https://github.com/LeEinsteinZhang/cpuEmulationPublic",
             "image": "images/cpu_emulation/card.jpg"
         },
         {
