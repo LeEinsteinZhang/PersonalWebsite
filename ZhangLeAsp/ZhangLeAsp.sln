@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZhangLeAsp", "ZhangLeAsp\ZhangLeAsp.csproj", "{BC536111-45F5-4B3E-A241-8E669983AE88}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC536111-45F5-4B3E-A241-8E669983AE88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC536111-45F5-4B3E-A241-8E669983AE88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC536111-45F5-4B3E-A241-8E669983AE88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC536111-45F5-4B3E-A241-8E669983AE88}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3B0FDD4B-E36B-44C6-93E9-49424E5269A4}
+	EndGlobalSection
+EndGlobal
