@@ -1,0 +1,40 @@
+{
+    "Home": "Home",
+    "About": "About",
+    "Experiences": "Experiences",
+    "Projects": "Projects",
+    "Resume": "Resume",
+    "ResumeFile": "LeZhang",
+    "Discover": "Discover",
+    "SubNav": [
+        {
+            "Name": "Software Developer",
+            "Link": "software-developer"
+        },
+        {
+            "Name": "CS ISA",
+            "Link": "cs-isa"
+        },
+        {
+            "Name": "Website Developer",
+            "Link": "web-developer"
+        },
+        {
+            "Name": "Public-Address System",
+            "Link": "pa-system"
+        },
+        {
+            "Name": "Electrical Engineer",
+            "Link": "electrical-engineer"
+        },
+        {
+            "Name": "Visual Arts",
+            "Link": "visual-arts"
+        }
+    ],
+    "Address": "Waterloo, ON, Canada",
+    "Tel": "+1 (647) 721-6033",
+    "Email": "le.zhang@uwaterloo.ca",
+    "Author": "Zhang, Le",
+    "Rights": "All rights reserved."
+}

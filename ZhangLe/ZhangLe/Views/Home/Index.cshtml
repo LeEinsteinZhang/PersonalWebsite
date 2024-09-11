@@ -1,0 +1,106 @@
+@model HomeViewModel
+
+<div id="home" class="section-offset">
+    <div class="slide-container">
+        <div class="background-slide">
+            <img src="~/images/background_0.jpg" alt="Background">
+        </div>
+        <div class="background-slide">
+            <img src="~/images/background_1.jpg" alt="Background">
+        </div>
+        <div class="background-slide">
+            <img src="~/images/background_2.jpg" alt="Background">
+        </div>
+        <div class="overlay">
+            <div class="title white">
+                <p>@Model?.Description</p>
+            </div>
+            <div class="welcome">
+                <p>@Model?.WelcomeMessage</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="main-page">
+    <div class="content">
+        <div id="about" class="title black section-offset">
+            <p>@Model?.AboutMe</p>
+        </div>
+        <div class="row-section">
+            <div class="column-section about-section">
+                <h1>@Model?.Name</h1>
+                <p>@Model?.AboutDescription</p>
+                <p></p>
+                <div class="logos-container">
+                    <a href="https://uwaterloo.ca/" class="logo-link" target="_blank">
+                        <img src="~/icons/uwaterloo-logo.png" alt="University of Waterloo Logo">
+                    </a>
+                    <a href="http://www.virtualphy.com" class="logo-link" target="_blank">
+                        <img src="~/icons/vp_logo.png" alt="Virtual Physics">
+                    </a>
+                </div>
+                <p></p>
+                <h2>@Model?.Layout?.Experiences</h2>
+                <p>@Model?.HighschoolExperience</p>
+                <p></p>
+                <h2>@Model?.InterestsAndAwards</h2>
+                @if (Model?.Awards != null)
+                {
+                    foreach (var award in Model.Awards)
+                    {
+                        <p align="left">- @award</p>
+                    }
+                }
+                <p></p>
+                <a class="transparent-button" href="@Url.Content("~/resume/" + Model?.Layout?.ResumeFile + ".pdf")" target="_blank">@Model?.ResumeDownload</a>
+            </div>
+            <div id="about-img">
+                <img src="@Url.Content("~/images/profil.jpg")">
+            </div>
+        </div>
+        <div id="experiences" class="title black section-offset">
+            <p>@Model?.Layout?.Experiences</p>
+        </div>
+        @if (Model?.ExperiencesSection != null)
+        {
+            foreach (var jobExp in Model.ExperiencesSection)
+            {
+                <div class="exp-section">
+                    <div class="exp-text">
+                        <p class="exp-name">@jobExp.Name</p>
+                        <p class="exp-type">@jobExp.Type</p>
+                        <p class="exp-description">@jobExp.Description</p>
+                        <p></p>
+                        <a class="transparent-button" href="@Url.Content("~/" + jobExp.Link)">@Model?.Layout?.Discover</a>
+                    </div>
+                    <div class="exp-img">
+                        <img src="@Url.Content("~/" + jobExp.Image)" alt="">
+                    </div>
+                </div>
+            }
+        }
+        <div id="projects" class="title black section-offset">
+            <p>@Model?.Layout?.Projects</p>
+        </div>
+        @if (Model?.ProjectsSection != null)
+        {
+            foreach (var project in Model.ProjectsSection)
+            {
+                <div class="exp-section">
+                    <div class="exp-text">
+                        <p class="exp-name">@project.Name</p>
+                        <p class="exp-type">@project.Type</p>
+                        <p class="exp-description">@project.Description</p>
+                        <p></p>
+                        <a class="transparent-button" href="@project.Link" target="_blank">@Model?.Layout?.Discover</a>
+                    </div>
+                    <div class="exp-img">
+                        <img src="@Url.Content("~/" + project.Image)" alt="">
+                    </div>
+                </div>
+            }
+        }
+    </div>
+</div>

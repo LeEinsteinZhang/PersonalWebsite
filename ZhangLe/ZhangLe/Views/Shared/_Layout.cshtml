@@ -1,0 +1,80 @@
+@model HomeViewModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>@(Model?.Title ?? "Default Title")</title>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta content="@(Model?.Description ?? "Default Description")" name="description">
+    <meta name="google" content="notranslate" />
+    <meta name="msapplication-tap-highlight" content="no">
+    <link rel="apple-touch-icon" sizes="180x180" href="~/icons/icon.png">
+    <link rel="icon" href="~/icons/favicon.ico">
+    <link rel="shortcut icon" href="~/icons/favicon.ico">
+    <link href="~/css/css_file.css" rel="stylesheet">
+</head>
+
+<body>
+<header>
+    <nav>
+        <div class="menu"> 
+            <a href="/" class="logo"><img src="~/icons/logo.png" alt="Logo"></a>
+            <ul>
+                <li><a href="/">@(Model?.Layout?.Home ?? "Home")</a></li>
+                <li><a href="/#about">@(Model?.Layout?.About ?? "About")</a></li>
+                <li><a href="/#experiences">@(Model?.Layout?.Experiences ?? "Experiences")</a></li>
+                <li><a href="/#projects">@(Model?.Layout?.Projects ?? "Projects")</a></li>
+                <li><a href="@Url.Content("~/resume/" + (Model?.Layout?.ResumeFile ?? "default") + ".pdf")" target="_blank">@(Model?.Layout?.Resume ?? "Resume")</a></li>
+            </ul>
+            <div class="row-section">
+                <div class="language-switcher">
+                    <a id="lang-switch" href="@Url.Action("SwitchLang", new { lang = ViewBag.Lang == "en" ? "zh" : "en", next = ViewContext.HttpContext.Request.Path })">
+                        @(ViewBag.Lang == "en" ? "中文" : "EN")
+                    </a>
+                </div>
+
+                <div class="dropdown-menu">
+                    <button class="dropdown-btn">&#9776;</button>
+                    <div class="dropdown-content">
+                        <a href="/">@(Model?.Layout?.Home ?? "Home")</a>
+                        <a href="/#about">@(Model?.Layout?.About ?? "About")</a>
+                        <a href="/#experiences">@(Model?.Layout?.Experiences ?? "Experiences")</a>
+                        <a href="/#projects">@(Model?.Layout?.Projects ?? "Projects")</a>
+                        <a href="@Url.Content("~/resume/" + (Model?.Layout?.ResumeFile ?? "default") + ".pdf")" target="_blank">@(Model?.Layout?.Resume ?? "Resume")</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="color-bar">
+        <div class="color-block site-c1"></div>
+        <div class="color-block site-c2"></div>
+        <div class="color-block site-c3"></div>
+        <div class="color-block site-c4"></div>
+    </div>
+</header>
+
+@RenderBody()
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-address">
+            <p>@(Model?.Layout?.Address ?? "Address")</p>
+            <p>@(Model?.Layout?.Tel ?? "Tel")</p>
+            <p><a href="mailto:@(Model?.Layout?.Email ?? "lez@zhangle.ca")">@(Model?.Layout?.Email ?? "Email")</a></p>
+        </div>
+        <div class="footer-social">
+            <div class="social-media"> 
+                <a href="https://github.com/LeEinsteinZhang" target="_blank"> <img src="~/icons/github_w.png" alt="GitHub"> </a> 
+                <a href="https://www.linkedin.com/in/uw-le-zhang" target="_blank"> <img src="~/icons/linkedin_w.png" alt="LinkedIn"> </a> 
+            </div>
+            <p>&copy; 2024 @(Model?.Layout?.Author ?? "Zhang, Le"). @(Model?.Layout?.Rights ?? "All Rights Reserved")</p>
+        </div>
+    </div>
+</footer>
+<script src="~/js/jquery-3.7.1.js"></script>
+<script src="~/js/main.js"></script>
+</body>
+</html>
