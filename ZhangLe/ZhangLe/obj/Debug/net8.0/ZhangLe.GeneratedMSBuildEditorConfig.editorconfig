@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/lez/git/PersonalWebsite/ZhangLe/ZhangLe
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/lez/git/PersonalWebsite/ZhangLe/ZhangLe/Views/Error/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXJyb3IvRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/lez/git/PersonalWebsite/ZhangLe/ZhangLe/Views/Experiences/Experience.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXhwZXJpZW5jZXMvRXhwZXJpZW5jZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
