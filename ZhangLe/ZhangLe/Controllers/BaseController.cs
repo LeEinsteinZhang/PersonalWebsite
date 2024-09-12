@@ -10,16 +10,14 @@ namespace ZhangLe.Controllers
 
         protected void EnsureSession()
         {
-            // 检查并设置Session中的语言信息
             if (string.IsNullOrEmpty(HttpContext.Session.GetString("Lang")))
             {
-                HttpContext.Session.SetString("Lang", "en"); // 设置默认语言为 "en"
+                HttpContext.Session.SetString("Lang", "en");
             }
 
-            // 检查并设置Session中的前一个页面信息
             if (string.IsNullOrEmpty(HttpContext.Session.GetString("PrevUrl")))
             {
-                HttpContext.Session.SetString("PrevUrl", Request.Path); // 设置当前请求路径作为前一个页面信息
+                HttpContext.Session.SetString("PrevUrl", Request.Path);
             }
         }
 
@@ -32,7 +30,6 @@ namespace ZhangLe.Controllers
 
             var jsonData = System.IO.File.ReadAllText(filePath);
 
-            // 如果反序列化失败，将返回一个新的对象而不是 null
             return JsonConvert.DeserializeObject<T>(jsonData) ?? new T();
         }
 
@@ -41,6 +38,18 @@ namespace ZhangLe.Controllers
             var layoutJsonPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "languages", "layout", $"{lang}.json");
 
             return LoadJsonFile<LayoutViewModel>(layoutJsonPath);
+        }
+
+        public IActionResult SwitchLang(string lang, string next)
+        {
+            if (string.IsNullOrEmpty(lang) || (lang != "en" && lang != "zh"))
+            {
+                lang = "en";
+            }
+
+            HttpContext.Session.SetString("Lang", lang);
+
+            return Redirect(next ?? "/");
         }
     }
 }

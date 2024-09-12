@@ -1,3 +1,9 @@
+@{
+    var lang = Context.Session.GetString("Lang") ?? "en";
+    var prevUrl = Context.Session.GetString("PrevUrl") ?? "/";
+    var currentPath = Context.Request.Path;
+}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,8 +34,8 @@
             </ul>
             <div class="row-section">
                 <div class="language-switcher">
-                    <a id="lang-switch" href="@Url.Action("SwitchLang", new { lang = ViewBag.Lang == "en" ? "zh" : "en", next = ViewContext.HttpContext.Request.Path })">
-                        @(ViewBag.Lang == "en" ? "中文" : "EN")
+                    <a id="lang-switch" href="@Url.Action("SwitchLang", "Base", new { lang = lang == "zh" ? "en" : "zh", next = currentPath })">
+                        @(lang == "zh" ? "EN" : "中文")
                     </a>
                 </div>
 
@@ -52,6 +58,23 @@
         <div class="color-block site-c3"></div>
         <div class="color-block site-c4"></div>
     </div>
+    @if (currentPath != "/")
+    {
+        <div class="sub-nav">
+        <ul>
+            @if (Model?.Layout?.SubNav != null)
+            {
+                foreach (var item in Model.Layout.SubNav)
+                {
+                    <li>
+                        <a href="/@item.Link" class="@(ViewContext.HttpContext.Request.Path == "/" + item.Link ? "active" : "")">@item.Name</a>
+                    </li>
+                }
+            }
+        </ul>
+        </div>
+    }
+</div>
 </header>
 
 @RenderBody()

@@ -1,41 +1,44 @@
 {
-    "title": "Professional Audio",
-    "background": "images/pa_system/w0_0.jpg",
-    "description": "Worked as an audio editor and live sound control for the event operations team in the University of Waterloo ITMS with high rating of performance evaluations. As well as independent build audio power amplifier.",
-    "quote": "Sound is not only the wave. It is vivid dancing element of life.",
-    "quote_author": "Zhang, Le",
-    "job_projects": [],
-    "exp_sections": [
+    "Title": "Professional Audio",
+    "Background": "images/pa_system/w0_0.jpg",
+    "Description": "Professional Audio",
+    "Quote": {
+        "Description": "Worked as an audio editor and live sound control for the event operations team in the University of Waterloo ITMS with high rating of performance evaluations. As well as independently building an audio power amplifier.",
+        "Text": "Sound is not only the wave. It is vivid dancing element of life.",
+        "Author": "Zhang, Le"
+    },
+    "JobProjects": [],
+    "ExpSections": [
         {
-            "quote": {},
-            "images": [
+            "Quote": {},
+            "Images": [
                 {
-                    "src": "images/pa_system/w1_0.jpg",
-                    "alt": "U of Waterloo Black and Golden Room Event",
-                    "caption": "U of Waterloo Black and Golden Room Event"
+                    "Src": "images/pa_system/w1_0.jpg",
+                    "Alt": "U of Waterloo Black and Golden Room Event",
+                    "Caption": "U of Waterloo Black and Golden Room Event"
                 },
                 {
-                    "src": "images/pa_system/w1_1.jpg",
-                    "alt": "Sound Tuning",
-                    "caption": "Sound Tuning"
+                    "Src": "images/pa_system/w1_1.jpg",
+                    "Alt": "Sound Tuning",
+                    "Caption": "Sound Tuning"
                 }
             ]
         },
         {
-            "quote": {},
-            "images": [
+            "Quote": {},
+            "Images": [
                 {
-                    "src": "images/pa_system/w2_0.jpg",
-                    "alt": "DIY Amplifier",
-                    "caption": "DIY Amplifier"
+                    "Src": "images/pa_system/w2_0.jpg",
+                    "Alt": "DIY Amplifier",
+                    "Caption": "DIY Amplifier"
                 },
                 {
-                    "src": "images/pa_system/w2_1.jpg",
-                    "alt": "During the Event",
-                    "caption": "During the Event"
+                    "Src": "images/pa_system/w2_1.jpg",
+                    "Alt": "During the Event",
+                    "Caption": "During the Event"
                 }
             ]
         }
     ],
-    "main_image": "images/pa_system/w3_0.jpg"
+    "MainImage": "images/pa_system/w3_0.jpg"
 }

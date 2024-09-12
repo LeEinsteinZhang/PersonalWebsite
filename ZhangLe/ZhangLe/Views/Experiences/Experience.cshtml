@@ -1,21 +1,5 @@
 @model ExperienceViewModel
-
 <div class="header-background"></div>
-
-<div class="sub-nav">
-    <ul>
-        @if (Model.Layout?.SubNav != null)
-        {
-            foreach (var item in Model.Layout.SubNav)
-            {
-                <li>
-                    <a href="/@item.Link" class="@(ViewContext.HttpContext.Request.Path == "/" + item.Link ? "active" : "")">@item.Name</a>
-                </li>
-            }
-        }
-    </ul>
-</div>
-
 <div class="exp-page">
     <div class="content">
         <div class="column-section">
@@ -46,7 +30,7 @@
                             <p class="exp-type">@project.Type</p>
                             <p class="exp-description">@project.Description</p>
                             <p></p>
-                            <a class="transparent-button" href="@Url.Content("~/" + project.Link)" target="_blank">@Model?.Layout?.Discover</a>
+                            <a class="transparent-button" href=@project.Link target="_blank">@Model?.Layout?.Discover</a>
                         </div>
                         <div class="exp-img">
                             <img src=@project.Image alt="@project.Name">
@@ -54,7 +38,7 @@
                     </div>
                 }
             }
-            @if (Model.ExpSections != null && Model.ExpSections.Any())
+            @if (Model?.ExpSections != null && Model.ExpSections.Any())
             {
                 foreach (var row in Model.ExpSections)
                 {
@@ -72,7 +56,7 @@
                         </div>
                     }
                     <div class="images">
-                        @foreach (var img in row.Images)
+                        @foreach (var img in row?.Images ?? Enumerable.Empty<ImageViewModel>())
                         {
                             <div class="img-container margin-10"> 
                                 <img src=@img.Src alt="@img.Alt">
@@ -84,7 +68,7 @@
             }
             <div class="row-section">
                 <div class="img-container"> 
-                    <img src=@Model.MainImage alt="Main"> 
+                    <img src=@Model?.MainImage alt="Main"> 
                 </div>
             </div>
         </div>

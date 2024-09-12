@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ZhangLe")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+32af504eacf7e5cabb22cb74dfae617c5d4bbbfb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+46092de808a4f03a3707b092e5860a7276ebf442")]
 [assembly: System.Reflection.AssemblyProductAttribute("ZhangLe")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ZhangLe")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

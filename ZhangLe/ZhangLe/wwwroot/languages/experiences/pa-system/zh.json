@@ -1,41 +1,44 @@
 {
-    "title": "音频工程",
-    "background": "images/pa_system/w0_0.jpg",
-    "description": "曾在滑铁卢大学 ITMS 的活动运营团队担任音频编辑和现场声音控制，并获得高评价。并独自搭建出音频放大器",
-    "quote": "声音不仅仅是波。 更是是生动舞蹈在空气中的元素。",
-    "quote_author": "张乐",
-    "job_projects": [],
-    "exp_sections": [
+    "Title": "音频工程",
+    "Background": "images/pa_system/w0_0.jpg",
+    "Description": "音频工程",
+    "Quote": {
+        "Description": "曾在滑铁卢大学 ITMS 的活动运营团队担任音频编辑和现场声音控制，并获得高评价。并独自搭建出音频放大器。",
+        "Text": "声音不仅仅是波。更是生动舞蹈在空气中的元素。",
+        "Author": "张乐"
+    },
+    "JobProjects": [],
+    "ExpSections": [
         {
-            "quote": {},
-            "images": [
+            "Quote": {},
+            "Images": [
                 {
-                    "src": "images/pa_system/w1_0.jpg",
-                    "alt": "滑铁卢大学活动现场",
-                    "caption": "滑铁卢大学活动现场"
+                    "Src": "images/pa_system/w1_0.jpg",
+                    "Alt": "滑铁卢大学活动现场",
+                    "Caption": "滑铁卢大学活动现场"
                 },
                 {
-                    "src": "images/pa_system/w1_1.jpg",
-                    "alt": "调音",
-                    "caption": "调音"
+                    "Src": "images/pa_system/w1_1.jpg",
+                    "Alt": "调音",
+                    "Caption": "调音"
                 }
             ]
         },
         {
-            "quote": {},
-            "images": [
+            "Quote": {},
+            "Images": [
                 {
-                    "src": "images/pa_system/w2_0.jpg",
-                    "alt": "自制功放",
-                    "caption": "自制功放"
+                    "Src": "images/pa_system/w2_0.jpg",
+                    "Alt": "自制功放",
+                    "Caption": "自制功放"
                 },
                 {
-                    "src": "images/pa_system/w2_1.jpg",
-                    "alt": "高中大型活动期间",
-                    "caption": "高中大型活动期间"
+                    "Src": "images/pa_system/w2_1.jpg",
+                    "Alt": "高中大型活动期间",
+                    "Caption": "高中大型活动期间"
                 }
             ]
         }
     ],
-    "main_image": "images/pa_system/w3_0.jpg"
+    "MainImage": "images/pa_system/w3_0.jpg"
 }

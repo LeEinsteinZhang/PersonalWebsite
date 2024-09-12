@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using ZhangLe.ViewModels;
 using ZhangLe.ViewModels.Shared;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Localization;
 using System.IO;
 
 namespace ZhangLe.Controllers
@@ -11,7 +13,7 @@ namespace ZhangLe.Controllers
         public IActionResult Index()
         {   
             EnsureSession();
-            var lang = HttpContext.Session.GetString("Lang");
+            var lang = HttpContext.Session.GetString("Lang") ?? "en";
             var homeViewModel = LoadHomeViewModel(lang);
             return View(homeViewModel);
         }

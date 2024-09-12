@@ -1,41 +1,44 @@
 {
-    "title": "网站运营",
-    "background": "images/web_developer/w0_0.jpg",
-    "description": "中学时期独立开发完成了中国内地明星门户网站，大学期间搭建了个人网页。 并在滑铁卢大学COOP期间还负责滑铁卢大学工程学院的网站维护工作。",
-    "quote": "Hello World!",
-    "quote_author": "张乐",
-    "job_projects": [],
-    "exp_sections": [
+    "Title": "全栈开发",
+    "Background": "images/web_developer/w0_0.jpg",
+    "Description": "全栈开发",
+    "Quote": {
+        "Description": "中学时期独立开发完成了中国内地明星门户网站，大学期间搭建了个人网页。",
+        "Text": "Hello World!",
+        "Author": "张乐"
+    },
+    "JobProjects": [],
+    "ExpSections": [
         {
-            "quote": {},
-            "images": [
+            "Quote": {},
+            "Images": [
                 {
-                    "src": "images/web_developer/w1_0.png",
-                    "alt": "迪丽热巴的门户网站",
-                    "caption": "迪丽热巴的门户网站"
+                    "Src": "images/web_developer/w1_0.png",
+                    "Alt": "迪丽热巴的门户网站",
+                    "Caption": "迪丽热巴的门户网站"
                 },
                 {
-                    "src": "images/web_developer/w1_1.png",
-                    "alt": "代码展示",
-                    "caption": "代码展示"
+                    "Src": "images/web_developer/w1_1.png",
+                    "Alt": "代码展示",
+                    "Caption": "代码展示"
                 }
             ]
         },
         {
-            "quote": {},
-            "images": [
+            "Quote": {},
+            "Images": [
                 {
-                    "src": "images/web_developer/w2_0.png",
-                    "alt": "个人网站的搭建",
-                    "caption": "个人网站的搭建"
+                    "Src": "images/web_developer/w2_0.png",
+                    "Alt": "个人网站的搭建",
+                    "Caption": "个人网站的搭建"
                 },
                 {
-                    "src": "images/web_developer/w2_1.png",
-                    "alt": "代码展示",
-                    "caption": "代码展示"
+                    "Src": "images/web_developer/w2_1.png",
+                    "Alt": "代码展示",
+                    "Caption": "代码展示"
                 }
             ]
         }
     ],
-    "main_image": "images/web_developer/w3_0.jpg"
+    "MainImage": "images/web_developer/w3_0.jpg"
 }

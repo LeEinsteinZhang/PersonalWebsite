@@ -1,50 +1,52 @@
 {
-    "title": "计算机助教",
-    "background": "images/cs_isa/w0_0.jpg",
-    "description": "在 COOP 期间，作为滑铁卢大学数学系 CS136/l 的教学支持助理 (ISA)，我积极协助教师，通过教程和数字平台促进学生学习，管理课程作业评分，并通过监考考试维护学术诚信， 确保支持性的教育环境。",
-    "quote": "传授知识是一个令人愉悦的过程。",
-    "quote_author": "张乐",
-    "job_projects": [
+    "Title": "计算机助教",
+    "Background": "images/cs_isa/w0_0.jpg",
+    "Description": "计算机助教",
+    "Quote": {
+        "Description": "在 COOP 期间，作为滑铁卢大学数学系 CS136/l 的教学支持助理 (ISA)，我积极协助教师，通过教程和数字平台促进学生学习，管理课程作业评分，并通过监考考试维护学术诚信，确保支持性的教育环境。",
+        "Text": "传授知识是一个令人愉悦的过程。",
+        "Author": "张乐"
+    },
+    "JobProjects": [
         {
-            "exp_name": "脚本开发",
-            "exp_type": "利用C和Python以及脚本进行脚本开发",
-            "exp_description": "课程相关脚本的开发和实现提高了评分过程和数据库通信的速度",
-            "link_text": "了解更多",
-            "link_url": "https://github.com/LeEinsteinZhang/marks_scripts",
-            "image": "images/cs_isa/p0_0.jpg"
+            "Name": "脚本开发",
+            "Type": "利用C和Python进行脚本开发",
+            "Description": "课程相关脚本的开发和实现提高了评分过程和数据库通信的速度。",
+            "Link": "https://github.com/LeEinsteinZhang/marks_scripts",
+            "Image": "images/cs_isa/p0_0.jpg"
         }
     ],
-    "exp_sections": [
-        {
-            "quote": {},
-            "images": [
+    "ExpSections": [
+        {   
+            "Quote": {},
+            "Images": [
                 {
-                    "src": "images/cs_isa/w1_0.jpg",
-                    "alt": "递归解释",
-                    "caption": "递归解释"
+                    "Src": "images/cs_isa/w1_0.jpg",
+                    "Alt": "递归解释",
+                    "Caption": "递归解释"
                 },
                 {
-                    "src": "images/cs_isa/w1_1.jpg",
-                    "alt": "代码调试",
-                    "caption": "代码调试"
+                    "Src": "images/cs_isa/w1_1.jpg",
+                    "Alt": "代码调试",
+                    "Caption": "代码调试"
                 }
             ]
         },
         {
-            "quote": {},
-            "images": [
+            "Quote": {},
+            "Images": [
                 {
-                    "src": "images/cs_isa/w2_0.jpg",
-                    "alt": "创建课程笔记",
-                    "caption": "创建课程笔记"
+                    "Src": "images/cs_isa/w2_0.jpg",
+                    "Alt": "创建课程笔记",
+                    "Caption": "创建课程笔记"
                 },
                 {
-                    "src": "images/cs_isa/w2_1.jpg",
-                    "alt": "Bash 脚本编码",
-                    "caption": "Bash 脚本编码"
+                    "Src": "images/cs_isa/w2_1.jpg",
+                    "Alt": "Bash 脚本编码",
+                    "Caption": "Bash 脚本编码"
                 }
             ]
         }
     ],
-    "main_image": "images/cs_isa/w3_0.jpg"
+    "MainImage": "images/cs_isa/w3_0.jpg"
 }
