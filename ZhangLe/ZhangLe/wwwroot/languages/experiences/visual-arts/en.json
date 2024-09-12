@@ -1,45 +1,48 @@
 {
-    "title": "Visual Arts",
-    "background": "images/visual_arts/w0_0.jpg",
-    "description": "Photography is a technique that uses light. I have worked as a commercial photographer, capturing images of large commercial events. I also founded a photography club with friends in high school and organized several large club events in the form of photography lectures. During this period, I received many awards from the school. Personally, I am particularly interested in classical photography.",
-    "quote": "The eye should learn to listen before it looks.",
-    "quote_author": "Robert Frank",
-    "job_projects": [],
-    "exp_sections": [
+    "Title": "Visual Arts",
+    "Background": "images/visual_arts/w0_0.jpg",
+    "Description": "Visual Arts",
+    "Quote": {
+        "Description": "Photography is a technique that uses light. I have worked as a commercial photographer, capturing images of large commercial events. I also founded a photography club with friends in high school and organized several large club events in the form of photography lectures. During this period, I received many awards from the school. Personally, I am particularly interested in classical photography.",
+        "Text": "The eye should learn to listen before it looks.",
+        "Author": "Robert Frank"
+    },
+    "JobProjects": [],
+    "ExpSections": [
         {
-            "quote": {},
-            "images": [
+            "Quote": {},
+            "Images": [
                 {
-                    "src": "images/visual_arts/w1_0.jpg",
-                    "alt": "Commercial Photography - Dilireba Event",
-                    "caption": "Commercial Photography - Dilireba Event"
+                    "Src": "images/visual_arts/w1_0.jpg",
+                    "Alt": "Commercial Photography - Dilireba Event",
+                    "Caption": "Commercial Photography - Dilireba Event"
                 },
                 {
-                    "src": "images/visual_arts/w1_1.jpg",
-                    "alt": "Blueprint Photo of a Building",
-                    "caption": "Blueprint Photo of a Building"
+                    "Src": "images/visual_arts/w1_1.jpg",
+                    "Alt": "Blueprint Photo of a Building",
+                    "Caption": "Blueprint Photo of a Building"
                 }
-                ]
+            ]
         },
         {
-            "quote": {
-                    "description": "In the photography club, not only Visual Arts activities are conducted, but also video recording. And we completed several groups of microfilm shooting and post-production during high school.",
-                    "text": "The foundation of film art is editing.",
-                    "quote_author": "Vsevolod Pudovkin"
-                },
-            "images": [
+            "Quote": {
+                "Description": "In the photography club, not only Visual Arts activities are conducted, but also video recording. And we completed several groups of microfilm shooting and post-production during high school.",
+                "Text": "The foundation of film art is editing.",
+                "Author": "Vsevolod Pudovkin"
+            },
+            "Images": [
                 {
-                    "src": "images/visual_arts/w2_0.jpg",
-                    "alt": "Editing Video",
-                    "caption": "Editing Video"
+                    "Src": "images/visual_arts/w2_0.jpg",
+                    "Alt": "Editing Video",
+                    "Caption": "Editing Video"
                 },
                 {
-                    "src": "images/visual_arts/w2_1.jpg",
-                    "alt": "One of the High School Film job_projects",
-                    "caption": "One of the High School Film job_projects"
+                    "Src": "images/visual_arts/w2_1.jpg",
+                    "Alt": "One of the High School Film",
+                    "Caption": "One of the High School Film"
                 }
             ]
         }
     ],
-    "main_image": "images/visual_arts/w3_0.jpg"
+    "MainImage": "images/visual_arts/w3_0.jpg"
 }

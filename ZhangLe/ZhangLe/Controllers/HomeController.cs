@@ -9,8 +9,9 @@ namespace ZhangLe.Controllers
     {
         [Route("/")]
         public IActionResult Index()
-        {
-            var lang = HttpContext.Session.GetString("lang") ?? _defaultLang;
+        {   
+            EnsureSession();
+            var lang = HttpContext.Session.GetString("Lang");
             var homeViewModel = LoadHomeViewModel(lang);
             return View(homeViewModel);
         }

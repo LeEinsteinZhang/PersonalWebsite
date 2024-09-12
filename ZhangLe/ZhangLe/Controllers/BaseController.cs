@@ -7,7 +7,21 @@ namespace ZhangLe.Controllers
 {
     public class BaseController : Controller
     {
-        protected readonly string _defaultLang = "en";
+
+        protected void EnsureSession()
+        {
+            // 检查并设置Session中的语言信息
+            if (string.IsNullOrEmpty(HttpContext.Session.GetString("Lang")))
+            {
+                HttpContext.Session.SetString("Lang", "en"); // 设置默认语言为 "en"
+            }
+
+            // 检查并设置Session中的前一个页面信息
+            if (string.IsNullOrEmpty(HttpContext.Session.GetString("PrevUrl")))
+            {
+                HttpContext.Session.SetString("PrevUrl", Request.Path); // 设置当前请求路径作为前一个页面信息
+            }
+        }
 
         protected T LoadJsonFile<T>(string filePath) where T : new()
         {

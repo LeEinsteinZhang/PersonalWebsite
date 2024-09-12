@@ -5,25 +5,24 @@ using System.IO;
 
 namespace ZhangLe.Controllers
 {
-    public class ExperienceController : BaseController
+    public class ExperiencesController : BaseController
     {
-        [Route("/experience/{id}")]
-        public IActionResult Detail(string id)
-        {
-            var lang = HttpContext.Session.GetString("lang") ?? _defaultLang;
-            var experienceModel = LoadExperienceViewModel(lang, id);
-            return View(experienceModel);
+        [Route("/{experience}")]
+        public IActionResult Experience(string experience)
+        {   
+            var lang = HttpContext.Session.GetString("Lang") ?? "en";
+            var currentPage = HttpContext.Session.GetString("CurrentPage") ?? experience;
+            var viewModel = LoadExperienceViewModel(lang, experience);
+
+            return View(viewModel);
         }
 
-        private ExperienceViewModel LoadExperienceViewModel(string lang, string id)
+        private ExperienceViewModel LoadExperienceViewModel(string lang, string experience)
         {
-            var experienceJsonPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "languages", "experiences", id, $"{lang}.json");
-
-            var experienceModel = LoadJsonFile<ExperienceViewModel>(experienceJsonPath);
-
-            experienceModel.Layout = LoadLayout(lang);
-
-            return experienceModel;
+            var experienceJsonPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "languages", "experiences", $"{experience}", $"{lang}.json");
+            var viewModel = LoadJsonFile<ExperienceViewModel>(experienceJsonPath);
+            viewModel.Layout = LoadLayout(lang);
+            return viewModel;
         }
     }
 }

@@ -76,7 +76,7 @@
                         <a class="transparent-button" href="@Url.Content("~/" + jobExp.Link)">@Model?.Layout?.Discover</a>
                     </div>
                     <div class="exp-img">
-                        <img src="@Url.Content("~/" + jobExp.Image)" alt="">
+                        <img src="@Url.Content("~/" + jobExp.Image)" alt=@jobExp.Name>
                     </div>
                 </div>
             }

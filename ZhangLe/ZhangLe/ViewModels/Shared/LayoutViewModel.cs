@@ -9,7 +9,7 @@ namespace ZhangLe.ViewModels.Shared
         public string? Resume { get; set; }
         public string? ResumeFile { get; set; }
         public string? Discover { get; set; }
-        public List<SubNavItemViewModel>? SubNav { get; set; }
+        public List<SubNavItem>? SubNav { get; set; }
 
         public string? Address { get; set; }
         public string? Tel { get; set; }
@@ -18,7 +18,7 @@ namespace ZhangLe.ViewModels.Shared
         public string? Rights { get; set; }
     }
 
-    public class SubNavItemViewModel
+    public class SubNavItem
     {
         public string? Name { get; set; }
         public string? Link { get; set; }

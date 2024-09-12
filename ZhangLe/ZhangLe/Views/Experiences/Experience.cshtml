@@ -1,0 +1,92 @@
+@model ExperienceViewModel
+
+<div class="header-background"></div>
+
+<div class="sub-nav">
+    <ul>
+        @if (Model.Layout?.SubNav != null)
+        {
+            foreach (var item in Model.Layout.SubNav)
+            {
+                <li>
+                    <a href="/@item.Link" class="@(ViewContext.HttpContext.Request.Path == "/" + item.Link ? "active" : "")">@item.Name</a>
+                </li>
+            }
+        }
+    </ul>
+</div>
+
+<div class="exp-page">
+    <div class="content">
+        <div class="column-section">
+            <div class="canvas-container"> 
+                <img src=@Model.Background alt=@Model.Title>
+                <div class="canvas-overlay"></div>
+                <div class="sub-title">
+                    <p>@Model.Title</p>
+                </div>
+            </div>
+            <div class="description">
+                @if (Model.Quote != null)
+                {
+                    <p>@Model.Quote.Description</p>
+                    <blockquote>
+                        <h2>"@Model.Quote.Text"</h2>
+                        <small>- @Model.Quote.Author</small>
+                    </blockquote>
+                }
+            </div>
+            @if (Model.JobProjects != null && Model.JobProjects.Any())
+            {
+                foreach (var project in Model.JobProjects)
+                {
+                    <div class="exp-section">
+                        <div class="exp-text">
+                            <p class="exp-name">@project.Name</p>
+                            <p class="exp-type">@project.Type</p>
+                            <p class="exp-description">@project.Description</p>
+                            <p></p>
+                            <a class="transparent-button" href="@Url.Content("~/" + project.Link)" target="_blank">@Model?.Layout?.Discover</a>
+                        </div>
+                        <div class="exp-img">
+                            <img src=@project.Image alt="@project.Name">
+                        </div>
+                    </div>
+                }
+            }
+            @if (Model.ExpSections != null && Model.ExpSections.Any())
+            {
+                foreach (var row in Model.ExpSections)
+                {
+                    if (row.Quote != null && 
+                        (!string.IsNullOrEmpty(row.Quote.Description) || 
+                        !string.IsNullOrEmpty(row.Quote.Text) || 
+                        !string.IsNullOrEmpty(row.Quote.Author)))
+                    {
+                        <div class="description">
+                            <p>@row.Quote?.Description</p>
+                            <blockquote>
+                                <h2>"@row.Quote?.Text"</h2>
+                                <small>- @row.Quote?.Author</small>
+                            </blockquote>
+                        </div>
+                    }
+                    <div class="images">
+                        @foreach (var img in row.Images)
+                        {
+                            <div class="img-container margin-10"> 
+                                <img src=@img.Src alt="@img.Alt">
+                                <p>@img.Caption</p>
+                            </div>
+                        }
+                    </div>
+                }
+            }
+            <div class="row-section">
+                <div class="img-container"> 
+                    <img src=@Model.MainImage alt="Main"> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

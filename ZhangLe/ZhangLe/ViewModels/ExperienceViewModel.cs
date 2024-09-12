@@ -8,8 +8,7 @@ namespace ZhangLe.ViewModels
         public string? Title { get; set; }
         public string? Background { get; set; }
         public string? Description { get; set; }
-        public string? Quote { get; set; }
-        public string? QuoteAuthor { get; set; }
+        public QuoteViewModel? Quote { get; set; }
         public List<ItemViewModel>? JobProjects { get; set; }
         public List<ExperienceSectionViewModel>? ExpSections { get; set; }
         public string? MainImage { get; set; }
@@ -23,6 +22,7 @@ namespace ZhangLe.ViewModels
 
     public class QuoteViewModel
     {
+        public string? Description { get; set; }
         public string? Text { get; set; }
         public string? Author { get; set; }
     }
