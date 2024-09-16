@@ -1,27 +1,10 @@
 @model HomeViewModel
 
-<div id="home" class="section-offset">
-    <div class="slide-container">
-        <div class="background-slide">
-            <img src="~/images/background_0.jpg" alt="Background">
-        </div>
-        <div class="background-slide">
-            <img src="~/images/background_1.jpg" alt="Background">
-        </div>
-        <div class="background-slide">
-            <img src="~/images/background_2.jpg" alt="Background">
-        </div>
-        <div class="overlay">
-            <div class="title white">
-                <p>@Model?.Description</p>
-            </div>
-            <div class="welcome">
-                <p>@Model?.WelcomeMessage</p>
-            </div>
-        </div>
-    </div>
-</div>
+@{
+    ViewBag.Discover = Model.Layout.Discover;
+}
 
+<partial name="_SlideShow" model="Model" />
 
 <div class="main-page">
     <div class="content">
@@ -65,20 +48,10 @@
         </div>
         @if (Model?.ExperiencesSection != null)
         {
+            ViewBag.OpenInNewTab = false;
             foreach (var jobExp in Model.ExperiencesSection)
             {
-                <div class="exp-section">
-                    <div class="exp-text">
-                        <p class="exp-name">@jobExp.Name</p>
-                        <p class="exp-type">@jobExp.Type</p>
-                        <p class="exp-description">@jobExp.Description</p>
-                        <p></p>
-                        <a class="transparent-button" href="@Url.Content("~/" + jobExp.Link)">@Model?.Layout?.Discover</a>
-                    </div>
-                    <div class="exp-img">
-                        <img src="@Url.Content("~/" + jobExp.Image)" alt=@jobExp.Name>
-                    </div>
-                </div>
+                <partial name="_ExpCard" model="jobExp" />
             }
         }
         <div id="projects" class="title black section-offset">
@@ -86,20 +59,10 @@
         </div>
         @if (Model?.ProjectsSection != null)
         {
+            ViewBag.OpenInNewTab = true;
             foreach (var project in Model.ProjectsSection)
             {
-                <div class="exp-section">
-                    <div class="exp-text">
-                        <p class="exp-name">@project.Name</p>
-                        <p class="exp-type">@project.Type</p>
-                        <p class="exp-description">@project.Description</p>
-                        <p></p>
-                        <a class="transparent-button" href="@project.Link" target="_blank">@Model?.Layout?.Discover</a>
-                    </div>
-                    <div class="exp-img">
-                        <img src="@Url.Content("~/" + project.Image)" alt="">
-                    </div>
-                </div>
+                <partial name="_ExpCard" model="project" />
             }
         }
     </div>

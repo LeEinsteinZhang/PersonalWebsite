@@ -1,4 +1,9 @@
 @model ExperienceViewModel
+
+@{
+    ViewBag.Discover = Model.Layout.Discover;
+}
+
 <div class="header-background"></div>
 <div class="exp-page">
     <div class="content">
@@ -24,18 +29,8 @@
             {
                 foreach (var project in Model.JobProjects)
                 {
-                    <div class="exp-section">
-                        <div class="exp-text">
-                            <p class="exp-name">@project.Name</p>
-                            <p class="exp-type">@project.Type</p>
-                            <p class="exp-description">@project.Description</p>
-                            <p></p>
-                            <a class="transparent-button" href=@project.Link target="_blank">@Model?.Layout?.Discover</a>
-                        </div>
-                        <div class="exp-img">
-                            <img src=@project.Image alt="@project.Name">
-                        </div>
-                    </div>
+                    ViewBag.OpenInNewTab = true;
+                    <partial name="_ExpCard" model="project" />
                 }
             }
             @if (Model?.ExpSections != null && Model.ExpSections.Any())

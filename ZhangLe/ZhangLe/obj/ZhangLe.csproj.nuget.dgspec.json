@@ -1,25 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "/Users/lez/git/PersonalWebsite/ZhangLe/ZhangLe/ZhangLe.csproj": {}
+    "C:\\Users\\leein\\git\\PersonalWebsite\\ZhangLe\\ZhangLe\\ZhangLe.csproj": {}
   },
   "projects": {
-    "/Users/lez/git/PersonalWebsite/ZhangLe/ZhangLe/ZhangLe.csproj": {
+    "C:\\Users\\leein\\git\\PersonalWebsite\\ZhangLe\\ZhangLe\\ZhangLe.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/lez/git/PersonalWebsite/ZhangLe/ZhangLe/ZhangLe.csproj",
+        "projectUniqueName": "C:\\Users\\leein\\git\\PersonalWebsite\\ZhangLe\\ZhangLe\\ZhangLe.csproj",
         "projectName": "ZhangLe",
-        "projectPath": "/Users/lez/git/PersonalWebsite/ZhangLe/ZhangLe/ZhangLe.csproj",
-        "packagesPath": "/Users/lez/.nuget/packages/",
-        "outputPath": "/Users/lez/git/PersonalWebsite/ZhangLe/ZhangLe/obj/",
+        "projectPath": "C:\\Users\\leein\\git\\PersonalWebsite\\ZhangLe\\ZhangLe\\ZhangLe.csproj",
+        "packagesPath": "C:\\Users\\leein\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\leein\\git\\PersonalWebsite\\ZhangLe\\ZhangLe\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/lez/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\leein\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -52,6 +59,14 @@
               "version": "[8.0.8, )"
             },
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[8.0.8, )"
             },
@@ -97,7 +112,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

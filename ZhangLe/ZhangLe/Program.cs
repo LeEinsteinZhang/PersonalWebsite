@@ -4,7 +4,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,10 +11,11 @@ var connectionString = builder.Configuration.GetConnectionString("FinanceDbConte
                       ?? throw new InvalidOperationException("Connection string 'FinanceDbContextConnection' not found.");
 
 // 配置服务（Service Configuration）
+builder.Services.AddControllersWithViews();
 
 // 配置 DbContext 使用 MySQL
 builder.Services.AddDbContext<FinanceDbContext>(options =>
-    options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
+    options.UseSqlServer(connectionString));
 
 // 配置 ASP.NET Core Identity 服务
 builder.Services.AddDefaultIdentity<IdentityUser>(options =>

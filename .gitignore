@@ -1,2 +1,48 @@
-**/_notes/
-**/.DS_Store
+.vs/
+# ASP.NET Core
+bin/
+obj/
+wwwroot/
+*.dll
+*.exe
+*.pdb
+*.db
+*.suo
+*.user
+*.userosscache
+*.suo
+*.vscode
+.vs/
+*.nupkg
+*.snk
+*.suo
+
+# Rider project files
+.idea/
+
+# ASP.NET temporary files
+*.log
+*.tmp
+
+# Node modules (if using Node.js)
+node_modules/
+
+# Environment files
+.env
+
+# Microsoft Azure
+*.azure/
+
+# Docker files
+Dockerfile
+docker-compose.yml
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Linux
+*~
