@@ -1,0 +1,54 @@
+<header>
+    <nav>
+        <div class="menu"> 
+            <a href="/" class="logo"><img src="~/icons/logo.png" alt="Logo"></a>
+            <ul>
+                <li><a href="/">@(Model?.Layout?.Home ?? "Home")</a></li>
+                <li><a href="/#about">@(Model?.Layout?.About ?? "About")</a></li>
+                <li><a href="/#experiences">@(Model?.Layout?.Experiences ?? "Experiences")</a></li>
+                <li><a href="/#projects">@(Model?.Layout?.Projects ?? "Projects")</a></li>
+                <li><a href="@Url.Content("~/resume/" + (Model?.Layout?.ResumeFile ?? "default") + ".pdf")" target="_blank">@(Model?.Layout?.Resume ?? "Resume")</a></li>
+            </ul>
+            <div class="row-section">
+                <div class="language-switcher">
+                    <a id="lang-switch" href="@Url.Action("SwitchLang", "Base", new { lang = lang == "zh" ? "en" : "zh", next = currentPath })">
+                        @(lang == "zh" ? "EN" : "中文")
+                    </a>
+                </div>
+
+                <div class="dropdown-menu">
+                    <button class="dropdown-btn">&#9776;</button>
+                    <div class="dropdown-content">
+                        <a href="/">@(Model?.Layout?.Home ?? "Home")</a>
+                        <a href="/#about">@(Model?.Layout?.About ?? "About")</a>
+                        <a href="/#experiences">@(Model?.Layout?.Experiences ?? "Experiences")</a>
+                        <a href="/#projects">@(Model?.Layout?.Projects ?? "Projects")</a>
+                        <a href="@Url.Content("~/resume/" + (Model?.Layout?.ResumeFile ?? "default") + ".pdf")" target="_blank">@(Model?.Layout?.Resume ?? "Resume")</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="color-bar">
+        <div class="color-block site-c1"></div>
+        <div class="color-block site-c2"></div>
+        <div class="color-block site-c3"></div>
+        <div class="color-block site-c4"></div>
+    </div>
+    @if (ViewBag.SubNav)
+    {
+        <div class="sub-nav">
+        <ul>
+            @if (Model?.Layout?.SubNav != null)
+            {
+                foreach (var item in Model.Layout.SubNav)
+                {
+                    <li>
+                        <a asp-controller="Experiences" asp-action="@item.Action" class="@(ViewContext.HttpContext.Request.Path == "/" + item.Action ? "active" : "")">@item.Name</a>
+                    </li>
+                }
+            }
+        </ul>
+        </div>
+    }
+</header>
