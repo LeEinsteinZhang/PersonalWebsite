@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ZhangLe")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c03c04af3ee1a62cfbb2fbb51a1eaf85948a0540")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6003bf5c05d6f613d8921b3f33a6f4379ceef1c8")]
 [assembly: System.Reflection.AssemblyProductAttribute("ZhangLe")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ZhangLe")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
