@@ -1,8 +1,144 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@using ZhangLe.Resources
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div id="home" class="section-offset">
+    <div class="slide-container">
+        <div class="background-slide">
+            <img src="/images/background_0.jpg" alt="Background">
+        </div>
+        <div class="background-slide">
+            <img src="/images/background_1.jpg" alt="Background">
+        </div>
+        <div class="background-slide">
+            <img src="/images/background_2.jpg" alt="Background">
+        </div>
+        <div class="overlay">
+            <div class="title white">
+                <p>@HomePage.Description</p>
+            </div>
+            <div class="welcome">
+                <p>@HomePage.WelcomeMessage</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="main-page">
+    <div class="content">
+        <div id="about" class="title black section-offset">
+            <p>@Base.About</p>
+        </div>
+        <div class="row-section">
+            <div class="column-section about-section">
+                <h1>@Base.Author</h1>
+                <p>@HomePage.AboutDescription</p>
+                <div class="logos-container">
+                    <a href="https://uwaterloo.ca/" class="logo-link" target="_blank">
+                        <img src="~/icons/uwaterloo-logo.png" alt="University of Waterloo Logo" />
+                    </a>
+                    <a href="http://www.virtualphy.com" class="logo-link" target="_blank">
+                        <img src="~/icons/vp_logo.png" alt="Virtual Physics" />
+                    </a>
+                </div>
+                <h2>@HomePage.Experiences</h2>
+                <p>@HomePage.HighschoolExperience</p>
+                <h2>@HomePage.InterestsAndAwards</h2>
+                @for (int i = 1; i <= 10; i++)
+                {
+                    var awardKey = $"Award{i}";
+                    var award = HomePage.ResourceManager.GetString(awardKey);
+                    if (!string.IsNullOrEmpty(award))
+                    {
+                        <p align="left">- @award</p>
+                    }
+                }
+                <p></p>
+                <a class="transparent-button" href="/resume/@Base.ResumeFile" target="_blank">
+                    @HomePage.ResumeDownload
+                </a>
+            </div>
+            <div id="about-img">
+                <img src="~/images/profil.jpg" alt="Profile Image" />
+            </div>
+        </div>
+        <div id="experiences" class="title black section-offset">
+            <p>@HomePage.Experiences</p>
+        </div>
+        @for (int i = 1; i <= 10; i++)
+        {
+            var expName = HomePage.ResourceManager.GetString($"Exp{i}Name");
+            var expType = HomePage.ResourceManager.GetString($"Exp{i}Type");
+            var expDescription = HomePage.ResourceManager.GetString($"Exp{i}Description");
+            var expLink = HomePage.ResourceManager.GetString($"Exp{i}Link");
+            var expImage = HomePage.ResourceManager.GetString($"Exp{i}Image");
+
+            if (!string.IsNullOrEmpty(expName))
+            {
+                <div class="exp-section">
+                    <div class="exp-text">
+                        <p class="exp-name">@expName</p>
+                        @if (!string.IsNullOrEmpty(expType))
+                        {
+                            <p class="exp-type">@expType</p>
+                        }
+                        @if (!string.IsNullOrEmpty(expDescription))
+                        {
+                            <p class="exp-description">@expDescription</p>
+                        }
+                        @if (!string.IsNullOrEmpty(expLink))
+                        {
+                            <p></p>
+                            <a class="transparent-button" href="/@expLink">@Base.Discover</a>
+                        }
+                    </div>
+                    @if (!string.IsNullOrEmpty(expImage))
+                    {
+                        <div class="exp-img">
+                            <img src="~/@expImage" alt="" />
+                        </div>
+                    }
+                </div>
+            }
+        }
+
+        <div id="projects" class="title black section-offset">
+            <p>@Base.Projects</p>
+        </div>
+
+        @for (int i = 1; i <= 10; i++)
+        {
+            var projectName = HomePage.ResourceManager.GetString($"Project{i}Name");
+            var projectType = HomePage.ResourceManager.GetString($"Project{i}Type");
+            var projectDescription = HomePage.ResourceManager.GetString($"Project{i}Description");
+            var projectLink = HomePage.ResourceManager.GetString($"Project{i}Link");
+            var projectImage = HomePage.ResourceManager.GetString($"Project{i}Image");
+
+            if (!string.IsNullOrEmpty(projectName))
+            {
+                <div class="exp-section">
+                    <div class="exp-text">
+                        <p class="exp-name">@projectName</p>
+                        @if (!string.IsNullOrEmpty(projectType))
+                        {
+                            <p class="exp-type">@projectType</p>
+                        }
+                        @if (!string.IsNullOrEmpty(projectDescription))
+                        {
+                            <p class="exp-description">@projectDescription</p>
+                        }
+                        @if (!string.IsNullOrEmpty(projectLink))
+                        {
+                            <p></p>
+                            <a class="transparent-button" href="@projectLink" target="_blank">@Base.Discover</a>
+                        }
+                    </div>
+                    @if (!string.IsNullOrEmpty(projectImage))
+                    {
+                        <div class="exp-img">
+                            <img src="~/@projectImage" alt="" />
+                        </div>
+                    }
+                </div>
+            }
+        }
+    </div>
 </div>

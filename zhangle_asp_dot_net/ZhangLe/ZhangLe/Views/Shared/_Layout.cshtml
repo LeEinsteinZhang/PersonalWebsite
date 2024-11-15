@@ -1,11 +1,12 @@
-﻿<!DOCTYPE html>
-<html lang="{{ lang }}">
+﻿@using ZhangLe.Resources
+<!DOCTYPE html>
+<html lang=@Thread.CurrentThread.CurrentCulture.ToString() == "zh" ? "zh" : "en">
 <head>
-    <title>{{ content.title }}</title>
+    <title>@Base.Title</title>
     <meta charset="UTF-8">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width,initial-scale=1" name="viewport">
-    <meta content="{{ content.description }}" name="description">
+    <meta content=@Base.Description name="description">
     <meta name="google" content="notranslate" />
     <meta name="msapplication-tap-highlight" content="no">
     <link rel="apple-touch-icon" sizes="180x180" href="/icons/icon.png">
@@ -20,24 +21,31 @@
             <div class="menu">
                 <a href="/" class="logo"><img src="/icons/logo.png" alt="Logo"></a>
                 <ul>
-                    <li><a asp-controller="Home" asp-action="Index">{{ content.home }}</a></li>
-                    <li><a asp-controller="Home" asp-action="Index" href="~/#about">{{ content.about }}</a></li>
-                    <li><a asp-controller="Home" asp-action="Index" href="~/#experiences">{{ content.experiences }}</a></li>
-                    <li><a asp-controller="Home" asp-action="Index" href="~/#projects">{{ content.projects }}</a></li>
-                    <li><a asp-controller="Resume" asp-action="Index" target="_blank">{{ content.resume }}</a></li>
+                    <li><a asp-controller="Home" asp-action="Index">@Base.Home</a></li>
+                    <li><a href="~/#about">@Base.About</a></li>
+                    <li><a href="~/#experiences">@Base.Experiences</a></li>
+                    <li><a href="~/#projects">@Base.Projects</a></li>
+                    <li><a href="/resume/@Base.ResumeFile" target="_blank">@Base.Resume</a></li>
                 </ul>
                 <div class="row-section">
                     <div class="language-switcher">
-                        <a id="lang-switch" href="{{ url_for('switch_lang', lang='zh' if lang == 'en' else 'en', next=request.path) }}">{{ '中文' if lang == 'en' else 'EN' }}</a>
+                        @if (Thread.CurrentThread.CurrentCulture.ToString() == "en")
+                        {
+                            <a id="lang-switch" asp-controller="Language" asp-action="ChangeLanguage" asp-route-lang="zh">中文</a>
+                        }
+                        else
+                        {
+                            <a id="lang-switch" asp-controller="Language" asp-action="ChangeLanguage" asp-route-lang="en">EN</a>
+                        }
                     </div>
                     <div class="dropdown-menu">
                         <button class="dropdown-btn">&#9776;</button>
                         <div class="dropdown-content">
-                            <a asp-controller="Home" asp-action="Index">{{ content.home }}</a>
-                            <a asp-controller="Home" asp-action="Index" href="~/#about">{{ content.about }}</a>
-                            <a asp-controller="Home" asp-action="Index" href="~/#experiences">{{ content.experiences }}</a>
-                            <a asp-controller="Home" asp-action="Index" href="~/#projects">{{ content.projects }}</a>
-                            <a asp-controller="Resume" asp-action="Index" target="_blank">{{ content.resume }}</a>
+                            <a asp-controller="Home" asp-action="Index">@Base.Home</a>
+                            <a href="~/#about">@Base.About</a>
+                            <a href="~/#experiences">@Base.Experiences</a>
+                            <a href="~/#projects">@Base.Projects</a>
+                            <a href="/resume/@Base.ResumeFile" target="_blank">@Base.Resume</a>
                         </div>
                     </div>
                 </div>
@@ -56,16 +64,16 @@
     <footer>
         <div class="footer-content">
             <div class="footer-address">
-                <p>{{ content.address }}</p>
-                <p>{{ content.tel }}</p>
-                <p><a href="mailto:{{ content.email }}">{{ content.email }}</a></p>
+                <p>@Base.Address</p>
+                <p>@Base.Telephone</p>
+                <p><p><a href="mailto:@(Base.Email)">@Base.Email</a></p>
             </div>
             <div class="footer-social">
                 <div class="social-media">
                     <a href="https://github.com/LeEinsteinZhang" target="_blank"> <img src="/icons/github_w.png" alt="GitHub"> </a>
                     <a href="https://www.linkedin.com/in/uw-le-zhang" target="_blank"> <img src="/icons/linkedin_w.png" alt="LinkedIn"> </a>
                 </div>
-                <p>&copy; 2024 {{ content.author }}. {{ content.rights }}</p>
+                <p>&copy; 2024 @Base.Author. @Base.CopyRight</p>
             </div>
         </div>
     </footer>

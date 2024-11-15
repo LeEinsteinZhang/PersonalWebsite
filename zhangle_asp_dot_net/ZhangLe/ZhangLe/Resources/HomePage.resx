@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers &amp; schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutDescription" xml:space="preserve">
+    <value>Third year Honour Physics Co-op Students in the University of Waterloo. Studying in physics major with computing minor. Co-Founder of VirtualPHY.</value>
+  </data>
+  <data name="Experiences" xml:space="preserve">
+    <value>Experiences</value>
+  </data>
+  <data name="HighschoolExperience" xml:space="preserve">
+    <value>High school is graduated from Henan Experimental High School, one of the top high schools in Henan Province, China, where he served as vice president of the high school Visual Arts club, audio engineer and event planner for the event operations team, and engineer and mechanical designer for the robotics team. And excelled in these positions. Successfully organized several large school events and won an industrial design award from General Motor in a robotics competition.</value>
+  </data>
+  <data name="InterestsAndAwards" xml:space="preserve">
+    <value>Interests and Awards</value>
+  </data>
+  <data name="ResumeDownload" xml:space="preserve">
+    <value>Resume Download</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Le Zhang's Personal Website</value>
+  </data>
+  <data name="WelcomeMessage" xml:space="preserve">
+    <value>Welcome to my personal website. I'm Zhang, Le. Honours Physics student in the University of Waterloo, Interested in quantum physics and IoT.</value>
+  </data>
+  <data name="Award1" xml:space="preserve">
+    <value>Best works of the Science Fair | 2018</value>
+  </data>
+  <data name="Award2" xml:space="preserve">
+    <value>Best Club leader on Campus | 2018</value>
+  </data>
+  <data name="Award3" xml:space="preserve">
+    <value>First Robotic Competition industrial design award | 2018</value>
+  </data>
+  <data name="Award4" xml:space="preserve">
+    <value>Chinese Micro Film Festival Best Editing Award | 2018</value>
+  </data>
+  <data name="Exp1Name" xml:space="preserve">
+  <value>Software Developer</value>
+</data>
+<data name="Exp1Type" xml:space="preserve">
+  <value>CO-OP | University of Waterloo 2024</value>
+</data>
+<data name="Exp1Description" xml:space="preserve">
+  <value>To upgrade existing framework, test functionality and data integrity.</value>
+</data>
+<data name="Exp1Link" xml:space="preserve">
+  <value>software-developer</value>
+</data>
+<data name="Exp1Image" xml:space="preserve">
+  <value>images/software_developer/card.jpg</value>
+</data>
+
+<data name="Exp2Name" xml:space="preserve">
+  <value>CS136 ISA</value>
+</data>
+<data name="Exp2Type" xml:space="preserve">
+  <value>CO-OP | University of Waterloo 2024</value>
+</data>
+<data name="Exp2Description" xml:space="preserve">
+  <value>Assisting instructors, supporting students, managing coursework, and ensuring effective communication and feedback within educational settings.</value>
+</data>
+<data name="Exp2Link" xml:space="preserve">
+  <value>cs-isa</value>
+</data>
+<data name="Exp2Image" xml:space="preserve">
+  <value>images/cs_isa/card.jpg</value>
+</data>
+
+<data name="Exp3Name" xml:space="preserve">
+  <value>Website Developer &amp; Maintenance</value>
+</data>
+<data name="Exp3Type" xml:space="preserve">
+  <value>CO-OP | University of Waterloo 2023</value>
+</data>
+<data name="Exp3Description" xml:space="preserve">
+  <value>Web maintenance optimizes content, performance, and security, ensuring a seamless user experience.</value>
+</data>
+<data name="Exp3Link" xml:space="preserve">
+  <value>web-developer</value>
+</data>
+<data name="Exp3Image" xml:space="preserve">
+  <value>images/web_developer/card.jpg</value>
+</data>
+
+<data name="Exp4Name" xml:space="preserve">
+  <value>Public-Address System</value>
+</data>
+<data name="Exp4Type" xml:space="preserve">
+  <value>CO-OP | University of Waterloo IST-ITMS 2023</value>
+</data>
+<data name="Exp4Description" xml:space="preserve">
+  <value>Edit and control the sound effect for events. Worked in University of Waterloo ITMS and high school events team.</value>
+</data>
+<data name="Exp4Link" xml:space="preserve">
+  <value>sound-engineer</value>
+</data>
+<data name="Exp4Image" xml:space="preserve">
+  <value>images/pa_system/card.jpg</value>
+</data>
+
+<data name="Exp5Name" xml:space="preserve">
+  <value>Electrical Engineer</value>
+</data>
+<data name="Exp5Type" xml:space="preserve">
+  <value></value>
+</data>
+<data name="Exp5Description" xml:space="preserve">
+  <value>Programming, Construction robot. Worked as the Electrical Engineer in the high school robotics team.</value>
+</data>
+<data name="Exp5Link" xml:space="preserve">
+  <value>electrical-engineer</value>
+</data>
+<data name="Exp5Image" xml:space="preserve">
+  <value>images/electrical_engineer/card.jpg</value>
+</data>
+
+<data name="Exp6Name" xml:space="preserve">
+  <value>Visual Arts</value>
+</data>
+<data name="Exp6Type" xml:space="preserve">
+  <value></value>
+</data>
+<data name="Exp6Description" xml:space="preserve">
+  <value>Use and teach classical Visual Arts techniques. Worked with Canon and Sony in working and daily recording. Film video and edit the video for public. Worked with Final Cut Pro, Adobe PR and Davinci.</value>
+</data>
+<data name="Exp6Link" xml:space="preserve">
+  <value>visual-arts</value>
+</data>
+<data name="Exp6Image" xml:space="preserve">
+  <value>images/visual_arts/card.jpg</value>
+</data>
+
+<!-- Projects -->
+<data name="Project1Name" xml:space="preserve">
+  <value>CPU Emulation</value>
+</data>
+<data name="Project1Type" xml:space="preserve">
+  <value>Python Based CPU Logic Simulation</value>
+</data>
+<data name="Project1Description" xml:space="preserve">
+  <value>Develop and implementation of CPU instruction sets and CPU peripheral systems such as memory management, I/O, and simple C compiler and OS.</value>
+</data>
+<data name="Project1Link" xml:space="preserve">
+  <value>https://github.com/LeEinsteinZhang/cpuEmulationPublic</value>
+</data>
+<data name="Project1Image" xml:space="preserve">
+  <value>images/cpu_emulation/card.jpg</value>
+</data>
+
+<data name="Project2Name" xml:space="preserve">
+  <value>Game Development</value>
+</data>
+<data name="Project2Type" xml:space="preserve">
+  <value>Python Classic Electrical Game Development</value>
+</data>
+<data name="Project2Description" xml:space="preserve">
+  <value>Use python to develop classic video games, two games have been completed so far, Connect 4 and Tetris.</value>
+</data>
+<data name="Project2Link" xml:space="preserve">
+  <value>https://github.com/LeEinsteinZhang/Games</value>
+</data>
+<data name="Project2Image" xml:space="preserve">
+  <value>images/game_develop/card.jpg</value>
+</data>
+
+<data name="Project3Name" xml:space="preserve">
+  <value>Schrödinger Computational Solution</value>
+</data>
+<data name="Project3Type" xml:space="preserve">
+  <value>Quantum Mechanics</value>
+</data>
+<data name="Project3Description" xml:space="preserve">
+  <value>Solving one-dimensional Schrödinger equation for a harmonic oscillator (HO) potential as well as for an infinite square well (ISW) potential.</value>
+</data>
+<data name="Project3Link" xml:space="preserve">
+  <value>https://github.com/LeEinsteinZhang/SchrodingerSolving</value>
+</data>
+<data name="Project3Image" xml:space="preserve">
+  <value>images/ho_isw/card.jpg</value>
+</data>
+
+<data name="Project4Name" xml:space="preserve">
+  <value>Ray Tracing</value>
+</data>
+<data name="Project4Type" xml:space="preserve">
+  <value>Classic Mechanics</value>
+</data>
+<data name="Project4Description" xml:space="preserve">
+  <value>Modelling the light in computer program. To simulate the real light reflection in different situations.</value>
+</data>
+<data name="Project4Link" xml:space="preserve">
+  <value>https://github.com/LeEinsteinZhang/ComputationalPhysics/blob/main/ray_tracing.ipynb</value>
+</data>
+<data name="Project4Image" xml:space="preserve">
+  <value>images/ray_tracing/card.jpg</value>
+</data>
+
+<data name="Project5Name" xml:space="preserve">
+  <value>Solving Linear Equations</value>
+</data>
+<data name="Project5Type" xml:space="preserve">
+  <value>Linear Algebra</value>
+</data>
+<data name="Project5Description" xml:space="preserve">
+  <value>Using the concept of matrix in mathematics to solve some problems in real life that involve the solution of linear equations.</value>
+</data>
+<data name="Project5Link" xml:space="preserve">
+  <value>https://github.com/LeEinsteinZhang/ComputationalPhysics/blob/main/solving_linear_equation.ipynb</value>
+</data>
+<data name="Project5Image" xml:space="preserve">
+  <value>images/solve_linear/card.jpg</value>
+</data>
+
+</root>

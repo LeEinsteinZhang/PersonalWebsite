@@ -72,4 +72,31 @@
     <None Include="wwwroot\sitemap.xml" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Update="Resources\Base.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Base.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\HomePage.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>HomePage.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\Base.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Base.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Base.zh.resx">
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\HomePage.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>HomePage.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
 </Project>

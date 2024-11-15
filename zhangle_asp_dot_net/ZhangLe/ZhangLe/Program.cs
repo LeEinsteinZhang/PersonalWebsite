@@ -18,6 +18,22 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.Use(async (context, next) =>
+{
+    string cookie = string.Empty;
+    if (context.Request.Cookies.TryGetValue("Language", out cookie))
+    {
+        System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo(cookie);
+        System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(cookie);
+    }
+    else
+    {
+        System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("en");
+        System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
+    }
+    await next.Invoke();
+});
+
 app.UseAuthorization();
 
 app.MapControllerRoute(
