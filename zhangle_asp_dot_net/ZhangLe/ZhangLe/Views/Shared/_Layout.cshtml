@@ -1,9 +1,10 @@
 ﻿@using ZhangLe.Resources
 @{
     var currentAction = ViewContext.RouteData.Values["action"]?.ToString();
+    var langAttribute = Thread.CurrentThread.CurrentCulture.ToString() == "zh" ? "zh" : "en";
 }
 <!DOCTYPE html>
-<html lang=@Thread.CurrentThread.CurrentCulture.ToString() == "zh" ? "zh" : "en">
+<html lang="@langAttribute">
 <head>
     <title>@Base.Title</title>
     <meta charset="UTF-8">
@@ -106,6 +107,6 @@
 
     <script src="/js/jquery-3.7.1.js"></script>
     <script src="/js/site.js"></script>
-    @RenderSection("Scripts", required: false)
-</body>
+    @await RenderSectionAsync("Scripts", required: false)
+    </body>
 </html>
