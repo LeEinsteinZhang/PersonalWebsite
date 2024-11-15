@@ -12,7 +12,7 @@
     
     Example:
     
-    ... ado.net/XML headers &amp; schema ...
+    ... ado.net/XML headers & schema ...
     <resheader name="resmimetype">text/microsoft-resx</resheader>
     <resheader name="version">2.0</resheader>
     <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
@@ -150,181 +150,169 @@
   <data name="Award4" xml:space="preserve">
     <value>Chinese Micro Film Festival Best Editing Award | 2018</value>
   </data>
+  <data name="Exp6Name" xml:space="preserve">
+    <value>Software Developer</value>
+  </data>
+  <data name="Exp6Type" xml:space="preserve">
+    <value>CO-OP | University of Waterloo 2024</value>
+  </data>
+  <data name="Exp6Description" xml:space="preserve">
+    <value>To upgrade existing framework, test functionality and data integrity.</value>
+  </data>
+  <data name="Exp6Link" xml:space="preserve">
+    <value>software-developer</value>
+  </data>
+  <data name="Exp6Image" xml:space="preserve">
+    <value>images/software_developer/card.jpg</value>
+  </data>
+  <data name="Exp5Name" xml:space="preserve">
+    <value>CS136 ISA</value>
+  </data>
+  <data name="Exp5Type" xml:space="preserve">
+    <value>CO-OP | University of Waterloo 2024</value>
+  </data>
+  <data name="Exp5Description" xml:space="preserve">
+    <value>Assisting instructors, supporting students, managing coursework, and ensuring effective communication and feedback within educational settings.</value>
+  </data>
+  <data name="Exp5Link" xml:space="preserve">
+    <value>cs-isa</value>
+  </data>
+  <data name="Exp5Image" xml:space="preserve">
+    <value>images/cs_isa/card.jpg</value>
+  </data>
+  <data name="Exp4Name" xml:space="preserve">
+    <value>Website Developer &amp; Maintenance</value>
+  </data>
+  <data name="Exp4Type" xml:space="preserve">
+    <value>CO-OP | University of Waterloo 2023</value>
+  </data>
+  <data name="Exp4Description" xml:space="preserve">
+    <value>Web maintenance optimizes content, performance, and security, ensuring a seamless user experience.</value>
+  </data>
+  <data name="Exp4Link" xml:space="preserve">
+    <value>web-developer</value>
+  </data>
+  <data name="Exp4Image" xml:space="preserve">
+    <value>images/web_developer/card.jpg</value>
+  </data>
+  <data name="Exp3Name" xml:space="preserve">
+    <value>Public-Address System</value>
+  </data>
+  <data name="Exp3Type" xml:space="preserve">
+    <value>CO-OP | University of Waterloo IST-ITMS 2023</value>
+  </data>
+  <data name="Exp3Description" xml:space="preserve">
+    <value>Edit and control the sound effect for events. Worked in University of Waterloo ITMS and high school events team.</value>
+  </data>
+  <data name="Exp3Link" xml:space="preserve">
+    <value>sound-engineer</value>
+  </data>
+  <data name="Exp3Image" xml:space="preserve">
+    <value>images/pa_system/card.jpg</value>
+  </data>
+  <data name="Exp2Name" xml:space="preserve">
+    <value>Electrical Engineer</value>
+  </data>
+  <data name="Exp2Type" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Exp2Description" xml:space="preserve">
+    <value>Programming, Construction robot. Worked as the Electrical Engineer in the high school robotics team.</value>
+  </data>
+  <data name="Exp2Link" xml:space="preserve">
+    <value>electrical-engineer</value>
+  </data>
+  <data name="Exp2Image" xml:space="preserve">
+    <value>images/electrical_engineer/card.jpg</value>
+  </data>
   <data name="Exp1Name" xml:space="preserve">
-  <value>Software Developer</value>
-</data>
-<data name="Exp1Type" xml:space="preserve">
-  <value>CO-OP | University of Waterloo 2024</value>
-</data>
-<data name="Exp1Description" xml:space="preserve">
-  <value>To upgrade existing framework, test functionality and data integrity.</value>
-</data>
-<data name="Exp1Link" xml:space="preserve">
-  <value>software-developer</value>
-</data>
-<data name="Exp1Image" xml:space="preserve">
-  <value>images/software_developer/card.jpg</value>
-</data>
-
-<data name="Exp2Name" xml:space="preserve">
-  <value>CS136 ISA</value>
-</data>
-<data name="Exp2Type" xml:space="preserve">
-  <value>CO-OP | University of Waterloo 2024</value>
-</data>
-<data name="Exp2Description" xml:space="preserve">
-  <value>Assisting instructors, supporting students, managing coursework, and ensuring effective communication and feedback within educational settings.</value>
-</data>
-<data name="Exp2Link" xml:space="preserve">
-  <value>cs-isa</value>
-</data>
-<data name="Exp2Image" xml:space="preserve">
-  <value>images/cs_isa/card.jpg</value>
-</data>
-
-<data name="Exp3Name" xml:space="preserve">
-  <value>Website Developer &amp; Maintenance</value>
-</data>
-<data name="Exp3Type" xml:space="preserve">
-  <value>CO-OP | University of Waterloo 2023</value>
-</data>
-<data name="Exp3Description" xml:space="preserve">
-  <value>Web maintenance optimizes content, performance, and security, ensuring a seamless user experience.</value>
-</data>
-<data name="Exp3Link" xml:space="preserve">
-  <value>web-developer</value>
-</data>
-<data name="Exp3Image" xml:space="preserve">
-  <value>images/web_developer/card.jpg</value>
-</data>
-
-<data name="Exp4Name" xml:space="preserve">
-  <value>Public-Address System</value>
-</data>
-<data name="Exp4Type" xml:space="preserve">
-  <value>CO-OP | University of Waterloo IST-ITMS 2023</value>
-</data>
-<data name="Exp4Description" xml:space="preserve">
-  <value>Edit and control the sound effect for events. Worked in University of Waterloo ITMS and high school events team.</value>
-</data>
-<data name="Exp4Link" xml:space="preserve">
-  <value>sound-engineer</value>
-</data>
-<data name="Exp4Image" xml:space="preserve">
-  <value>images/pa_system/card.jpg</value>
-</data>
-
-<data name="Exp5Name" xml:space="preserve">
-  <value>Electrical Engineer</value>
-</data>
-<data name="Exp5Type" xml:space="preserve">
-  <value></value>
-</data>
-<data name="Exp5Description" xml:space="preserve">
-  <value>Programming, Construction robot. Worked as the Electrical Engineer in the high school robotics team.</value>
-</data>
-<data name="Exp5Link" xml:space="preserve">
-  <value>electrical-engineer</value>
-</data>
-<data name="Exp5Image" xml:space="preserve">
-  <value>images/electrical_engineer/card.jpg</value>
-</data>
-
-<data name="Exp6Name" xml:space="preserve">
-  <value>Visual Arts</value>
-</data>
-<data name="Exp6Type" xml:space="preserve">
-  <value></value>
-</data>
-<data name="Exp6Description" xml:space="preserve">
-  <value>Use and teach classical Visual Arts techniques. Worked with Canon and Sony in working and daily recording. Film video and edit the video for public. Worked with Final Cut Pro, Adobe PR and Davinci.</value>
-</data>
-<data name="Exp6Link" xml:space="preserve">
-  <value>visual-arts</value>
-</data>
-<data name="Exp6Image" xml:space="preserve">
-  <value>images/visual_arts/card.jpg</value>
-</data>
-
-<!-- Projects -->
-<data name="Project1Name" xml:space="preserve">
-  <value>CPU Emulation</value>
-</data>
-<data name="Project1Type" xml:space="preserve">
-  <value>Python Based CPU Logic Simulation</value>
-</data>
-<data name="Project1Description" xml:space="preserve">
-  <value>Develop and implementation of CPU instruction sets and CPU peripheral systems such as memory management, I/O, and simple C compiler and OS.</value>
-</data>
-<data name="Project1Link" xml:space="preserve">
-  <value>https://github.com/LeEinsteinZhang/cpuEmulationPublic</value>
-</data>
-<data name="Project1Image" xml:space="preserve">
-  <value>images/cpu_emulation/card.jpg</value>
-</data>
-
-<data name="Project2Name" xml:space="preserve">
-  <value>Game Development</value>
-</data>
-<data name="Project2Type" xml:space="preserve">
-  <value>Python Classic Electrical Game Development</value>
-</data>
-<data name="Project2Description" xml:space="preserve">
-  <value>Use python to develop classic video games, two games have been completed so far, Connect 4 and Tetris.</value>
-</data>
-<data name="Project2Link" xml:space="preserve">
-  <value>https://github.com/LeEinsteinZhang/Games</value>
-</data>
-<data name="Project2Image" xml:space="preserve">
-  <value>images/game_develop/card.jpg</value>
-</data>
-
-<data name="Project3Name" xml:space="preserve">
-  <value>Schrödinger Computational Solution</value>
-</data>
-<data name="Project3Type" xml:space="preserve">
-  <value>Quantum Mechanics</value>
-</data>
-<data name="Project3Description" xml:space="preserve">
-  <value>Solving one-dimensional Schrödinger equation for a harmonic oscillator (HO) potential as well as for an infinite square well (ISW) potential.</value>
-</data>
-<data name="Project3Link" xml:space="preserve">
-  <value>https://github.com/LeEinsteinZhang/SchrodingerSolving</value>
-</data>
-<data name="Project3Image" xml:space="preserve">
-  <value>images/ho_isw/card.jpg</value>
-</data>
-
-<data name="Project4Name" xml:space="preserve">
-  <value>Ray Tracing</value>
-</data>
-<data name="Project4Type" xml:space="preserve">
-  <value>Classic Mechanics</value>
-</data>
-<data name="Project4Description" xml:space="preserve">
-  <value>Modelling the light in computer program. To simulate the real light reflection in different situations.</value>
-</data>
-<data name="Project4Link" xml:space="preserve">
-  <value>https://github.com/LeEinsteinZhang/ComputationalPhysics/blob/main/ray_tracing.ipynb</value>
-</data>
-<data name="Project4Image" xml:space="preserve">
-  <value>images/ray_tracing/card.jpg</value>
-</data>
-
-<data name="Project5Name" xml:space="preserve">
-  <value>Solving Linear Equations</value>
-</data>
-<data name="Project5Type" xml:space="preserve">
-  <value>Linear Algebra</value>
-</data>
-<data name="Project5Description" xml:space="preserve">
-  <value>Using the concept of matrix in mathematics to solve some problems in real life that involve the solution of linear equations.</value>
-</data>
-<data name="Project5Link" xml:space="preserve">
-  <value>https://github.com/LeEinsteinZhang/ComputationalPhysics/blob/main/solving_linear_equation.ipynb</value>
-</data>
-<data name="Project5Image" xml:space="preserve">
-  <value>images/solve_linear/card.jpg</value>
-</data>
-
+    <value>Visual Arts</value>
+  </data>
+  <data name="Exp1Type" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Exp1Description" xml:space="preserve">
+    <value>Use and teach classical Visual Arts techniques. Worked with Canon and Sony in working and daily recording. Film video and edit the video for public. Worked with Final Cut Pro, Adobe PR and Davinci.</value>
+  </data>
+  <data name="Exp1Link" xml:space="preserve">
+    <value>visual-arts</value>
+  </data>
+  <data name="Exp1Image" xml:space="preserve">
+    <value>images/visual_arts/card.jpg</value>
+  </data>
+  <data name="Project5Name" xml:space="preserve">
+    <value>CPU Emulation</value>
+  </data>
+  <data name="Project5Type" xml:space="preserve">
+    <value>Python Based CPU Logic Simulation</value>
+  </data>
+  <data name="Project5Description" xml:space="preserve">
+    <value>Develop and implementation of CPU instruction sets and CPU peripheral systems such as memory management, I/O, and simple C compiler and OS.</value>
+  </data>
+  <data name="Project5Link" xml:space="preserve">
+    <value>https://github.com/LeEinsteinZhang/cpuEmulationPublic</value>
+  </data>
+  <data name="Project5Image" xml:space="preserve">
+    <value>images/cpu_emulation/card.jpg</value>
+  </data>
+  <data name="Project4Name" xml:space="preserve">
+    <value>Game Development</value>
+  </data>
+  <data name="Project4Type" xml:space="preserve">
+    <value>Python Classic Electrical Game Development</value>
+  </data>
+  <data name="Project4Description" xml:space="preserve">
+    <value>Use python to develop classic video games, two games have been completed so far, Connect 4 and Tetris.</value>
+  </data>
+  <data name="Project4Link" xml:space="preserve">
+    <value>https://github.com/LeEinsteinZhang/Games</value>
+  </data>
+  <data name="Project4Image" xml:space="preserve">
+    <value>images/game_develop/card.jpg</value>
+  </data>
+  <data name="Project3Name" xml:space="preserve">
+    <value>Schrödinger Computational Solution</value>
+  </data>
+  <data name="Project3Type" xml:space="preserve">
+    <value>Quantum Mechanics</value>
+  </data>
+  <data name="Project3Description" xml:space="preserve">
+    <value>Solving one-dimensional Schrödinger equation for a harmonic oscillator (HO) potential as well as for an infinite square well (ISW) potential.</value>
+  </data>
+  <data name="Project3Link" xml:space="preserve">
+    <value>https://github.com/LeEinsteinZhang/SchrodingerSolving</value>
+  </data>
+  <data name="Project3Image" xml:space="preserve">
+    <value>images/ho_isw/card.jpg</value>
+  </data>
+  <data name="Project2Name" xml:space="preserve">
+    <value>Ray Tracing</value>
+  </data>
+  <data name="Project2Type" xml:space="preserve">
+    <value>Classic Mechanics</value>
+  </data>
+  <data name="Project2Description" xml:space="preserve">
+    <value>Modelling the light in computer program. To simulate the real light reflection in different situations.</value>
+  </data>
+  <data name="Project2Link" xml:space="preserve">
+    <value>https://github.com/LeEinsteinZhang/ComputationalPhysics/blob/main/ray_tracing.ipynb</value>
+  </data>
+  <data name="Project2Image" xml:space="preserve">
+    <value>images/ray_tracing/card.jpg</value>
+  </data>
+  <data name="Project1Name" xml:space="preserve">
+    <value>Solving Linear Equations</value>
+  </data>
+  <data name="Project1Type" xml:space="preserve">
+    <value>Linear Algebra</value>
+  </data>
+  <data name="Project1Description" xml:space="preserve">
+    <value>Using the concept of matrix in mathematics to solve some problems in real life that involve the solution of linear equations.</value>
+  </data>
+  <data name="Project1Link" xml:space="preserve">
+    <value>https://github.com/LeEinsteinZhang/ComputationalPhysics/blob/main/solving_linear_equation.ipynb</value>
+  </data>
+  <data name="Project1Image" xml:space="preserve">
+    <value>images/solve_linear/card.jpg</value>
+  </data>
 </root>

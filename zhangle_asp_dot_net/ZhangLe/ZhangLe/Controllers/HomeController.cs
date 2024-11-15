@@ -1,6 +1,7 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using ZhangLe.Models;
+using System.Resources;
+using System.Xml.Linq;
 
 namespace ZhangLe.Controllers
 {
@@ -16,6 +17,32 @@ namespace ZhangLe.Controllers
         public IActionResult Index()
         {
             return View();
+        }
+
+        [Route("/{expName}")]
+        public IActionResult Experiences(string expName)
+        {
+            int expIndex = 0;
+            for (int i = 1; i <= 10; i++)
+            {
+                var expLink = ZhangLe.Resources.Experiences.ResourceManager.GetString($"Exp{i}Link");
+                Console.WriteLine($"Checking Exp{i}Link: {expLink} vs {expName}");
+                if (expLink == expName)
+                {
+                    expIndex = i;
+                    break;
+                }
+            }
+
+            if (expIndex != 0)
+            {
+                ViewBag.ExpIndex = expIndex;
+                return View();
+            }
+            else
+            {
+                return NotFound();
+            }
         }
     }
 }

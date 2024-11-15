@@ -150,181 +150,176 @@
   <data name="Award4" xml:space="preserve">
     <value>中国微电影节最佳剪辑奖 | 2018</value>
   </data>
+  <data name="Exp6Name" xml:space="preserve">
+    <value>软件开发</value>
+  </data>
+  <data name="Exp6Type" xml:space="preserve">
+    <value>CO-OP | 滑铁卢大学 2024</value>
+  </data>
+  <data name="Exp6Description" xml:space="preserve">
+    <value>升级现有框架，测试功能和数据完整性。</value>
+  </data>
+  <data name="Exp6Link" xml:space="preserve">
+    <value>software-developer</value>
+  </data>
+  <data name="Exp6Image" xml:space="preserve">
+    <value>images/software_developer/card.jpg</value>
+  </data>
+  <data name="Exp5Name" xml:space="preserve">
+    <value>CS136 助教</value>
+  </data>
+  <data name="Exp5Type" xml:space="preserve">
+    <value>CO-OP | 滑铁卢大学 2024</value>
+  </data>
+  <data name="Exp5Description" xml:space="preserve">
+    <value>协助教师进行课堂活动、帮助学生学习计算机科学知识、管理课程作业并确保教育环境中师生之间的有效沟通和反馈。</value>
+  </data>
+  <data name="Exp5Link" xml:space="preserve">
+    <value>cs-isa</value>
+  </data>
+  <data name="Exp5Image" xml:space="preserve">
+    <value>images/cs_isa/card.jpg</value>
+  </data>
+  <data name="Exp4Name" xml:space="preserve">
+    <value>网站开发与维护</value>
+  </data>
+  <data name="Exp4Type" xml:space="preserve">
+    <value>CO-OP | 滑铁卢大学 2023</value>
+  </data>
+  <data name="Exp4Description" xml:space="preserve">
+    <value>网站维护优化了内容、性能和安全性，确保用户体验顺畅。</value>
+  </data>
+  <data name="Exp4Link" xml:space="preserve">
+    <value>web-developer</value>
+  </data>
+  <data name="Exp4Image" xml:space="preserve">
+    <value>images/web_developer/card.jpg</value>
+  </data>
+  <data name="Exp3Name" xml:space="preserve">
+    <value>音频系统</value>
+  </data>
+  <data name="Exp3Type" xml:space="preserve">
+    <value>CO-OP | 滑铁卢大学 IST-ITMS 2023</value>
+  </data>
+  <data name="Exp3Description" xml:space="preserve">
+    <value>编辑和控制活动的音效。在滑铁卢大学ITMS和高中活动团队工作。</value>
+  </data>
+  <data name="Exp3Link" xml:space="preserve">
+    <value>sound-engineer</value>
+  </data>
+  <data name="Exp3Image" xml:space="preserve">
+    <value>images/pa_system/card.jpg</value>
+  </data>
+  <data name="Exp2Name" xml:space="preserve">
+    <value>电子工程师</value>
+  </data>
+  <data name="Exp2Type" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Exp2Description" xml:space="preserve">
+    <value>编程和构建机器人。作为高中机器人团队的电子工程师工作。</value>
+  </data>
+  <data name="Exp2Link" xml:space="preserve">
+    <value>electrical-engineer</value>
+  </data>
+  <data name="Exp2Image" xml:space="preserve">
+    <value>images/electrical_engineer/card.jpg</value>
+  </data>
   <data name="Exp1Name" xml:space="preserve">
-  <value>软件开发</value>
-</data>
-<data name="Exp1Type" xml:space="preserve">
-  <value>CO-OP | 滑铁卢大学 2024</value>
-</data>
-<data name="Exp1Description" xml:space="preserve">
-  <value>升级现有框架，测试功能和数据完整性。</value>
-</data>
-<data name="Exp1Link" xml:space="preserve">
-  <value>software-developer</value>
-</data>
-<data name="Exp1Image" xml:space="preserve">
-  <value>images/software_developer/card.jpg</value>
-</data>
+    <value>视觉艺术</value>
+  </data>
+  <data name="Exp1Type" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Exp1Description" xml:space="preserve">
+    <value>使用和教授经典视觉艺术技巧。与佳能和索尼合作进行工作和日常录音。为公众拍摄和编辑视频，使用Final Cut Pro、Adobe PR和Davinci。</value>
+  </data>
+  <data name="Exp1Link" xml:space="preserve">
+    <value>visual-arts</value>
+  </data>
+  <data name="Exp1Image" xml:space="preserve">
+    <value>images/visual_arts/card.jpg</value>
+  </data>
 
-<data name="Exp2Name" xml:space="preserve">
-  <value>CS136 助教</value>
-</data>
-<data name="Exp2Type" xml:space="preserve">
-  <value>CO-OP | 滑铁卢大学 2024</value>
-</data>
-<data name="Exp2Description" xml:space="preserve">
-  <value>协助教师进行课堂活动、帮助学生学习计算机科学知识、管理课程作业并确保教育环境中师生之间的有效沟通和反馈。</value>
-</data>
-<data name="Exp2Link" xml:space="preserve">
-  <value>cs-isa</value>
-</data>
-<data name="Exp2Image" xml:space="preserve">
-  <value>images/cs_isa/card.jpg</value>
-</data>
+  <!-- Projects -->
+  <data name="Project5Name" xml:space="preserve">
+    <value>CPU 仿真</value>
+  </data>
+  <data name="Project5Type" xml:space="preserve">
+    <value>基于Python的CPU逻辑仿真</value>
+  </data>
+  <data name="Project5Description" xml:space="preserve">
+    <value>开发和实现CPU指令集及其外围系统，如内存管理、I/O、简单的C编译器和操作系统。</value>
+  </data>
+  <data name="Project5Link" xml:space="preserve">
+    <value>https://github.com/LeEinsteinZhang/cpuEmulationPublic</value>
+  </data>
+  <data name="Project5Image" xml:space="preserve">
+    <value>images/cpu_emulation/card.jpg</value>
+  </data>
 
-<data name="Exp3Name" xml:space="preserve">
-  <value>网站开发与维护</value>
-</data>
-<data name="Exp3Type" xml:space="preserve">
-  <value>CO-OP | 滑铁卢大学 2023</value>
-</data>
-<data name="Exp3Description" xml:space="preserve">
-  <value>网站维护优化了内容、性能和安全性，确保用户体验顺畅。</value>
-</data>
-<data name="Exp3Link" xml:space="preserve">
-  <value>web-developer</value>
-</data>
-<data name="Exp3Image" xml:space="preserve">
-  <value>images/web_developer/card.jpg</value>
-</data>
+  <data name="Project4Name" xml:space="preserve">
+    <value>游戏开发</value>
+  </data>
+  <data name="Project4Type" xml:space="preserve">
+    <value>Python 经典电子游戏开发</value>
+  </data>
+  <data name="Project4Description" xml:space="preserve">
+    <value>使用Python开发经典电子游戏，已完成四子棋和俄罗斯方块。</value>
+  </data>
+  <data name="Project4Link" xml:space="preserve">
+    <value>https://github.com/LeEinsteinZhang/Games</value>
+  </data>
+  <data name="Project4Image" xml:space="preserve">
+    <value>images/game_develop/card.jpg</value>
+  </data>
 
-<data name="Exp4Name" xml:space="preserve">
-  <value>音频系统</value>
-</data>
-<data name="Exp4Type" xml:space="preserve">
-  <value>CO-OP | 滑铁卢大学 IST-ITMS 2023</value>
-</data>
-<data name="Exp4Description" xml:space="preserve">
-  <value>编辑和控制活动的音效。在滑铁卢大学ITMS和高中活动团队工作。</value>
-</data>
-<data name="Exp4Link" xml:space="preserve">
-  <value>sound-engineer</value>
-</data>
-<data name="Exp4Image" xml:space="preserve">
-  <value>images/pa_system/card.jpg</value>
-</data>
+  <data name="Project3Name" xml:space="preserve">
+    <value>薛定谔方程求解器</value>
+  </data>
+  <data name="Project3Type" xml:space="preserve">
+    <value>量子力学</value>
+  </data>
+  <data name="Project3Description" xml:space="preserve">
+    <value>求解一维谐振子(HO)势和无限深方势井(ISW)势的一维薛定谔方程。</value>
+  </data>
+  <data name="Project3Link" xml:space="preserve">
+    <value>https://github.com/LeEinsteinZhang/SchrodingerSolving</value>
+  </data>
+  <data name="Project3Image" xml:space="preserve">
+    <value>images/ho_isw/card.jpg</value>
+  </data>
 
-<data name="Exp5Name" xml:space="preserve">
-  <value>电子工程师</value>
-</data>
-<data name="Exp5Type" xml:space="preserve">
-  <value></value>
-</data>
-<data name="Exp5Description" xml:space="preserve">
-  <value>编程和构建机器人。作为高中机器人团队的电子工程师工作。</value>
-</data>
-<data name="Exp5Link" xml:space="preserve">
-  <value>electrical-engineer</value>
-</data>
-<data name="Exp5Image" xml:space="preserve">
-  <value>images/electrical_engineer/card.jpg</value>
-</data>
+  <data name="Project2Name" xml:space="preserve">
+    <value>光线追踪</value>
+  </data>
+  <data name="Project2Type" xml:space="preserve">
+    <value>经典力学</value>
+  </data>
+  <data name="Project2Description" xml:space="preserve">
+    <value>在计算机程序中模拟光的路径，仿真不同场景中的真实光反射。</value>
+  </data>
+  <data name="Project2Link" xml:space="preserve">
+    <value>https://github.com/LeEinsteinZhang/ComputationalPhysics/blob/main/ray_tracing.ipynb</value>
+  </data>
+  <data name="Project2Image" xml:space="preserve">
+    <value>images/ray_tracing/card.jpg</value>
+  </data>
 
-<data name="Exp6Name" xml:space="preserve">
-  <value>视觉艺术</value>
-</data>
-<data name="Exp6Type" xml:space="preserve">
-  <value></value>
-</data>
-<data name="Exp6Description" xml:space="preserve">
-  <value>使用和教授经典视觉艺术技巧。与佳能和索尼合作进行工作和日常录音。为公众拍摄和编辑视频，使用Final Cut Pro、Adobe PR和Davinci。</value>
-</data>
-<data name="Exp6Link" xml:space="preserve">
-  <value>visual-arts</value>
-</data>
-<data name="Exp6Image" xml:space="preserve">
-  <value>images/visual_arts/card.jpg</value>
-</data>
-
-<!-- Projects -->
-<data name="Project1Name" xml:space="preserve">
-  <value>CPU 仿真</value>
-</data>
-<data name="Project1Type" xml:space="preserve">
-  <value>基于Python的CPU逻辑仿真</value>
-</data>
-<data name="Project1Description" xml:space="preserve">
-  <value>开发和实现CPU指令集及其外围系统，如内存管理、I/O、简单的C编译器和操作系统。</value>
-</data>
-<data name="Project1Link" xml:space="preserve">
-  <value>https://github.com/LeEinsteinZhang/cpuEmulationPublic</value>
-</data>
-<data name="Project1Image" xml:space="preserve">
-  <value>images/cpu_emulation/card.jpg</value>
-</data>
-
-<data name="Project2Name" xml:space="preserve">
-  <value>游戏开发</value>
-</data>
-<data name="Project2Type" xml:space="preserve">
-  <value>Python 经典电子游戏开发</value>
-</data>
-<data name="Project2Description" xml:space="preserve">
-  <value>使用Python开发经典电子游戏，已完成四子棋和俄罗斯方块。</value>
-</data>
-<data name="Project2Link" xml:space="preserve">
-  <value>https://github.com/LeEinsteinZhang/Games</value>
-</data>
-<data name="Project2Image" xml:space="preserve">
-  <value>images/game_develop/card.jpg</value>
-</data>
-
-<data name="Project3Name" xml:space="preserve">
-  <value>薛定谔方程求解器</value>
-</data>
-<data name="Project3Type" xml:space="preserve">
-  <value>量子力学</value>
-</data>
-<data name="Project3Description" xml:space="preserve">
-  <value>求解一维谐振子(HO)势和无限深方势井(ISW)势的一维薛定谔方程。</value>
-</data>
-<data name="Project3Link" xml:space="preserve">
-  <value>https://github.com/LeEinsteinZhang/SchrodingerSolving</value>
-</data>
-<data name="Project3Image" xml:space="preserve">
-  <value>images/ho_isw/card.jpg</value>
-</data>
-
-<data name="Project4Name" xml:space="preserve">
-  <value>光线追踪</value>
-</data>
-<data name="Project4Type" xml:space="preserve">
-  <value>经典力学</value>
-</data>
-<data name="Project4Description" xml:space="preserve">
-  <value>在计算机程序中模拟光的路径，仿真不同场景中的真实光反射。</value>
-</data>
-<data name="Project4Link" xml:space="preserve">
-  <value>https://github.com/LeEinsteinZhang/ComputationalPhysics/blob/main/ray_tracing.ipynb</value>
-</data>
-<data name="Project4Image" xml:space="preserve">
-  <value>images/ray_tracing/card.jpg</value>
-</data>
-
-<data name="Project5Name" xml:space="preserve">
-  <value>线性方程求解器</value>
-</data>
-<data name="Project5Type" xml:space="preserve">
-  <value>线性代数</value>
-</data>
-<data name="Project5Description" xml:space="preserve">
-  <value>使用矩阵概念解决现实生活中涉及线性方程求解的问题。</value>
-</data>
-<data name="Project5Link" xml:space="preserve">
-  <value>https://github.com/LeEinsteinZhang/ComputationalPhysics/blob/main/solving_linear_equation.ipynb</value>
-</data>
-<data name="Project5Image" xml:space="preserve">
-  <value>images/solve_linear/card.jpg</value>
-</data>
+  <data name="Project1Name" xml:space="preserve">
+    <value>线性方程求解器</value>
+  </data>
+  <data name="Project1Type" xml:space="preserve">
+    <value>线性代数</value>
+  </data>
+  <data name="Project1Description" xml:space="preserve">
+    <value>使用矩阵概念解决现实生活中涉及线性方程求解的问题。</value>
+  </data>
+  <data name="Project1Link" xml:space="preserve">
+    <value>https://github.com/LeEinsteinZhang/ComputationalPhysics/blob/main/solving_linear_equation.ipynb</value>
+  </data>
+  <data name="Project1Image" xml:space="preserve">
+    <value>images/solve_linear/card.jpg</value>
+  </data>
 
 </root>

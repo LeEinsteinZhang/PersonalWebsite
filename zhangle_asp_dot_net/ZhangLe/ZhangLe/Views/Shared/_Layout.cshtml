@@ -1,4 +1,7 @@
 ﻿@using ZhangLe.Resources
+@{
+    var currentAction = ViewContext.RouteData.Values["action"]?.ToString();
+}
 <!DOCTYPE html>
 <html lang=@Thread.CurrentThread.CurrentCulture.ToString() == "zh" ? "zh" : "en">
 <head>
@@ -57,6 +60,29 @@
             <div class="color-block site-c3"></div>
             <div class="color-block site-c4"></div>
         </div>
+        @if (currentAction == "Experiences")
+        {
+            <div class="sub-nav">
+                <ul>
+                    @for (int i = 10; i > 0; i--)
+                    {
+                        var expKey = $"Exp{i}Link";
+                        var expLink = Experiences.ResourceManager.GetString(expKey);
+                        var expNameKey = $"Exp{i}Title";
+                        var expName = Experiences.ResourceManager.GetString(expNameKey);
+                        var currentPath = Context.Request.Path;
+                        if (!string.IsNullOrEmpty(expLink))
+                        {
+                            <li>
+                                <a href="/@expLink" title="" class="@(currentPath == $"/{expLink}" ? "active" : "")">
+                                    @expName
+                                </a>
+                            </li>
+                        }
+                    }
+                </ul>
+            </div>
+        }
     </header>
 
     @RenderBody()

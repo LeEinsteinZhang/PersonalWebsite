@@ -115,6 +115,276 @@ namespace ZhangLe.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Use and teach classical Visual Arts techniques. Worked with Canon and Sony in working and daily recording. Film video and edit the video for public. Worked with Final Cut Pro, Adobe PR and Davinci..
+        /// </summary>
+        public static string Exp1Description {
+            get {
+                return ResourceManager.GetString("Exp1Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to images/visual_arts/card.jpg.
+        /// </summary>
+        public static string Exp1Image {
+            get {
+                return ResourceManager.GetString("Exp1Image", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to visual-arts.
+        /// </summary>
+        public static string Exp1Link {
+            get {
+                return ResourceManager.GetString("Exp1Link", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Visual Arts.
+        /// </summary>
+        public static string Exp1Name {
+            get {
+                return ResourceManager.GetString("Exp1Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string Exp1Type {
+            get {
+                return ResourceManager.GetString("Exp1Type", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Programming, Construction robot. Worked as the Electrical Engineer in the high school robotics team..
+        /// </summary>
+        public static string Exp2Description {
+            get {
+                return ResourceManager.GetString("Exp2Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to images/electrical_engineer/card.jpg.
+        /// </summary>
+        public static string Exp2Image {
+            get {
+                return ResourceManager.GetString("Exp2Image", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to electrical-engineer.
+        /// </summary>
+        public static string Exp2Link {
+            get {
+                return ResourceManager.GetString("Exp2Link", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Electrical Engineer.
+        /// </summary>
+        public static string Exp2Name {
+            get {
+                return ResourceManager.GetString("Exp2Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string Exp2Type {
+            get {
+                return ResourceManager.GetString("Exp2Type", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Edit and control the sound effect for events. Worked in University of Waterloo ITMS and high school events team..
+        /// </summary>
+        public static string Exp3Description {
+            get {
+                return ResourceManager.GetString("Exp3Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to images/pa_system/card.jpg.
+        /// </summary>
+        public static string Exp3Image {
+            get {
+                return ResourceManager.GetString("Exp3Image", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to sound-engineer.
+        /// </summary>
+        public static string Exp3Link {
+            get {
+                return ResourceManager.GetString("Exp3Link", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Public-Address System.
+        /// </summary>
+        public static string Exp3Name {
+            get {
+                return ResourceManager.GetString("Exp3Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CO-OP | University of Waterloo IST-ITMS 2023.
+        /// </summary>
+        public static string Exp3Type {
+            get {
+                return ResourceManager.GetString("Exp3Type", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Web maintenance optimizes content, performance, and security, ensuring a seamless user experience..
+        /// </summary>
+        public static string Exp4Description {
+            get {
+                return ResourceManager.GetString("Exp4Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to images/web_developer/card.jpg.
+        /// </summary>
+        public static string Exp4Image {
+            get {
+                return ResourceManager.GetString("Exp4Image", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to web-developer.
+        /// </summary>
+        public static string Exp4Link {
+            get {
+                return ResourceManager.GetString("Exp4Link", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Website Developer &amp; Maintenance.
+        /// </summary>
+        public static string Exp4Name {
+            get {
+                return ResourceManager.GetString("Exp4Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CO-OP | University of Waterloo 2023.
+        /// </summary>
+        public static string Exp4Type {
+            get {
+                return ResourceManager.GetString("Exp4Type", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Assisting instructors, supporting students, managing coursework, and ensuring effective communication and feedback within educational settings..
+        /// </summary>
+        public static string Exp5Description {
+            get {
+                return ResourceManager.GetString("Exp5Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to images/cs_isa/card.jpg.
+        /// </summary>
+        public static string Exp5Image {
+            get {
+                return ResourceManager.GetString("Exp5Image", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to cs-isa.
+        /// </summary>
+        public static string Exp5Link {
+            get {
+                return ResourceManager.GetString("Exp5Link", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CS136 ISA.
+        /// </summary>
+        public static string Exp5Name {
+            get {
+                return ResourceManager.GetString("Exp5Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CO-OP | University of Waterloo 2024.
+        /// </summary>
+        public static string Exp5Type {
+            get {
+                return ResourceManager.GetString("Exp5Type", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to To upgrade existing framework, test functionality and data integrity..
+        /// </summary>
+        public static string Exp6Description {
+            get {
+                return ResourceManager.GetString("Exp6Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to images/software_developer/card.jpg.
+        /// </summary>
+        public static string Exp6Image {
+            get {
+                return ResourceManager.GetString("Exp6Image", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to software-developer.
+        /// </summary>
+        public static string Exp6Link {
+            get {
+                return ResourceManager.GetString("Exp6Link", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Software Developer.
+        /// </summary>
+        public static string Exp6Name {
+            get {
+                return ResourceManager.GetString("Exp6Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CO-OP | University of Waterloo 2024.
+        /// </summary>
+        public static string Exp6Type {
+            get {
+                return ResourceManager.GetString("Exp6Type", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Experiences.
         /// </summary>
         public static string Experiences {
@@ -138,6 +408,231 @@ namespace ZhangLe.Resources {
         public static string InterestsAndAwards {
             get {
                 return ResourceManager.GetString("InterestsAndAwards", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Using the concept of matrix in mathematics to solve some problems in real life that involve the solution of linear equations..
+        /// </summary>
+        public static string Project1Description {
+            get {
+                return ResourceManager.GetString("Project1Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to images/solve_linear/card.jpg.
+        /// </summary>
+        public static string Project1Image {
+            get {
+                return ResourceManager.GetString("Project1Image", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to https://github.com/LeEinsteinZhang/ComputationalPhysics/blob/main/solving_linear_equation.ipynb.
+        /// </summary>
+        public static string Project1Link {
+            get {
+                return ResourceManager.GetString("Project1Link", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Solving Linear Equations.
+        /// </summary>
+        public static string Project1Name {
+            get {
+                return ResourceManager.GetString("Project1Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Linear Algebra.
+        /// </summary>
+        public static string Project1Type {
+            get {
+                return ResourceManager.GetString("Project1Type", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Modelling the light in computer program. To simulate the real light reflection in different situations..
+        /// </summary>
+        public static string Project2Description {
+            get {
+                return ResourceManager.GetString("Project2Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to images/ray_tracing/card.jpg.
+        /// </summary>
+        public static string Project2Image {
+            get {
+                return ResourceManager.GetString("Project2Image", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to https://github.com/LeEinsteinZhang/ComputationalPhysics/blob/main/ray_tracing.ipynb.
+        /// </summary>
+        public static string Project2Link {
+            get {
+                return ResourceManager.GetString("Project2Link", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ray Tracing.
+        /// </summary>
+        public static string Project2Name {
+            get {
+                return ResourceManager.GetString("Project2Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Classic Mechanics.
+        /// </summary>
+        public static string Project2Type {
+            get {
+                return ResourceManager.GetString("Project2Type", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Solving one-dimensional Schrödinger equation for a harmonic oscillator (HO) potential as well as for an infinite square well (ISW) potential..
+        /// </summary>
+        public static string Project3Description {
+            get {
+                return ResourceManager.GetString("Project3Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to images/ho_isw/card.jpg.
+        /// </summary>
+        public static string Project3Image {
+            get {
+                return ResourceManager.GetString("Project3Image", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to https://github.com/LeEinsteinZhang/SchrodingerSolving.
+        /// </summary>
+        public static string Project3Link {
+            get {
+                return ResourceManager.GetString("Project3Link", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Schrödinger Computational Solution.
+        /// </summary>
+        public static string Project3Name {
+            get {
+                return ResourceManager.GetString("Project3Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Quantum Mechanics.
+        /// </summary>
+        public static string Project3Type {
+            get {
+                return ResourceManager.GetString("Project3Type", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Use python to develop classic video games, two games have been completed so far, Connect 4 and Tetris..
+        /// </summary>
+        public static string Project4Description {
+            get {
+                return ResourceManager.GetString("Project4Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to images/game_develop/card.jpg.
+        /// </summary>
+        public static string Project4Image {
+            get {
+                return ResourceManager.GetString("Project4Image", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to https://github.com/LeEinsteinZhang/Games.
+        /// </summary>
+        public static string Project4Link {
+            get {
+                return ResourceManager.GetString("Project4Link", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Game Development.
+        /// </summary>
+        public static string Project4Name {
+            get {
+                return ResourceManager.GetString("Project4Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Python Classic Electrical Game Development.
+        /// </summary>
+        public static string Project4Type {
+            get {
+                return ResourceManager.GetString("Project4Type", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Develop and implementation of CPU instruction sets and CPU peripheral systems such as memory management, I/O, and simple C compiler and OS..
+        /// </summary>
+        public static string Project5Description {
+            get {
+                return ResourceManager.GetString("Project5Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to images/cpu_emulation/card.jpg.
+        /// </summary>
+        public static string Project5Image {
+            get {
+                return ResourceManager.GetString("Project5Image", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to https://github.com/LeEinsteinZhang/cpuEmulationPublic.
+        /// </summary>
+        public static string Project5Link {
+            get {
+                return ResourceManager.GetString("Project5Link", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CPU Emulation.
+        /// </summary>
+        public static string Project5Name {
+            get {
+                return ResourceManager.GetString("Project5Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Python Based CPU Logic Simulation.
+        /// </summary>
+        public static string Project5Type {
+            get {
+                return ResourceManager.GetString("Project5Type", resourceCulture);
             }
         }
         

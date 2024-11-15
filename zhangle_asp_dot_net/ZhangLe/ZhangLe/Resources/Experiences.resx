@@ -360,4 +360,22 @@
   <data name="Exp6MainImage" xml:space="preserve">
     <value>images/software_developer/w3_0.jpg</value>
   </data>
+  <data name="Exp1Link" xml:space="preserve">
+    <value>visual-arts</value>
+  </data>
+  <data name="Exp2Link" xml:space="preserve">
+    <value>electrical-engineer</value>
+  </data>
+  <data name="Exp3Link" xml:space="preserve">
+    <value>pa-system</value>
+  </data>
+  <data name="Exp4Link" xml:space="preserve">
+    <value>web-developer</value>
+  </data>
+  <data name="Exp5Link" xml:space="preserve">
+    <value>cs-isa</value>
+  </data>
+  <data name="Exp6Link" xml:space="preserve">
+    <value>software-developer</value>
+  </data>
 </root>

@@ -1,0 +1,95 @@
+﻿@{
+    int expIndex = ViewBag.ExpIndex;
+    string title = ZhangLe.Resources.Experiences.ResourceManager.GetString($"Exp{expIndex}Title");
+    string backgroundImage = ZhangLe.Resources.Experiences.ResourceManager.GetString($"Exp{expIndex}BackgroundImage");
+    string description = ZhangLe.Resources.Experiences.ResourceManager.GetString($"Exp{expIndex}Description");
+    string quote = ZhangLe.Resources.Experiences.ResourceManager.GetString($"Exp{expIndex}Quote");
+    string quoteAuthor = ZhangLe.Resources.Experiences.ResourceManager.GetString($"Exp{expIndex}QuoteAuthor");
+    string mainImage = ZhangLe.Resources.Experiences.ResourceManager.GetString($"Exp{expIndex}MainImage");
+}
+
+<div class="header-background"></div>
+
+<div class="exp-page">
+    <div class="content">
+        <div class="column-section">
+            <div class="canvas-container">
+                <img src="~/@backgroundImage" alt="Background">
+                <div class="canvas-overlay"></div>
+                <div class="sub-title">
+                    <p>@title</p>
+                </div>
+            </div>
+            <div class="description">
+                <p>@description</p>
+                <blockquote>
+                    <h2>"@quote"</h2>
+                    <small>- @quoteAuthor</small>
+                </blockquote>
+            </div>
+            @for (int i = 1; i <= 3; i++)
+            {
+                var projectName = ZhangLe.Resources.Experiences.ResourceManager.GetString($"Exp{expIndex}Project{i}Name");
+                var projectType = ZhangLe.Resources.Experiences.ResourceManager.GetString($"Exp{expIndex}Project{i}Type");
+                var projectDescription = ZhangLe.Resources.Experiences.ResourceManager.GetString($"Exp{expIndex}Project{i}Description");
+                var projectLinkText = ZhangLe.Resources.Experiences.ResourceManager.GetString($"Exp{expIndex}Project{i}LinkText");
+                var projectLink = ZhangLe.Resources.Experiences.ResourceManager.GetString($"Exp{expIndex}Project{i}Link");
+                var projectImage = ZhangLe.Resources.Experiences.ResourceManager.GetString($"Exp{expIndex}Project{i}Image");
+
+                if (!string.IsNullOrEmpty(projectName))
+                {
+                    <div class="exp-section">
+                        <div class="exp-text">
+                            <p class="exp-name">@projectName</p>
+                            <p class="exp-type">@projectType</p>
+                            <p class="exp-description">@projectDescription</p>
+                            <p></p>
+                            <a class="transparent-button" href="@projectLink" target="_blank">@projectLinkText</a>
+                        </div>
+                        <div class="exp-img">
+                            <img src="~/@projectImage" alt="">
+                        </div>
+                    </div>
+                }
+            }
+
+            @for (int section = 1; section <= 3; section++)
+            {
+                var sectionQuoteDescription = ZhangLe.Resources.Experiences.ResourceManager.GetString($"Exp{expIndex}Section{section}QuoteDescription");
+                var sectionQuoteContent = ZhangLe.Resources.Experiences.ResourceManager.GetString($"Exp{expIndex}Section{section}QuoteContent");
+                var sectionQuoteAuthor = ZhangLe.Resources.Experiences.ResourceManager.GetString($"Exp{expIndex}Section{section}QuoteAuthor");
+
+                if (!string.IsNullOrEmpty(sectionQuoteContent))
+                {
+                    <div class="description">
+                        <p>@sectionQuoteDescription</p>
+                        <blockquote>
+                            <h2>"@sectionQuoteContent"</h2>
+                            <small>- @sectionQuoteAuthor</small>
+                        </blockquote>
+                    </div>
+                }
+                <div class="images">
+                @for (int imgIndex = 1; imgIndex <= 3; imgIndex++)
+                {
+                    var imgSrc = ZhangLe.Resources.Experiences.ResourceManager.GetString($"Exp{expIndex}Section{section}Image{imgIndex}Src");
+                    var imgCaption = ZhangLe.Resources.Experiences.ResourceManager.GetString($"Exp{expIndex}Section{section}Image{imgIndex}Caption");
+
+                    if (!string.IsNullOrEmpty(imgSrc))
+                    {
+                        <div class="img-container margin-10">
+                            <img src="@Url.Content($"~/{imgSrc}")" alt="">
+                            <p>@imgCaption</p>
+                        </div>
+                    }
+                }
+                </div>
+            }
+            <div class="row-section">
+                <div class="img-container">
+                    <img src="~/@mainImage" alt="Main">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
