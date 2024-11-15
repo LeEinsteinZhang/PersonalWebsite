@@ -20,8 +20,7 @@ app.UseRouting();
 
 app.Use(async (context, next) =>
 {
-    string cookie = string.Empty;
-    if (context.Request.Cookies.TryGetValue("Language", out cookie))
+    if (context.Request.Cookies.TryGetValue("Language", out string? cookie) && !string.IsNullOrEmpty(cookie))
     {
         System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo(cookie);
         System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(cookie);

@@ -1,11 +1,11 @@
 ﻿@{
     int expIndex = ViewBag.ExpIndex;
-    string title = ZhangLe.Resources.Experiences.ResourceManager.GetString($"Exp{expIndex}Title");
-    string backgroundImage = ZhangLe.Resources.Experiences.ResourceManager.GetString($"Exp{expIndex}BackgroundImage");
-    string description = ZhangLe.Resources.Experiences.ResourceManager.GetString($"Exp{expIndex}Description");
-    string quote = ZhangLe.Resources.Experiences.ResourceManager.GetString($"Exp{expIndex}Quote");
-    string quoteAuthor = ZhangLe.Resources.Experiences.ResourceManager.GetString($"Exp{expIndex}QuoteAuthor");
-    string mainImage = ZhangLe.Resources.Experiences.ResourceManager.GetString($"Exp{expIndex}MainImage");
+    string title = ZhangLe.Resources.Experiences.ResourceManager.GetString($"Exp{expIndex}Title") ?? string.Empty;
+    string backgroundImage = ZhangLe.Resources.Experiences.ResourceManager.GetString($"Exp{expIndex}BackgroundImage") ?? string.Empty;
+    string description = ZhangLe.Resources.Experiences.ResourceManager.GetString($"Exp{expIndex}Description") ?? string.Empty;
+    string quote = ZhangLe.Resources.Experiences.ResourceManager.GetString($"Exp{expIndex}Quote") ?? string.Empty;
+    string quoteAuthor = ZhangLe.Resources.Experiences.ResourceManager.GetString($"Exp{expIndex}QuoteAuthor") ?? string.Empty;
+    string mainImage = ZhangLe.Resources.Experiences.ResourceManager.GetString($"Exp{expIndex}MainImage") ?? string.Empty;
 }
 
 <div class="header-background"></div>

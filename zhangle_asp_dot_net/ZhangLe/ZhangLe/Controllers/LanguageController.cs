@@ -18,7 +18,7 @@ namespace ZhangLe.Controllers
                 Thread.CurrentThread.CurrentCulture = new CultureInfo("en");
             }
             Response.Cookies.Append("Language", lang);
-            return Redirect(Request.GetTypedHeaders().Referer.ToString());
+            return Redirect(Request.GetTypedHeaders()?.Referer?.ToString() ?? "/");
         }
     }
 }
