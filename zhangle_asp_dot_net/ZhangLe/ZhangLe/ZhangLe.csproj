@@ -78,6 +78,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Base.resx</DependentUpon>
     </Compile>
+    <Compile Update="Resources\Experiences.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Experiences.resx</DependentUpon>
+    </Compile>
     <Compile Update="Resources\HomePage.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -93,10 +98,18 @@
     <EmbeddedResource Update="Resources\Base.zh.resx">
       <Generator></Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Experiences.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Experiences.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Update="Resources\HomePage.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>HomePage.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Resources\Experiences\" />
   </ItemGroup>
 
 </Project>

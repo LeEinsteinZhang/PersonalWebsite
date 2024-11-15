@@ -1,0 +1,72 @@
+﻿<div class="sub-nav">
+    <ul>
+        {% for item in content.sub_nav %}
+        <li><a href="/{{ item.link }}" title="" class="{{ 'active' if current_page == item.link else '' }}">{{ item.name }}</a></li>
+        {% endfor %}
+    </ul>
+</div>
+
+<div class="header-background"></div>
+
+<div class="exp-page">
+    <div class="content">
+        <div class="column-section">
+            <div class="canvas-container">
+                <img src="{{ url_for('static', filename=content.background) }}" alt="">
+                <div class="canvas-overlay"></div>
+                <div class="sub-title">
+                    <p>{{ content.title }}</p>
+                </div>
+            </div>
+            <div class="description">
+                <p>{{ content.description }}</p>
+                <blockquote>
+                    <h2>"{{ content.quote }}"</h2>
+                    <small>- {{ content.quote_author }}</small>
+                </blockquote>
+            </div>
+            {% if content.job_projects %}
+            {% for project in content.job_projects %}
+            <div class="exp-section">
+                <div class="exp-text">
+                    <p class="exp-name">{{ project.exp_name }}</p>
+                    <p class="exp-type">{{ project.exp_type }}</p>
+                    <p class="exp-description">{{ project.exp_description }}</p>
+                    <p></p>
+                    <a class="transparent-button" href="{{ project.link_url }}" target="_blank">{{ project.link_text }}</a>
+                </div>
+                <div class="exp-img">
+                    <img src="{{ url_for('static', filename=project.image) }}" alt="">
+                </div>
+            </div>
+            {% endfor %}
+            {% endif %}
+            {% if content.exp_sections %}
+            {% for row in content.exp_sections %}
+            {% if row.quote %}
+            <div class="description">
+                <p>{{ row.quote.description }}</p>
+                <blockquote>
+                    <h2>"{{ row.quote.text }}"</h2>
+                    <small>- {{ row.quote.quote_author }}</small>
+                </blockquote>
+            </div>
+            {% endif %}
+            <div class="images">
+                {% for img in row.images %}
+                <div class="img-container margin-10">
+                    <img src="{{ url_for('static', filename=img.src) }}" alt="{{ img.alt }}">
+                    <p>{{ img.caption }}</p>
+                </div>
+                {% endfor %}
+            </div>
+            {% endfor %}
+            {% endif %}
+            <div class="row-section">
+                <div class="img-container">
+                    <img src="{{ url_for('static', filename=content.main_image) }}" alt="Main">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

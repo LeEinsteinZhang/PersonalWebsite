@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Exp1Title" xml:space="preserve">
+    <value>视觉艺术</value>
+  </data>
+  <data name="Exp1BackgroundImage" xml:space="preserve">
+    <value>images/visual_arts/w0_0.jpg</value>
+  </data>
+  <data name="Exp1Description" xml:space="preserve">
+    <value>摄影是一种利用光的技术。 我曾担任商业摄影师，记录大型商业活动的图像。 我还在高中时和朋友成立了摄影俱乐部，并以摄影讲座的形式举办了几次大型俱乐部活动。 在此期间，我获得了学校颁发的许多奖项。 就我个人而言，我对古典摄影特别感兴趣。</value>
+  </data>
+  <data name="Exp1Quote" xml:space="preserve">
+    <value>眼睛在看之前应该先学会听。</value>
+  </data>
+  <data name="Exp1QuoteAuthor" xml:space="preserve">
+    <value>罗伯特·弗兰克</value>
+  </data>
+  <data name="Exp1MainImage" xml:space="preserve">
+    <value>images/visual_arts/w3_0.jpg</value>
+  </data>
+  <data name="Exp1Section1Image1Src" xml:space="preserve">
+    <value>images/visual_arts/w1_0.jpg</value>
+  </data>
+  <data name="Exp1Section1Image1Caption" xml:space="preserve">
+    <value>商业摄影-迪丽热巴活动现场</value>
+  </data>
+  <data name="Exp1Section1Image2Caption" xml:space="preserve">
+    <value>建筑物的蓝晒照片</value>
+  </data>
+  <data name="Exp1Section1Image2Src" xml:space="preserve">
+    <value>images/visual_arts/w1_1.jpg</value>
+  </data>
+  <data name="Exp1Section2QuoteDescription" xml:space="preserve">
+    <value>在摄影社里，不仅进行摄影活动，还进行录像活动。 我们在高中期间完成了多组微电影的拍摄和后期制作。</value>
+  </data>
+  <data name="Exp1Section2QuoteContent" xml:space="preserve">
+    <value>电影艺术的基础是剪辑。</value>
+  </data>
+  <data name="Exp1Section2QuoteAuthor" xml:space="preserve">
+    <value>弗谢沃洛德·普多夫金</value>
+  </data>
+  <data name="Exp1Section2Image1Caption" xml:space="preserve">
+    <value>视频剪辑</value>
+  </data>
+  <data name="Exp1Section2Image2Caption" xml:space="preserve">
+    <value>高中时期的电影拍摄活动之一</value>
+  </data>
+  <data name="Exp1Section2Image1Src" xml:space="preserve">
+    <value>images/visual_arts/w2_0.jpg</value>
+  </data>
+  <data name="Exp1Section2Image2Src" xml:space="preserve">
+    <value>images/visual_arts/w2_1.jpg</value>
+  </data>
+  <data name="Exp2Title" xml:space="preserve">
+    <value>电子工程师</value>
+  </data>
+  <data name="Exp2BackgroundImage" xml:space="preserve">
+    <value>images/electrical_engineer/w0_0.jpg</value>
+  </data>
+  <data name="Exp2Description" xml:space="preserve">
+    <value>FIRST机器人竞赛（FRC）是一项国际高中机器人竞赛。2018-2019年在中国河南省实验中学担任7047队成员，并进行基本的编程和设计工作。在2018年FIRST Power Up上海比赛中获得通用汽车赞助的工业设计奖。</value>
+  </data>
+  <data name="Exp2Quote" xml:space="preserve">
+    <value>表彰展示工业设计原则、在形式、功能和美学之间取得平衡的团队。</value>
+  </data>
+  <data name="Exp2QuoteAuthor" xml:space="preserve">
+    <value>通用汽车</value>
+  </data>
+  <data name="Exp2MainImage" xml:space="preserve">
+    <value>images/electrical_engineer/w2_0.jpg</value>
+  </data>
+  <data name="Exp2Section1Image1Src" xml:space="preserve">
+    <value>images/electrical_engineer/w1_0.jpg</value>
+  </data>
+  <data name="Exp2Section1Image1Caption" xml:space="preserve">
+    <value>工业设计奖</value>
+  </data>
+  <data name="Exp2Section1Image2Src" xml:space="preserve">
+    <value>images/electrical_engineer/w1_1.jpg</value>
+  </data>
+  <data name="Exp2Section1Image2Caption" xml:space="preserve">
+    <value>7047团队</value>
+  </data>
+  <data name="Exp3Title" xml:space="preserve">
+    <value>音频工程</value>
+  </data>
+  <data name="Exp3BackgroundImage" xml:space="preserve">
+    <value>images/pa_system/w0_0.jpg</value>
+  </data>
+  <data name="Exp3Description" xml:space="preserve">
+    <value>曾在滑铁卢大学 ITMS 的活动运营团队担任音频编辑和现场声音控制，并获得高评价。并独自搭建出音频放大器</value>
+  </data>
+  <data name="Exp3Quote" xml:space="preserve">
+    <value>声音不仅仅是波。 更是生动舞蹈在空气中的元素。</value>
+  </data>
+  <data name="Exp3QuoteAuthor" xml:space="preserve">
+    <value>张乐</value>
+  </data>
+  <data name="Exp3MainImage" xml:space="preserve">
+    <value>images/pa_system/w3_0.jpg</value>
+  </data>
+  <data name="Exp3Section1Image1Src" xml:space="preserve">
+    <value>images/pa_system/w1_0.jpg</value>
+  </data>
+  <data name="Exp3Section1Image1Caption" xml:space="preserve">
+    <value>滑铁卢大学活动现场</value>
+  </data>
+  <data name="Exp3Section1Image2Src" xml:space="preserve">
+    <value>images/pa_system/w1_1.jpg</value>
+  </data>
+  <data name="Exp3Section1Image2Caption" xml:space="preserve">
+    <value>调音</value>
+  </data>
+  <data name="Exp3Section2Image1Src" xml:space="preserve">
+    <value>images/pa_system/w2_0.jpg</value>
+  </data>
+  <data name="Exp3Section2Image1Caption" xml:space="preserve">
+    <value>自制功放</value>
+  </data>
+  <data name="Exp3Section2Image2Src" xml:space="preserve">
+    <value>images/pa_system/w2_1.jpg</value>
+  </data>
+  <data name="Exp3Section2Image2Caption" xml:space="preserve">
+    <value>高中大型活动期间</value>
+  </data>
+  <data name="Exp4Title" xml:space="preserve">
+    <value>网站运营</value>
+  </data>
+  <data name="Exp4BackgroundImage" xml:space="preserve">
+    <value>images/web_developer/w0_0.jpg</value>
+  </data>
+  <data name="Exp4Description" xml:space="preserve">
+    <value>中学时期独立开发完成了中国内地明星门户网站，大学期间搭建了个人网页。 并在滑铁卢大学COOP期间还负责滑铁卢大学工程学院的网站维护工作。</value>
+  </data>
+  <data name="Exp4Quote" xml:space="preserve">
+    <value>Hello World!</value>
+  </data>
+  <data name="Exp4QuoteAuthor" xml:space="preserve">
+    <value>张乐</value>
+  </data>
+  <data name="Exp4MainImage" xml:space="preserve">
+    <value>images/web_developer/w3_0.jpg</value>
+  </data>
+  <data name="Exp4Section1Image1Src" xml:space="preserve">
+    <value>images/web_developer/w1_0.png</value>
+  </data>
+  <data name="Exp4Section1Image1Caption" xml:space="preserve">
+    <value>迪丽热巴的门户网站</value>
+  </data>
+  <data name="Exp4Section1Image2Src" xml:space="preserve">
+    <value>images/web_developer/w1_1.png</value>
+  </data>
+  <data name="Exp4Section1Image2Caption" xml:space="preserve">
+    <value>代码展示</value>
+  </data>
+  <data name="Exp4Section2Image1Src" xml:space="preserve">
+    <value>images/web_developer/w2_0.png</value>
+  </data>
+  <data name="Exp4Section2Image1Caption" xml:space="preserve">
+    <value>个人网站的搭建</value>
+  </data>
+  <data name="Exp4Section2Image2Src" xml:space="preserve">
+    <value>images/web_developer/w2_1.png</value>
+  </data>
+  <data name="Exp4Section2Image2Caption" xml:space="preserve">
+    <value>代码展示</value>
+  </data>
+  <data name="Exp5Title" xml:space="preserve">
+    <value>计算机助教</value>
+  </data>
+  <data name="Exp5BackgroundImage" xml:space="preserve">
+    <value>images/cs_isa/w0_0.jpg</value>
+  </data>
+  <data name="Exp5Description" xml:space="preserve">
+    <value>在 COOP 期间，作为滑铁卢大学数学系 CS136/l 的教学支持助理 (ISA)，我积极协助教师，通过教程和数字平台促进学生学习，管理课程作业评分，并通过监考考试维护学术诚信， 确保支持性的教育环境。</value>
+  </data>
+  <data name="Exp5Quote" xml:space="preserve">
+    <value>传授知识是一个令人愉悦的过程。</value>
+  </data>
+  <data name="Exp5QuoteAuthor" xml:space="preserve">
+    <value>张乐</value>
+  </data>
+  <data name="Exp5MainImage" xml:space="preserve">
+    <value>images/cs_isa/w3_0.jpg</value>
+  </data>
+  <data name="Exp5Project1Name" xml:space="preserve">
+    <value>脚本开发</value>
+  </data>
+  <data name="Exp5Project1Type" xml:space="preserve">
+    <value>利用C和Python以及脚本进行脚本开发</value>
+  </data>
+  <data name="Exp5Project1Description" xml:space="preserve">
+    <value>课程相关脚本的开发和实现提高了评分过程和数据库通信的速度</value>
+  </data>
+  <data name="Exp5Project1LinkText" xml:space="preserve">
+    <value>了解更多</value>
+  </data>
+  <data name="Exp5Project1Link" xml:space="preserve">
+    <value>https://github.com/LeEinsteinZhang/marks_scripts</value>
+  </data>
+  <data name="Exp5Project1Image" xml:space="preserve">
+    <value>images/cs_isa/p0_0.jpg</value>
+  </data>
+  <data name="Exp5Section1Image1Src" xml:space="preserve">
+    <value>images/cs_isa/w1_0.jpg</value>
+  </data>
+  <data name="Exp5Section1Image1Caption" xml:space="preserve">
+    <value>递归解释</value>
+  </data>
+  <data name="Exp5Section1Image2Src" xml:space="preserve">
+    <value>images/cs_isa/w1_1.jpg</value>
+  </data>
+  <data name="Exp5Section1Image2Caption" xml:space="preserve">
+    <value>代码调试</value>
+  </data>
+  <data name="Exp5Section2Image1Src" xml:space="preserve">
+    <value>images/cs_isa/w2_0.jpg</value>
+  </data>
+  <data name="Exp5Section2Image1Caption" xml:space="preserve">
+    <value>创建课程笔记</value>
+  </data>
+  <data name="Exp5Section2Image2Src" xml:space="preserve">
+    <value>images/cs_isa/w2_1.jpg</value>
+  </data>
+  <data name="Exp5Section2Image2Caption" xml:space="preserve">
+    <value>Bash 脚本编码</value>
+  </data>
+  <data name="Exp6Title" xml:space="preserve">
+    <value>软件开发</value>
+  </data>
+  <data name="Exp6BackgroundImage" xml:space="preserve">
+    <value>images/software_developer/w0_0.jpg</value>
+  </data>
+  <data name="Exp6Description" xml:space="preserve">
+    <value>与滑铁卢大学机械与机电一体化工程学院，开发和交付旨在支持学术管理流程的软件。这包括收集和分析数据并将其转化为报告、配置、测试和向内部行政教职员工（行政、技术和教学）团队提供需求。升级现有框架、测试功能和数据完整性。</value>
+  </data>
+  <data name="Exp6Quote" xml:space="preserve">
+    <value>软件在可重复使用之前首先必须可用。</value>
+  </data>
+  <data name="Exp6QuoteAuthor" xml:space="preserve">
+    <value>拉尔夫·约翰逊</value>
+  </data>
+  <data name="Exp6MainImage" xml:space="preserve">
+    <value>images/software_developer/w3_0.jpg</value>
+  </data>
+</root>
