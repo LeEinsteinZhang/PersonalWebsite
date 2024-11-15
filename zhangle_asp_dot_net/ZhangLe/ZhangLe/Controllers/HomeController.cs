@@ -26,7 +26,6 @@ namespace ZhangLe.Controllers
             for (int i = 1; i <= 10; i++)
             {
                 var expLink = ZhangLe.Resources.Experiences.ResourceManager.GetString($"Exp{i}Link");
-                Console.WriteLine($"Checking Exp{i}Link: {expLink} vs {expName}");
                 if (expLink == expName)
                 {
                     expIndex = i;
