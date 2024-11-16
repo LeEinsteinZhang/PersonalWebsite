@@ -1,6 +1,6 @@
-﻿namespace ZhangLe.Constant
+﻿namespace ZhangLe.Constants
 {
-    public class Constant
+    public class Constants
     {
         public const int maxNumberOfAwards = 5;
         public const int maxNumberOfExperiences = 10;

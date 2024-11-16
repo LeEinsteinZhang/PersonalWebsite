@@ -1,4 +1,4 @@
-﻿@using ZhangLe.Constant
+﻿@using ZhangLe.Constants
 @{
     int expIndex = ViewBag.ExpIndex;
     string title = ZhangLe.Resources.Experiences.ResourceManager.GetString($"Exp{expIndex}Title") ?? string.Empty;
@@ -28,7 +28,7 @@
                     <small>- @quoteAuthor</small>
                 </blockquote>
             </div>
-            @for (int i = 1; i <= Constant.maxNumberOfImagesInRow; i++)
+            @for (int i = 1; i <= Constants.maxNumberOfImagesInRow; i++)
             {
                 var projectName = ZhangLe.Resources.Experiences.ResourceManager.GetString($"Exp{expIndex}Project{i}Name");
                 var projectType = ZhangLe.Resources.Experiences.ResourceManager.GetString($"Exp{expIndex}Project{i}Type");
@@ -54,7 +54,7 @@
                 }
             }
 
-            @for (int section = 1; section <= Constant.maxNumberOfSections; section++)
+            @for (int section = 1; section <= Constants.maxNumberOfSections; section++)
             {
                 var sectionQuoteDescription = ZhangLe.Resources.Experiences.ResourceManager.GetString($"Exp{expIndex}Section{section}QuoteDescription");
                 var sectionQuoteContent = ZhangLe.Resources.Experiences.ResourceManager.GetString($"Exp{expIndex}Section{section}QuoteContent");
@@ -71,7 +71,7 @@
                     </div>
                 }
                 <div class="images">
-                    @for (int imgIndex = 1; imgIndex <= Constant.maxNumberOfImagesInRow; imgIndex++)
+                    @for (int imgIndex = 1; imgIndex <= Constants.maxNumberOfImagesInRow; imgIndex++)
                 {
                     var imgSrc = ZhangLe.Resources.Experiences.ResourceManager.GetString($"Exp{expIndex}Section{section}Image{imgIndex}Src");
                     var imgCaption = ZhangLe.Resources.Experiences.ResourceManager.GetString($"Exp{expIndex}Section{section}Image{imgIndex}Caption");
