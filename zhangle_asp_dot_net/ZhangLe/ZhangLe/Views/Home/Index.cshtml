@@ -1,4 +1,5 @@
 ﻿@using ZhangLe.Resources
+@using ZhangLe.Constant
 
 <div id="home" class="section-offset">
     <div class="slide-container">
@@ -42,7 +43,7 @@
                 <h2>@HomePage.Experiences</h2>
                 <p>@HomePage.HighschoolExperience</p>
                 <h2>@HomePage.InterestsAndAwards</h2>
-                @for (int i = 1; i <= 10; i++)
+                @for (int i = 1; i <= Constant.maxNumberOfAwards; i++)
                 {
                     var awardKey = $"Award{i}";
                     var award = HomePage.ResourceManager.GetString(awardKey);
@@ -63,7 +64,7 @@
         <div id="experiences" class="title black section-offset">
             <p>@HomePage.Experiences</p>
         </div>
-        @for (int i = 10; i >0; i--)
+        @for (int i = Constant.maxNumberOfExperiences; i > 0; i--)
         {
             var expName = HomePage.ResourceManager.GetString($"Exp{i}Name");
             var expType = HomePage.ResourceManager.GetString($"Exp{i}Type");
@@ -104,7 +105,7 @@
             <p>@Base.Projects</p>
         </div>
 
-        @for (int i = 10; i > 0; i--)
+        @for (int i = Constant.maxNumberOfExperiences; i > 0; i--)
         {
             var projectName = HomePage.ResourceManager.GetString($"Project{i}Name");
             var projectType = HomePage.ResourceManager.GetString($"Project{i}Type");
