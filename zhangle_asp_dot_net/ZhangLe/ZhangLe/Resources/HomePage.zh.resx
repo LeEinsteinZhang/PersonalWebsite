@@ -12,7 +12,7 @@
     
     Example:
     
-    ... ado.net/XML headers &amp; schema ...
+    ... ado.net/XML headers & schema ...
     <resheader name="resmimetype">text/microsoft-resx</resheader>
     <resheader name="version">2.0</resheader>
     <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutDescription" xml:space="preserve">
-    <value>就读于加拿大滑铁卢大学荣誉物理辅修计算机。VirtualPHY联合创始人</value>
+    <value>就读于加拿大滑铁卢大学荣誉物理辅修计算机。VirtualPHY以及MoveMo联合创始人</value>
   </data>
   <data name="Experiences" xml:space="preserve">
     <value>个人经历</value>
@@ -214,7 +214,7 @@
     <value>电子工程师</value>
   </data>
   <data name="Exp2Type" xml:space="preserve">
-    <value></value>
+    <value />
   </data>
   <data name="Exp2Description" xml:space="preserve">
     <value>编程和构建机器人。作为高中机器人团队的电子工程师工作。</value>
@@ -229,7 +229,7 @@
     <value>视觉艺术</value>
   </data>
   <data name="Exp1Type" xml:space="preserve">
-    <value></value>
+    <value />
   </data>
   <data name="Exp1Description" xml:space="preserve">
     <value>使用和教授经典视觉艺术技巧。与佳能和索尼合作进行工作和日常录音。为公众拍摄和编辑视频，使用Final Cut Pro、Adobe PR和Davinci。</value>
@@ -240,8 +240,6 @@
   <data name="Exp1Image" xml:space="preserve">
     <value>images/visual_arts/card.jpg</value>
   </data>
-
-  <!-- Projects -->
   <data name="Project5Name" xml:space="preserve">
     <value>CPU 仿真</value>
   </data>
@@ -257,7 +255,6 @@
   <data name="Project5Image" xml:space="preserve">
     <value>images/cpu_emulation/card.jpg</value>
   </data>
-
   <data name="Project4Name" xml:space="preserve">
     <value>游戏开发</value>
   </data>
@@ -273,7 +270,6 @@
   <data name="Project4Image" xml:space="preserve">
     <value>images/game_develop/card.jpg</value>
   </data>
-
   <data name="Project3Name" xml:space="preserve">
     <value>薛定谔方程求解器</value>
   </data>
@@ -289,7 +285,6 @@
   <data name="Project3Image" xml:space="preserve">
     <value>images/ho_isw/card.jpg</value>
   </data>
-
   <data name="Project2Name" xml:space="preserve">
     <value>光线追踪</value>
   </data>
@@ -305,7 +300,6 @@
   <data name="Project2Image" xml:space="preserve">
     <value>images/ray_tracing/card.jpg</value>
   </data>
-
   <data name="Project1Name" xml:space="preserve">
     <value>线性方程求解器</value>
   </data>
@@ -321,5 +315,4 @@
   <data name="Project1Image" xml:space="preserve">
     <value>images/solve_linear/card.jpg</value>
   </data>
-
 </root>
