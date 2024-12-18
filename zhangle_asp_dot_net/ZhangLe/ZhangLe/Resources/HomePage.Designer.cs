@@ -223,7 +223,7 @@ namespace ZhangLe.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to sound-engineer.
+        ///   Looks up a localized string similar to pa-system.
         /// </summary>
         public static string Exp3Link {
             get {
