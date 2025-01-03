@@ -1,3 +1,5 @@
+using System.Globalization;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -20,18 +22,43 @@ app.UseRouting();
 
 app.Use(async (context, next) =>
 {
+    string defaultLang = "en";
+    string host = context.Request.Host.Host;
+
+    if (host.EndsWith(".cn"))
+    {
+        defaultLang = "zh";
+    }
+    else if (host.EndsWith(".ca"))
+    {
+        defaultLang = "en";
+    }
+    else if (host.EndsWith(".com"))
+    {
+        var acceptLanguage = context.Request.Headers["Accept-Language"].ToString();
+        if (!string.IsNullOrEmpty(acceptLanguage))
+        {
+            var preferredLang = acceptLanguage.Split(',').FirstOrDefault()?.Split('-').FirstOrDefault();
+            if (preferredLang == "zh")
+            {
+                defaultLang = "zh";
+            }
+        }
+    }
+
     if (context.Request.Cookies.TryGetValue("Language", out string? cookie) && !string.IsNullOrEmpty(cookie))
     {
-        System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo(cookie);
-        System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(cookie);
+        defaultLang = cookie;
     }
-    else
-    {
-        System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("en");
-        System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
-    }
+
+    Thread.CurrentThread.CurrentCulture = new CultureInfo(defaultLang);
+    Thread.CurrentThread.CurrentUICulture = new CultureInfo(defaultLang);
+
+    context.Response.Cookies.Append("Language", defaultLang);
+
     await next.Invoke();
 });
+
 
 app.UseAuthorization();
 

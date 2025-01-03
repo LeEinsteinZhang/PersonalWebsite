@@ -5,20 +5,27 @@ namespace ZhangLe.Controllers
 {
     public class LanguageController : Controller
     {
+        private static readonly HashSet<string> SupportedLanguages = new()
+        {
+            "en",
+            "zh"
+        };
+
         public IActionResult ChangeLanguage(string lang)
         {
-            if (string.IsNullOrEmpty(lang))
+            if (!string.IsNullOrEmpty(lang) && SupportedLanguages.Contains(lang))
             {
-                Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture(lang);
                 Thread.CurrentThread.CurrentCulture = new CultureInfo(lang);
+                Thread.CurrentThread.CurrentUICulture = new CultureInfo(lang);
+                Response.Cookies.Append("Language", lang);
             }
             else
             {
-                Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("en");
                 Thread.CurrentThread.CurrentCulture = new CultureInfo("en");
+                Thread.CurrentThread.CurrentUICulture = new CultureInfo("en");
             }
-            Response.Cookies.Append("Language", lang);
-            return Redirect(Request.GetTypedHeaders()?.Referer?.ToString() ?? "/");
+            return Redirect(Request.Headers["Referer"].ToString() ?? "/");
         }
+
     }
 }
