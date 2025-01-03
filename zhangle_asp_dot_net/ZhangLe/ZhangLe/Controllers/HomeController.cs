@@ -40,5 +40,17 @@ namespace ZhangLe.Controllers
                 return NotFound();
             }
         }
+
+        [Route("sitemap.xml")]
+        public IActionResult Sitemap()
+        {
+            var domain = $"{Request.Scheme}://{Request.Host}";
+
+            ViewBag.Domain = domain;
+            Console.WriteLine("here");
+            Console.WriteLine(domain);
+
+            return View("SiteMap");
+        }
     }
 }
