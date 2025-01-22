@@ -61,7 +61,7 @@ namespace ZhangLe.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Third year Honour Physics Co-op Students in the University of Waterloo. Studying in physics major with computing minor. Co-Founder of VirtualPHY..
+        ///   Looks up a localized string similar to Third year Honour Physics Co-op Students in the University of Waterloo. Studying in physics major with computing minor. Co-Founder of VirtualPHY and MoveMo..
         /// </summary>
         public static string AboutDescription {
             get {
@@ -223,7 +223,7 @@ namespace ZhangLe.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to sound-engineer.
+        ///   Looks up a localized string similar to pa-system.
         /// </summary>
         public static string Exp3Link {
             get {

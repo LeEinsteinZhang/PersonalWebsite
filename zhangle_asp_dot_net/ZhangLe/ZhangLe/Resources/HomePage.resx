@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AboutDescription" xml:space="preserve">
-    <value>Third year Honour Physics Co-op Students in the University of Waterloo. Studying in physics major with computing minor. Co-Founder of VirtualPHY.</value>
+    <value>Third year Honour Physics Co-op Students in the University of Waterloo. Studying in physics major with computing minor. Co-Founder of VirtualPHY and MoveMo.</value>
   </data>
   <data name="Experiences" xml:space="preserve">
     <value>Experiences</value>
@@ -205,7 +205,7 @@
     <value>Edit and control the sound effect for events. Worked in University of Waterloo ITMS and high school events team.</value>
   </data>
   <data name="Exp3Link" xml:space="preserve">
-    <value>sound-engineer</value>
+    <value>pa-system</value>
   </data>
   <data name="Exp3Image" xml:space="preserve">
     <value>images/pa_system/card.jpg</value>

@@ -69,7 +69,6 @@
     <None Include="wwwroot\js\site.js" />
     <None Include="wwwroot\resume\LeZhang.pdf" />
     <None Include="wwwroot\resume\张乐.pdf" />
-    <None Include="wwwroot\sitemap.xml" />
   </ItemGroup>
 
   <ItemGroup>
