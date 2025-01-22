@@ -1,0 +1,10 @@
+﻿@{
+ViewData["Title"] = "Error";
+var statusCode = ViewData["StatusCode"] ?? "Unknown";
+var errorMessage = ViewData["ErrorMessage"] ?? "An unexpected error occurred.";
+}
+
+<div class="error-page">
+        <h1>Error - @statusCode</h1>
+        <p>@errorMessage</p>
+</div>

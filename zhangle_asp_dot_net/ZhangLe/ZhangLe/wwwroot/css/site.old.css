@@ -104,14 +104,26 @@ body {
 	flex-direction: row;
 }
 
-.page-404 {
-	font-family: 'Helvetica', sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    text-align: center;
+.error-page {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	text-align: center;
+	color: #333;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+.error-page h1 {
+	font-size: 48px;
+	margin: 0;
+	color: #dc3545;
+}
+
+.error-page p {
+	font-size: 18px;
+	margin: 10px 0;
 }
 
 .contact {
