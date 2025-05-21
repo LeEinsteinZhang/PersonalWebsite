@@ -322,7 +322,7 @@ namespace ZhangLe.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to CS136 ISA.
+        ///   Looks up a localized string similar to Computer Science ISA.
         /// </summary>
         public static string Exp5Name {
             get {
@@ -331,7 +331,7 @@ namespace ZhangLe.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to CO-OP | University of Waterloo 2024.
+        ///   Looks up a localized string similar to CO-OP | University of Waterloo 2024 and 2025.
         /// </summary>
         public static string Exp5Type {
             get {

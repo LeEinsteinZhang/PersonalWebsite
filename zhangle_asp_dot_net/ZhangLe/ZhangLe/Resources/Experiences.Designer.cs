@@ -682,7 +682,7 @@ namespace ZhangLe.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Facilitating academic success in CS136/l at UWaterloo..
+        ///   Looks up a localized string similar to Facilitating academic success in compuer science at UWaterloo..
         /// </summary>
         public static string Exp5Quote {
             get {
@@ -772,7 +772,7 @@ namespace ZhangLe.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to CS136 Instructional Support Assistant.
+        ///   Looks up a localized string similar to Computer Science Instructional Support Assistant.
         /// </summary>
         public static string Exp5Title {
             get {
